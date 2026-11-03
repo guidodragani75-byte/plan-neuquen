@@ -12,10 +12,11 @@ Tablero interactivo para el control y seguimiento de metas de inspección, relev
 Inspirado en el diseño institucional y la arquitectura de métricas del [Portal Legajo HyS (IAPSER)](https://guidodragani75-byte.github.io/checklist-iapser/portal_legajo_hys.html).
 
 ### Estructura de Pestañas:
-1. **Resumen General:** Semáforo de stock de visitas (44,8% de avance), 32 visitas vencidas sin realizar, 26 urgencias de noviembre 2026, cumplimiento documental RGRL/RAR/SVCC, cobertura de Zona Fría y saneamiento de bajas en SIMP.
+1. **Resumen General:** Semáforo de stock de visitas (44,8% de avance), 30 visitas vencidas sin realizar, 26 urgencias de noviembre 2026, cumplimiento documental RGRL/RAR/SVCC, cobertura de Zona Fría y saneamiento de bajas en SIMP. Cada tarjeta de KPI es interactiva y permite saltar directamente a la lista de casos correspondientes.
 2. **Organismos:** Distribución y ranking de avance en los principales ministerios y entes (CPE, Salud, Policía, EPAS, Trabajo, etc.).
 3. **Vencimientos & Cronograma:** Curva mensual de metas inspectivas (Noviembre 2026 a Mayo 2027) y matriz departamental.
-4. **Preventores & Asignación:** Alerta de cuello de botella (913 sedes pendientes sin preventor asignado) y rendimiento por profesional matriculado.
+4. **Preventores & Asignación:** Alerta de cuello de botella (921 sedes activas sin preventor asignado) y rendimiento por profesional matriculado.
+5. **Vista de Casos & Sedes:** Padrón detallado de 1.664 establecimientos con filtrado instantáneo por cualquiera de las métricas KPI, búsqueda libre en tiempo real, filtros cruzados (organismo, preventor, departamento, zona fría), paginación dinámica, descarga a Excel/CSV y modal de ficha técnica completa.
 
 ---
 

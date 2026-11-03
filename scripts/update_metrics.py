@@ -8,6 +8,23 @@ from datetime import datetime
 SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1kxkrqu1bqtADiMKyNOP5uib-5Wv_-dNEmDngJCAJAHk/export?format=csv&gid=192789465"
 SHEET_GVIZ_URL = "https://docs.google.com/spreadsheets/d/1kxkrqu1bqtADiMKyNOP5uib-5Wv_-dNEmDngJCAJAHk/gviz/tq?tqx=out:csv&gid=192789465"
 
+def clean_txt(t):
+    if not t:
+        return ''
+    t = str(t).replace('\ufffd', '°').replace('\xa0', ' ').strip()
+    return t
+
+def parse_date(d_str):
+    if not d_str or not d_str.strip():
+        return None
+    d_str = d_str.strip().split()[0]
+    for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%m/%d/%Y', '%d-%m-%Y', '%m/%d/%y'):
+        try:
+            return datetime.strptime(d_str, fmt)
+        except ValueError:
+            pass
+    return None
+
 def fetch_csv():
     headers = {'User-Agent': 'Mozilla/5.0'}
     for url in [SHEET_CSV_URL, SHEET_GVIZ_URL]:
@@ -35,7 +52,6 @@ def parse_and_compute(csv_text):
             break
             
     if header_idx == -1:
-        # Fallback to row 5 or 0
         header_idx = 5 if len(rows) > 5 else 0
         
     data_rows = rows[header_idx + 1:]
@@ -43,9 +59,10 @@ def parse_and_compute(csv_text):
 
     # Column mapping indices based on standard layout
     # 0: RS, 1: CUIT, 2: ORGANISMO, 3: CUIT_ORG, 4: NOMBRE_ESTAB, 5: ESTADO
-    # 8: RGRL, 14: RAR, 18: SVCC, 23: DEPARTAMENTO, 27: Zona fría
+    # 6: COD_ESTAB ANTERIORES, 7: DOMICILIO, 8: RGRL, 9: FECHA CARGA RGRL, 10: FECHA ENVIO SRT
+    # 14: RAR, 18: SVCC, 23: DEPARTAMENTO, 27: Zona fría
     # 29: Fecha límite RGRL, 30: Fecha límite Visita, 31: Preventor
-    # 32: Referente, 33: Mail, 34: Teléfono, 35: Fecha Visita, 39: Comentarios
+    # 32: Referente, 33: Mail, 34: Teléfono, 35: Fecha Visita, 36: Nro SRT, 37: ID Empresa, 39: Comentarios
     
     total_padron = len(data_rows)
     activos = []
@@ -62,17 +79,6 @@ def parse_and_compute(csv_text):
             
     total_activos = len(activos)
     total_bajas = len(bajas)
-    
-    def parse_date(d_str):
-        if not d_str or not d_str.strip():
-            return None
-        d_str = d_str.strip().split()[0]
-        for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%m/%d/%Y', '%d-%m-%Y', '%m/%d/%y'):
-            try:
-                return datetime.strptime(d_str, fmt)
-            except ValueError:
-                pass
-        return None
 
     visitados = 0
     vencidas_criticas = 0
@@ -94,27 +100,38 @@ def parse_and_compute(csv_text):
     orgs_map = {}
     prev_map = {}
     dept_map = {}
+    casos = []
     
-    for r in activos:
-        org = r[2].strip() if len(r) > 2 and r[2].strip() else 'SIN ORGANISMO'
-        rgrl = r[8].strip().upper() if len(r) > 8 else 'NO'
-        rar = r[14].strip().upper() if len(r) > 14 else 'NO'
-        svcc = r[18].strip().upper() if len(r) > 18 else 'NO'
-        dept = r[23].strip().upper() if len(r) > 23 and r[23].strip() else 'SIN DEPARTAMENTO'
-        zf = r[27].strip().lower() if len(r) > 27 else ''
+    for idx, r in enumerate(activos, 1):
+        org = clean_txt(r[2]) if len(r) > 2 and clean_txt(r[2]) else 'SIN ORGANISMO'
+        rgrl = clean_txt(r[8]).upper() if len(r) > 8 else 'NO'
+        rar = clean_txt(r[14]).upper() if len(r) > 14 else 'NO'
+        svcc = clean_txt(r[18]).upper() if len(r) > 18 else 'NO'
+        dept = clean_txt(r[23]).upper() if len(r) > 23 and clean_txt(r[23]) else 'SIN DEPARTAMENTO'
+        zf = clean_txt(r[27]).lower() if len(r) > 27 else ''
         f_rgrl_lim = parse_date(r[29]) if len(r) > 29 else None
         f_vis_lim = parse_date(r[30]) if len(r) > 30 else None
-        preventor = r[31].strip().upper() if len(r) > 31 else ''
-        if preventor in ('NAN', 'NONE'):
+        preventor = clean_txt(r[31]).upper() if len(r) > 31 else ''
+        if preventor in ('NAN', 'NONE', 'SIN PREVENTOR'):
             preventor = ''
-        ref_n = r[32].strip() if len(r) > 32 else ''
-        ref_m = r[33].strip() if len(r) > 33 else ''
-        ref_t = r[34].strip() if len(r) > 34 else ''
+        ref_n = clean_txt(r[32]) if len(r) > 32 else ''
+        ref_m = clean_txt(r[33]) if len(r) > 33 else ''
+        ref_t = clean_txt(r[34]) if len(r) > 34 else ''
         f_vis = parse_date(r[35]) if len(r) > 35 else None
         
         has_visit = (f_vis is not None) or (len(r) > 35 and bool(r[35].strip()))
+        
+        # Tags for interactive drill-down views
+        kpi_tags = []
+        estado_visita = 'sin_fecha'
+        estado_visita_label = 'Sin programar'
+
         if has_visit:
             visitados += 1
+            kpi_tags.append('visitados')
+            estado_visita = 'efectuada'
+            f_vis_str = f_vis.strftime('%d/%m/%Y') if f_vis else clean_txt(r[35])
+            estado_visita_label = f'Efectuada: {f_vis_str}'
             if f_vis:
                 k = f_vis.strftime('%Y-%m')
                 hist_visits[k] = hist_visits.get(k, 0) + 1
@@ -122,58 +139,134 @@ def parse_and_compute(csv_text):
             if f_vis_lim:
                 if f_vis_lim < today:
                     vencidas_criticas += 1
+                    kpi_tags.append('vencidas')
+                    estado_visita = 'vencida'
+                    dias = (today - f_vis_lim).days
+                    estado_visita_label = f'Vencida: {f_vis_lim.strftime("%d/%m/%Y")} ({dias}d)'
                 elif f_vis_lim.year == today.year and f_vis_lim.month == today.month:
                     urgentes_nov26 += 1
+                    kpi_tags.append('urgentes_nov')
+                    estado_visita = 'urgente_nov'
+                    estado_visita_label = f'Vence Nov/26: {f_vis_lim.strftime("%d/%m/%Y")}'
                 elif f_vis_lim > today:
                     futuras_programadas += 1
+                    kpi_tags.append('futuras')
+                    estado_visita = 'programada'
+                    estado_visita_label = f'Prog: {f_vis_lim.strftime("%d/%m/%Y")}'
                     k = f_vis_lim.strftime('%Y-%m')
                     future_deadlines[k] = future_deadlines.get(k, 0) + 1
             else:
                 futuras_programadas += 1
+                kpi_tags.append('futuras')
+                estado_visita = 'programada'
+                estado_visita_label = 'Programada (Sin fecha fijada)'
                 
+        is_rgrl_venc = False
         if rgrl == 'SI':
             rgrl_si += 1
+            kpi_tags.append('rgrl_si')
         elif f_rgrl_lim and f_rgrl_lim < today:
             rgrl_vencidos_pend += 1
+            kpi_tags.append('rgrl_vencidos')
+            is_rgrl_venc = True
             
         if rar == 'SI':
             rar_si += 1
+            kpi_tags.append('rar_si')
         if svcc == 'SI':
             svcc_si += 1
+            kpi_tags.append('svcc_si')
             
-        if zf == 'si':
+        is_zf = (zf == 'si')
+        if is_zf:
             zona_fria_total += 1
+            kpi_tags.append('zona_fria')
             if has_visit:
                 zona_fria_vis += 1
+                kpi_tags.append('zona_fria_vis')
+            else:
+                kpi_tags.append('zona_fria_pend')
                 
         if preventor:
             prev_asignados += 1
+            kpi_tags.append('prev_asignados')
             if preventor not in prev_map:
                 prev_map[preventor] = {'asignados': 0, 'visitados': 0}
             prev_map[preventor]['asignados'] += 1
             if has_visit:
                 prev_map[preventor]['visitados'] += 1
+        else:
+            kpi_tags.append('sin_preventor')
                 
-        if ref_n and ref_n.lower() != 'nan': has_ref += 1
-        if ref_m and ref_m.lower() != 'nan': has_mail += 1
-        if ref_t and ref_t.lower() != 'nan': has_tel += 1
+        if ref_n and ref_n.lower() != 'nan':
+            has_ref += 1
+        else:
+            ref_n = ''
+        if ref_m and ref_m.lower() != 'nan':
+            has_mail += 1
+        else:
+            ref_m = ''
+        if ref_t and ref_t.lower() != 'nan':
+            has_tel += 1
+        else:
+            ref_t = ''
         
         # Org Map
         if org not in orgs_map:
             orgs_map[org] = {'total': 0, 'visitados': 0, 'vencidas': 0, 'urg_nov': 0, 'rgrl': 0, 'rar': 0}
         orgs_map[org]['total'] += 1
-        if has_visit: orgs_map[org]['visitados'] += 1
+        if has_visit:
+            orgs_map[org]['visitados'] += 1
         else:
-            if f_vis_lim and f_vis_lim < today: orgs_map[org]['vencidas'] += 1
-            elif f_vis_lim and f_vis_lim.year == today.year and f_vis_lim.month == today.month: orgs_map[org]['urg_nov'] += 1
-        if rgrl == 'SI': orgs_map[org]['rgrl'] += 1
-        if rar == 'SI': orgs_map[org]['rar'] += 1
+            if f_vis_lim and f_vis_lim < today:
+                orgs_map[org]['vencidas'] += 1
+            elif f_vis_lim and f_vis_lim.year == today.year and f_vis_lim.month == today.month:
+                orgs_map[org]['urg_nov'] += 1
+        if rgrl == 'SI':
+            orgs_map[org]['rgrl'] += 1
+        if rar == 'SI':
+            orgs_map[org]['rar'] += 1
         
         # Dept Map
         if dept not in dept_map:
             dept_map[dept] = {'total': 0, 'visitados': 0}
         dept_map[dept]['total'] += 1
-        if has_visit: dept_map[dept]['visitados'] += 1
+        if has_visit:
+            dept_map[dept]['visitados'] += 1
+
+        # Build individual case object
+        caso = {
+            'id': idx,
+            'rs': clean_txt(r[0]) if len(r) > 0 else '',
+            'cuit': clean_txt(r[1]) if len(r) > 1 else '',
+            'organismo': org,
+            'cuit_org': clean_txt(r[3]) if len(r) > 3 else '',
+            'nombre': clean_txt(r[4]) if len(r) > 4 else '',
+            'estado': clean_txt(r[5]) if len(r) > 5 else 'Activo',
+            'cod_ant': clean_txt(r[6]) if len(r) > 6 else '',
+            'domicilio': clean_txt(r[7]) if len(r) > 7 else '',
+            'rgrl': rgrl,
+            'f_rgrl_carga': clean_txt(r[9]) if len(r) > 9 else '',
+            'f_rgrl_lim': f_rgrl_lim.strftime('%d/%m/%Y') if f_rgrl_lim else '',
+            'rgrl_vencido': is_rgrl_venc,
+            'rar': rar,
+            'svcc': svcc,
+            'depto': dept,
+            'zona_fria': is_zf,
+            'f_vis_lim': f_vis_lim.strftime('%d/%m/%Y') if f_vis_lim else '',
+            'f_vis': f_vis.strftime('%d/%m/%Y') if f_vis else (clean_txt(r[35]) if has_visit else ''),
+            'preventor': preventor,
+            'ref_nombre': ref_n,
+            'ref_mail': ref_m,
+            'ref_tel': ref_t,
+            'nro_srt': clean_txt(r[36]) if len(r) > 36 else '',
+            'id_empresa': clean_txt(r[37]) if len(r) > 37 else '',
+            'comentarios': clean_txt(r[39]) if len(r) > 39 else '',
+            'estado_visita': estado_visita,
+            'estado_visita_label': estado_visita_label,
+            'kpi_tags': kpi_tags
+        }
+        casos.append(caso)
 
     # Format outputs
     org_list = []
@@ -257,22 +350,28 @@ def parse_and_compute(csv_text):
         'preventores': prev_list,
         'departamentos': dept_list
     }
-    return metrics
+    return metrics, casos
 
 def main():
-    print(f"[{datetime.now()}] Updating metrics from Google Sheets...")
+    print(f"[{datetime.now()}] Updating metrics & casos from Google Sheets...")
     csv_text = fetch_csv()
-    metrics = parse_and_compute(csv_text)
+    metrics, casos = parse_and_compute(csv_text)
     
-    # Save to data/metrics_data.json
+    # Save to data/metrics_data.json and data/casos_data.json
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(base_dir, 'data')
     os.makedirs(data_dir, exist_ok=True)
-    json_path = os.path.join(data_dir, 'metrics_data.json')
     
-    with open(json_path, 'w', encoding='utf-8') as f:
+    metrics_path = os.path.join(data_dir, 'metrics_data.json')
+    with open(metrics_path, 'w', encoding='utf-8') as f:
         json.dump(metrics, f, ensure_ascii=False, indent=2)
-    print(f"Saved metrics data to {json_path}")
+    print(f"Saved metrics data to {metrics_path}")
+    
+    casos_path = os.path.join(data_dir, 'casos_data.json')
+    with open(casos_path, 'w', encoding='utf-8') as f:
+        json.dump(casos, f, ensure_ascii=False, indent=2)
+    print(f"Saved {len(casos)} casos to {casos_path}")
+    
     print(f"Metrics update complete: {metrics['visitados']}/{metrics['total_activos']} visitados ({metrics['pct_avance']}%)")
 
 if __name__ == '__main__':
