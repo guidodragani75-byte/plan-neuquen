@@ -1,0 +1,560 @@
+{
+  "timestamp": "2026-11-02 23:03:36",
+  "total_padron": 1837,
+  "total_activos": 1664,
+  "total_bajas": 173,
+  "visitados": 745,
+  "pendientes": 919,
+  "pct_avance": 44.8,
+  "vencidas_criticas": 30,
+  "urgentes_nov26": 26,
+  "futuras_programadas": 863,
+  "rgrl_si": 747,
+  "rgrl_pct": 44.9,
+  "rgrl_vencidos_pend": 34,
+  "rar_si": 556,
+  "rar_pct": 33.4,
+  "total_expuestos": 15472,
+  "svcc_si": 50,
+  "svcc_pct": 3.0,
+  "zona_fria_total": 209,
+  "zona_fria_vis": 60,
+  "zona_fria_pct": 28.7,
+  "sin_preventor": 921,
+  "prev_asignados": 743,
+  "has_ref": 961,
+  "has_mail": 961,
+  "has_tel": 632,
+  "hist_labels": [
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "hist_values": [
+    2,
+    81,
+    230,
+    259,
+    171
+  ],
+  "crono_labels": [
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04",
+    "2027-05"
+  ],
+  "crono_values": [
+    160,
+    164,
+    157,
+    153,
+    129,
+    99
+  ],
+  "organismos": [
+    {
+      "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
+      "total": 690,
+      "visitados": 176,
+      "pendientes": 514,
+      "pct_avance": 25.5,
+      "vencidas": 0,
+      "urgentes_nov": 20,
+      "rgrl_pct": 25.4,
+      "rar_pct": 11.7
+    },
+    {
+      "organismo": "MINISTERIO DE SALUD",
+      "total": 235,
+      "visitados": 187,
+      "pendientes": 48,
+      "pct_avance": 79.6,
+      "vencidas": 5,
+      "urgentes_nov": 0,
+      "rgrl_pct": 79.6,
+      "rar_pct": 69.4
+    },
+    {
+      "organismo": "POLICIA DE LA PROVINCIA",
+      "total": 170,
+      "visitados": 95,
+      "pendientes": 75,
+      "pct_avance": 55.9,
+      "vencidas": 1,
+      "urgentes_nov": 4,
+      "rgrl_pct": 55.9,
+      "rar_pct": 3.5
+    },
+    {
+      "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
+      "total": 121,
+      "visitados": 54,
+      "pendientes": 67,
+      "pct_avance": 44.6,
+      "vencidas": 4,
+      "urgentes_nov": 1,
+      "rgrl_pct": 45.5,
+      "rar_pct": 45.5
+    },
+    {
+      "organismo": "PRESIDENCIA EPAS",
+      "total": 108,
+      "visitados": 69,
+      "pendientes": 39,
+      "pct_avance": 63.9,
+      "vencidas": 4,
+      "urgentes_nov": 0,
+      "rgrl_pct": 63.9,
+      "rar_pct": 67.6
+    },
+    {
+      "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
+      "total": 76,
+      "visitados": 63,
+      "pendientes": 13,
+      "pct_avance": 82.9,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 82.9,
+      "rar_pct": 80.3
+    },
+    {
+      "organismo": "MINISTERIO DE SEGURIDAD",
+      "total": 50,
+      "visitados": 18,
+      "pendientes": 32,
+      "pct_avance": 36.0,
+      "vencidas": 3,
+      "urgentes_nov": 1,
+      "rgrl_pct": 38.0,
+      "rar_pct": 42.0
+    },
+    {
+      "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
+      "total": 30,
+      "visitados": 14,
+      "pendientes": 16,
+      "pct_avance": 46.7,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 46.7,
+      "rar_pct": 46.7
+    },
+    {
+      "organismo": "SECRETARIA DE PRODUCCION E INDUSTRIA",
+      "total": 30,
+      "visitados": 1,
+      "pendientes": 29,
+      "pct_avance": 3.3,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 3.3,
+      "rar_pct": 3.3
+    },
+    {
+      "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
+      "total": 26,
+      "visitados": 0,
+      "pendientes": 26,
+      "pct_avance": 0.0,
+      "vencidas": 10,
+      "urgentes_nov": 0,
+      "rgrl_pct": 3.8,
+      "rar_pct": 38.5
+    },
+    {
+      "organismo": "MINISTERIO DE JUVENTUD, DEPORTES Y CULTURA",
+      "total": 26,
+      "visitados": 6,
+      "pendientes": 20,
+      "pct_avance": 23.1,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 23.1,
+      "rar_pct": 23.1
+    },
+    {
+      "organismo": "MINISTERIO DE ECONOMIA PRODUCCION E INDUSTRIA",
+      "total": 23,
+      "visitados": 0,
+      "pendientes": 23,
+      "pct_avance": 0.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 0.0,
+      "rar_pct": 0.0
+    },
+    {
+      "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
+      "total": 19,
+      "visitados": 11,
+      "pendientes": 8,
+      "pct_avance": 57.9,
+      "vencidas": 1,
+      "urgentes_nov": 0,
+      "rgrl_pct": 57.9,
+      "rar_pct": 63.2
+    },
+    {
+      "organismo": "INSTITUTO PROVINCIAL DE VIVIENDA Y URBANISMO (IPVU)",
+      "total": 10,
+      "visitados": 7,
+      "pendientes": 3,
+      "pct_avance": 70.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 70.0,
+      "rar_pct": 70.0
+    },
+    {
+      "organismo": "CONTROL DE INGRESO PROVINCIAL DEPRODUCTOS ALIMENTICIOS (CIPPA)",
+      "total": 9,
+      "visitados": 9,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "SECRETARIA DE OBRAS PUBLICAS",
+      "total": 8,
+      "visitados": 8,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "SUBSECRETARIA GENERAL",
+      "total": 8,
+      "visitados": 7,
+      "pendientes": 1,
+      "pct_avance": 87.5,
+      "vencidas": 1,
+      "urgentes_nov": 0,
+      "rgrl_pct": 87.5,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "MINISTERIO JEFATURA DE GABINETE",
+      "total": 7,
+      "visitados": 7,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "DIRECCION PROVINCIAL DE AERONÃUTICA",
+      "total": 5,
+      "visitados": 3,
+      "pendientes": 2,
+      "pct_avance": 60.0,
+      "vencidas": 1,
+      "urgentes_nov": 0,
+      "rgrl_pct": 60.0,
+      "rar_pct": 80.0
+    },
+    {
+      "organismo": "MINISTERIO DE ENERGIA",
+      "total": 3,
+      "visitados": 3,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "UNIDAD PROVINCIAL DE ENLACE Y EJECUCION DE PROYECTOS CON FINAN. EXTERNO - (UPEFE)",
+      "total": 3,
+      "visitados": 3,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "COORDINACION GENERAL - UNIDAD EJECUTORA PROVINCIAL",
+      "total": 3,
+      "visitados": 0,
+      "pendientes": 3,
+      "pct_avance": 0.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 0.0,
+      "rar_pct": 0.0
+    },
+    {
+      "organismo": "INSTITUTO PROVINCIAL DE JUEGOS DE AZAR (IJAN)",
+      "total": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "TRIBUNAL DE CUENTAS",
+      "total": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "MINISTERIO DE EDUCACION",
+      "total": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    },
+    {
+      "organismo": "AGENCIA DE DESARROLLO URBANO SUSTENTABLE - A.D.U.S.",
+      "total": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
+      "urgentes_nov": 0,
+      "rgrl_pct": 100.0,
+      "rar_pct": 100.0
+    }
+  ],
+  "preventores": [
+    {
+      "preventor": "EMANUEL VALDERRAMA",
+      "asignados": 169,
+      "visitados": 167,
+      "pendientes": 2,
+      "pct_completado": 98.8
+    },
+    {
+      "preventor": "LUCRECIA CONTRERAS",
+      "asignados": 134,
+      "visitados": 134,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "SAMUEL ISSAC",
+      "asignados": 80,
+      "visitados": 80,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "DIEGO CANALES",
+      "asignados": 73,
+      "visitados": 73,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "JAIRO GUAJARDO",
+      "asignados": 71,
+      "visitados": 68,
+      "pendientes": 3,
+      "pct_completado": 95.8
+    },
+    {
+      "preventor": "ALEJANDRO RODRIGUEZ",
+      "asignados": 70,
+      "visitados": 70,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "ARACELI FERNANDEZ",
+      "asignados": 65,
+      "visitados": 65,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "NESTOR SCATENA",
+      "asignados": 38,
+      "visitados": 37,
+      "pendientes": 1,
+      "pct_completado": 97.4
+    },
+    {
+      "preventor": "OSCAR ACEVEDO",
+      "asignados": 16,
+      "visitados": 16,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "DAIANA RAVETTI",
+      "asignados": 15,
+      "visitados": 15,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "LAUTARO FUENTEALBA",
+      "asignados": 11,
+      "visitados": 11,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
+      "preventor": "MATIAS NESTOR SCATENA",
+      "asignados": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    }
+  ],
+  "departamentos": [
+    {
+      "departamento": "CONFLUENCIA",
+      "total": 844,
+      "visitados": 486,
+      "pendientes": 358,
+      "pct_avance": 57.6
+    },
+    {
+      "departamento": "ZAPALA",
+      "total": 125,
+      "visitados": 53,
+      "pendientes": 72,
+      "pct_avance": 42.4
+    },
+    {
+      "departamento": "LACAR",
+      "total": 88,
+      "visitados": 33,
+      "pendientes": 55,
+      "pct_avance": 37.5
+    },
+    {
+      "departamento": "CHOS MALAL",
+      "total": 82,
+      "visitados": 24,
+      "pendientes": 58,
+      "pct_avance": 29.3
+    },
+    {
+      "departamento": "PEHUENCHES",
+      "total": 76,
+      "visitados": 25,
+      "pendientes": 51,
+      "pct_avance": 32.9
+    },
+    {
+      "departamento": "HUILICHES",
+      "total": 69,
+      "visitados": 21,
+      "pendientes": 48,
+      "pct_avance": 30.4
+    },
+    {
+      "departamento": "ÑORQUIN",
+      "total": 59,
+      "visitados": 12,
+      "pendientes": 47,
+      "pct_avance": 20.3
+    },
+    {
+      "departamento": "ALUMINE",
+      "total": 57,
+      "visitados": 21,
+      "pendientes": 36,
+      "pct_avance": 36.8
+    },
+    {
+      "departamento": "MINAS",
+      "total": 48,
+      "visitados": 13,
+      "pendientes": 35,
+      "pct_avance": 27.1
+    },
+    {
+      "departamento": "LOS LAGOS",
+      "total": 45,
+      "visitados": 14,
+      "pendientes": 31,
+      "pct_avance": 31.1
+    },
+    {
+      "departamento": "LONCOPUE",
+      "total": 35,
+      "visitados": 8,
+      "pendientes": 27,
+      "pct_avance": 22.9
+    },
+    {
+      "departamento": "PICUNCHES",
+      "total": 32,
+      "visitados": 9,
+      "pendientes": 23,
+      "pct_avance": 28.1
+    },
+    {
+      "departamento": "AÑELO",
+      "total": 30,
+      "visitados": 8,
+      "pendientes": 22,
+      "pct_avance": 26.7
+    },
+    {
+      "departamento": "CATAN LIL",
+      "total": 28,
+      "visitados": 4,
+      "pendientes": 24,
+      "pct_avance": 14.3
+    },
+    {
+      "departamento": "PICUN LEUFU",
+      "total": 21,
+      "visitados": 6,
+      "pendientes": 15,
+      "pct_avance": 28.6
+    },
+    {
+      "departamento": "COLLON CURA",
+      "total": 18,
+      "visitados": 6,
+      "pendientes": 12,
+      "pct_avance": 33.3
+    },
+    {
+      "departamento": "#N/A",
+      "total": 6,
+      "visitados": 1,
+      "pendientes": 5,
+      "pct_avance": 16.7
+    },
+    {
+      "departamento": "CABA",
+      "total": 1,
+      "visitados": 1,
+      "pendientes": 0,
+      "pct_avance": 100.0
+    }
+  ]
+}
