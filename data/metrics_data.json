@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-11-03 13:37:08",
+  "timestamp": "2026-11-04 13:45:18",
   "total_padron": 1837,
   "total_activos": 1664,
   "total_bajas": 173,
-  "visitados": 745,
-  "pendientes": 919,
+  "visitados": 746,
+  "pendientes": 918,
   "pct_avance": 44.8,
-  "vencidas_criticas": 30,
+  "vencidas_criticas": 31,
   "urgentes_nov26": 26,
-  "futuras_programadas": 863,
-  "rgrl_si": 747,
-  "rgrl_pct": 44.9,
+  "futuras_programadas": 861,
+  "rgrl_si": 749,
+  "rgrl_pct": 45.0,
   "rgrl_vencidos_pend": 34,
   "rar_si": 556,
   "rar_pct": 33.4,
@@ -20,8 +20,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 921,
-  "prev_asignados": 743,
+  "sin_preventor": 919,
+  "prev_asignados": 745,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -30,14 +30,16 @@
     "2026-07",
     "2026-08",
     "2026-09",
-    "2026-10"
+    "2026-10",
+    "2026-11"
   ],
   "hist_values": [
     2,
     81,
-    230,
-    259,
-    171
+    229,
+    261,
+    171,
+    2
   ],
   "crono_labels": [
     "2026-12",
@@ -48,7 +50,7 @@
     "2027-05"
   ],
   "crono_values": [
-    160,
+    158,
     164,
     157,
     153,
@@ -59,21 +61,21 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 176,
-      "pendientes": 514,
-      "pct_avance": 25.5,
+      "visitados": 178,
+      "pendientes": 512,
+      "pct_avance": 25.8,
       "vencidas": 0,
       "urgentes_nov": 20,
-      "rgrl_pct": 25.4,
+      "rgrl_pct": 25.7,
       "rar_pct": 11.7
     },
     {
       "organismo": "MINISTERIO DE SALUD",
       "total": 235,
-      "visitados": 187,
-      "pendientes": 48,
-      "pct_avance": 79.6,
-      "vencidas": 5,
+      "visitados": 186,
+      "pendientes": 49,
+      "pct_avance": 79.1,
+      "vencidas": 6,
       "urgentes_nov": 0,
       "rgrl_pct": 79.6,
       "rar_pct": 69.4
@@ -92,10 +94,10 @@
     {
       "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
       "total": 121,
-      "visitados": 54,
-      "pendientes": 67,
-      "pct_avance": 44.6,
-      "vencidas": 4,
+      "visitados": 53,
+      "pendientes": 68,
+      "pct_avance": 43.8,
+      "vencidas": 5,
       "urgentes_nov": 1,
       "rgrl_pct": 45.5,
       "rar_pct": 45.5
@@ -125,10 +127,10 @@
     {
       "organismo": "MINISTERIO DE SEGURIDAD",
       "total": 50,
-      "visitados": 18,
-      "pendientes": 32,
-      "pct_avance": 36.0,
-      "vencidas": 3,
+      "visitados": 19,
+      "pendientes": 31,
+      "pct_avance": 38.0,
+      "vencidas": 2,
       "urgentes_nov": 1,
       "rgrl_pct": 38.0,
       "rar_pct": 42.0
@@ -346,17 +348,17 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 169,
-      "visitados": 167,
-      "pendientes": 2,
-      "pct_completado": 98.8
+      "asignados": 171,
+      "visitados": 170,
+      "pendientes": 1,
+      "pct_completado": 99.4
     },
     {
       "preventor": "LUCRECIA CONTRERAS",
       "asignados": 134,
-      "visitados": 134,
-      "pendientes": 0,
-      "pct_completado": 100.0
+      "visitados": 133,
+      "pendientes": 1,
+      "pct_completado": 99.3
     },
     {
       "preventor": "SAMUEL ISSAC",
@@ -389,9 +391,9 @@
     {
       "preventor": "ARACELI FERNANDEZ",
       "asignados": 65,
-      "visitados": 65,
-      "pendientes": 0,
-      "pct_completado": 100.0
+      "visitados": 64,
+      "pendientes": 1,
+      "pct_completado": 98.5
     },
     {
       "preventor": "NESTOR SCATENA",
@@ -433,16 +435,16 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 844,
-      "visitados": 486,
-      "pendientes": 358,
-      "pct_avance": 57.6
+      "visitados": 488,
+      "pendientes": 356,
+      "pct_avance": 57.8
     },
     {
       "departamento": "ZAPALA",
       "total": 125,
-      "visitados": 53,
-      "pendientes": 72,
-      "pct_avance": 42.4
+      "visitados": 52,
+      "pendientes": 73,
+      "pct_avance": 41.6
     },
     {
       "departamento": "LACAR",
