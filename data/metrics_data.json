@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-04 13:45:18",
+  "timestamp": "2026-11-05 13:58:23",
   "total_padron": 1837,
-  "total_activos": 1664,
-  "total_bajas": 173,
-  "visitados": 746,
-  "pendientes": 918,
-  "pct_avance": 44.8,
-  "vencidas_criticas": 31,
+  "total_activos": 1663,
+  "total_bajas": 174,
+  "visitados": 747,
+  "pendientes": 916,
+  "pct_avance": 44.9,
+  "vencidas_criticas": 30,
   "urgentes_nov26": 26,
-  "futuras_programadas": 861,
+  "futuras_programadas": 860,
   "rgrl_si": 749,
   "rgrl_pct": 45.0,
   "rgrl_vencidos_pend": 34,
@@ -20,13 +20,12 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 919,
+  "sin_preventor": 918,
   "prev_asignados": 745,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
   "hist_labels": [
-    "2026-06",
     "2026-07",
     "2026-08",
     "2026-09",
@@ -34,10 +33,9 @@
     "2026-11"
   ],
   "hist_values": [
-    2,
     81,
-    229,
-    261,
+    230,
+    263,
     171,
     2
   ],
@@ -72,10 +70,10 @@
     {
       "organismo": "MINISTERIO DE SALUD",
       "total": 235,
-      "visitados": 186,
-      "pendientes": 49,
-      "pct_avance": 79.1,
-      "vencidas": 6,
+      "visitados": 187,
+      "pendientes": 48,
+      "pct_avance": 79.6,
+      "vencidas": 5,
       "urgentes_nov": 0,
       "rgrl_pct": 79.6,
       "rar_pct": 69.4
@@ -148,14 +146,14 @@
     },
     {
       "organismo": "SECRETARIA DE PRODUCCION E INDUSTRIA",
-      "total": 30,
+      "total": 29,
       "visitados": 1,
-      "pendientes": 29,
-      "pct_avance": 3.3,
+      "pendientes": 28,
+      "pct_avance": 3.4,
       "vencidas": 0,
       "urgentes_nov": 0,
-      "rgrl_pct": 3.3,
-      "rar_pct": 3.3
+      "rgrl_pct": 3.4,
+      "rar_pct": 3.4
     },
     {
       "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -391,9 +389,9 @@
     {
       "preventor": "ARACELI FERNANDEZ",
       "asignados": 65,
-      "visitados": 64,
-      "pendientes": 1,
-      "pct_completado": 98.5
+      "visitados": 65,
+      "pendientes": 0,
+      "pct_completado": 100.0
     },
     {
       "preventor": "NESTOR SCATENA",
@@ -442,16 +440,16 @@
     {
       "departamento": "ZAPALA",
       "total": 125,
-      "visitados": 52,
-      "pendientes": 73,
-      "pct_avance": 41.6
+      "visitados": 53,
+      "pendientes": 72,
+      "pct_avance": 42.4
     },
     {
       "departamento": "LACAR",
-      "total": 88,
+      "total": 87,
       "visitados": 33,
-      "pendientes": 55,
-      "pct_avance": 37.5
+      "pendientes": 54,
+      "pct_avance": 37.9
     },
     {
       "departamento": "CHOS MALAL",

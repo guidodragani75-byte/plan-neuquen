@@ -2486,7 +2486,7 @@
     "ref_tel": "",
     "nro_srt": "170",
     "id_empresa": "3188702",
-    "comentarios": "FALLIDA - Se mudo a  Mamá Margarita y Honduras provisoriamente, por inseguridad en el lugar debido a balaseras en reiteradas ocasiones. Se reasigno.",
+    "comentarios": "Fallida",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 16/09/2026",
     "kpi_tags": [
@@ -3029,7 +3029,7 @@
     "ref_tel": "",
     "nro_srt": "185",
     "id_empresa": "3188717",
-    "comentarios": "ESTAB. SE ENCUENTRA EN OBRAS desde el día 20 de julio. Visita fallida Emanuel, se reprograma con Diego quien informa en nuevo contcato que siguen en obra el domicilio",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 28/09/2026",
     "kpi_tags": [
@@ -3500,7 +3500,7 @@
     "ref_tel": "",
     "nro_srt": "198",
     "id_empresa": "3188730",
-    "comentarios": "1er fallida - 2da efectiva - ESTAB. SE ENCUENTRA EN OBRAS - NO OPERATIVO- SE DEBE VISITAR MAS ADELANTE",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 02/09/2026",
     "kpi_tags": [
@@ -4552,7 +4552,7 @@
     "ref_tel": "",
     "nro_srt": "227",
     "id_empresa": "3188760",
-    "comentarios": "Fallida - DESCONOCIDO SE MUDO - Se consulta nueva direccion",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 21/10/2026",
     "kpi_tags": [
@@ -4842,7 +4842,7 @@
     "ref_tel": "",
     "nro_srt": "235",
     "id_empresa": "3188768",
-    "comentarios": "Visita Fallida - REPROGRAMADA-SIN ACTIVIDAD - Empleados se encuentran con medidas de fuerza, sin prestación de servicio por tiempo indeterminado",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 18/08/2026",
     "kpi_tags": [
@@ -4878,7 +4878,7 @@
     "ref_tel": "",
     "nro_srt": "236",
     "id_empresa": "3188769",
-    "comentarios": "Visita Fallida - REPROGRAMADA- SIN ACTIVIDAD -  Empleados se encuentran con medidas de fuerza, sin prestación de servicio por tiempo indeterminado",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 18/08/2026",
     "kpi_tags": [
@@ -5311,7 +5311,7 @@
     "ref_tel": "",
     "nro_srt": "248",
     "id_empresa": "3188781",
-    "comentarios": "CAMBIAR DATOS PROFESIONAL",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 26/08/2026",
     "kpi_tags": [
@@ -5525,9 +5525,9 @@
     "ref_nombre": "Enrique Uribe\n Pilquiñan Micaela\n Dobrovolsky Natalia",
     "ref_mail": "euribe@neuquen.gov.ar\n mapilquinan@neuquen.gov.ar\n ndobrovolsky@neuquen.gov.ar",
     "ref_tel": "",
-    "nro_srt": "",
+    "nro_srt": "254",
     "id_empresa": "3188787",
-    "comentarios": "FALLIDA - Se reasigno",
+    "comentarios": "Fallida",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 16/09/2026",
     "kpi_tags": [
@@ -5556,7 +5556,7 @@
     "depto": "ZAPALA",
     "zona_fria": false,
     "f_vis_lim": "06/08/2026",
-    "f_vis": "",
+    "f_vis": "28/08/2026",
     "preventor": "ARACELI FERNANDEZ",
     "ref_nombre": "Micaela Rodriguez",
     "ref_mail": "micaelarodriguez@neuquen.gov.ar",
@@ -5564,10 +5564,10 @@
     "nro_srt": "255",
     "id_empresa": "3189293",
     "comentarios": "",
-    "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 06/08/2026 (90d)",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 28/08/2026",
     "kpi_tags": [
-      "vencidas",
+      "visitados",
       "rgrl_si",
       "rar_si",
       "prev_asignados"
@@ -6176,9 +6176,9 @@
     "ref_tel": "",
     "nro_srt": "273",
     "id_empresa": "3190063",
-    "comentarios": "PROGRAMADA",
+    "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (84d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -8985,7 +8985,7 @@
     "ref_tel": "",
     "nro_srt": "351",
     "id_empresa": "3190144",
-    "comentarios": "NOS DEBEN ENVIAR FIRMA DE CRISTINA, QUIEN CONFIRMA SI RECIBIO AL PREVENTOR",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 13/08/2026",
     "kpi_tags": [
@@ -9705,9 +9705,9 @@
     "ref_tel": "",
     "nro_srt": "373",
     "id_empresa": "3190169",
-    "comentarios": "Visita Fallida - CERRADO",
+    "comentarios": "Fallida",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (84d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -10173,7 +10173,7 @@
     "ref_tel": "",
     "nro_srt": "386",
     "id_empresa": "3190182",
-    "comentarios": "SE MODIFICO LA LOCALIDAD",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 21/08/2026",
     "kpi_tags": [
@@ -10209,9 +10209,9 @@
     "ref_tel": "",
     "nro_srt": "387",
     "id_empresa": "3190183",
-    "comentarios": "PROGRAMADA",
+    "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (84d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -11216,7 +11216,7 @@
     "ref_tel": "",
     "nro_srt": "418",
     "id_empresa": "3190214",
-    "comentarios": "VISITA FALLIDA - Se actualizo domicilio el 25/08, se reasigna",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 24/08/2026",
     "kpi_tags": [
@@ -11540,7 +11540,7 @@
     "ref_tel": "",
     "nro_srt": "429",
     "id_empresa": "3190225",
-    "comentarios": "CAMBIAR RESPONSABLE ES CRISTINA NNO ES GALATI - confirmar si recibio Cristina",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 26/08/2026",
     "kpi_tags": [
@@ -11864,7 +11864,7 @@
     "ref_tel": "",
     "nro_srt": "438",
     "id_empresa": "3190234",
-    "comentarios": "Visita Fallida - sin actividad por obras",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 22/10/2026",
     "kpi_tags": [
@@ -13409,7 +13409,7 @@
     "depto": "LACAR",
     "zona_fria": false,
     "f_vis_lim": "29/08/2026",
-    "f_vis": "11/06/2026",
+    "f_vis": "11/09/2026",
     "preventor": "ALEJANDRO RODRIGUEZ",
     "ref_nombre": "Leandro Joaquin Manríquez",
     "ref_mail": "lmanriquez@neuquen.gov.ar",
@@ -13418,7 +13418,7 @@
     "id_empresa": "3194695",
     "comentarios": "",
     "estado_visita": "efectuada",
-    "estado_visita_label": "Efectuada: 11/06/2026",
+    "estado_visita_label": "Efectuada: 11/09/2026",
     "kpi_tags": [
       "visitados",
       "rgrl_si",
@@ -14136,9 +14136,9 @@
     "ref_tel": "0294 - 154205470",
     "nro_srt": "501",
     "id_empresa": "3194715",
-    "comentarios": "PROGRAMADA",
+    "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (67d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -14715,7 +14715,7 @@
     "ref_tel": "2994627521",
     "nro_srt": "518",
     "id_empresa": "3194732",
-    "comentarios": "ERIC DESCONOCE LA VISITA, NO RECIBIO",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 04/09/2026",
     "kpi_tags": [
@@ -14787,7 +14787,7 @@
     "ref_tel": "2996377912",
     "nro_srt": "520",
     "id_empresa": "3194734",
-    "comentarios": "CRISTINA DESCONOCE LA FIRMA",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 04/09/2026",
     "kpi_tags": [
@@ -14967,7 +14967,7 @@
     "ref_tel": "2942595499",
     "nro_srt": "525",
     "id_empresa": "3194739",
-    "comentarios": "PROGRAMADA",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 05/10/2026",
     "kpi_tags": [
@@ -15979,7 +15979,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "553",
     "id_empresa": "3194767",
-    "comentarios": "EN PROCESO",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 06/10/2026",
     "kpi_tags": [
@@ -16339,9 +16339,9 @@
     "ref_tel": "2994382459",
     "nro_srt": "563",
     "id_empresa": "3194777",
-    "comentarios": "VISITA FALLIDA- DIRECCION INEXISTENTE",
+    "comentarios": "Fallida",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (67d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -16700,7 +16700,7 @@
     "id_empresa": "3194789",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (67d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -17240,7 +17240,7 @@
     "id_empresa": "3197180",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (67d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -18227,7 +18227,7 @@
     "id_empresa": "3204994",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18262,7 +18262,7 @@
     "id_empresa": "3204995",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18332,7 +18332,7 @@
     "id_empresa": "3204997",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18761,7 +18761,7 @@
     "id_empresa": "3205009",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -19309,7 +19309,7 @@
     "depto": "LOS LAGOS",
     "zona_fria": true,
     "f_vis_lim": "27/09/2026",
-    "f_vis": "22/06/2026",
+    "f_vis": "22/09/2026",
     "preventor": "ALEJANDRO RODRIGUEZ",
     "ref_nombre": "Leticia Busemi\n Del Arciprete Eric\n Maria Cassinelli",
     "ref_mail": "lbusemi@neuquen.gov.ar\n edasafety.ar@gmail.com\n mcassinelli@neuquen.gov.ar",
@@ -19318,7 +19318,7 @@
     "id_empresa": "3205024",
     "comentarios": "",
     "estado_visita": "efectuada",
-    "estado_visita_label": "Efectuada: 22/06/2026",
+    "estado_visita_label": "Efectuada: 22/09/2026",
     "kpi_tags": [
       "visitados",
       "rgrl_si",
@@ -19432,7 +19432,7 @@
     "id_empresa": "3205027",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -19660,7 +19660,7 @@
     "id_empresa": "3205033",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19697,7 +19697,7 @@
     "id_empresa": "3205034",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19772,7 +19772,7 @@
     "id_empresa": "3205036",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20458,7 +20458,7 @@
     "id_empresa": "3205054",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20495,7 +20495,7 @@
     "id_empresa": "3205056",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20532,7 +20532,7 @@
     "id_empresa": "3205057",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20569,7 +20569,7 @@
     "id_empresa": "3205058",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20606,7 +20606,7 @@
     "id_empresa": "3205059",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20643,7 +20643,7 @@
     "id_empresa": "3205060",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20680,7 +20680,7 @@
     "id_empresa": "3205061",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20717,7 +20717,7 @@
     "id_empresa": "3205062",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20754,7 +20754,7 @@
     "id_empresa": "3205063",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20791,7 +20791,7 @@
     "id_empresa": "3205064",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20828,7 +20828,7 @@
     "id_empresa": "3205065",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20865,7 +20865,7 @@
     "id_empresa": "3205067",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -21519,7 +21519,7 @@
     "ref_tel": "2996300921",
     "nro_srt": "706",
     "id_empresa": "3205085",
-    "comentarios": "1ero fue fallida  se modifica direccion",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 30/09/2026",
     "kpi_tags": [
@@ -22361,7 +22361,7 @@
     "id_empresa": "3205109",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "sin_preventor"
@@ -22920,7 +22920,7 @@
     "id_empresa": "3205125",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (38d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -22957,7 +22957,7 @@
     "id_empresa": "3206868",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 03/10/2026 (32d)",
+    "estado_visita_label": "Vencida: 03/10/2026 (33d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -25827,7 +25827,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "829",
     "id_empresa": "3216607",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 08/10/2026",
     "kpi_tags": [
@@ -28592,7 +28592,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "908",
     "id_empresa": "3216714",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "urgente_nov",
     "estado_visita_label": "Vence Nov/26: 30/11/2026",
     "kpi_tags": [
@@ -28627,7 +28627,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "909",
     "id_empresa": "3216715",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 30/10/2026",
     "kpi_tags": [
@@ -28662,7 +28662,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "910",
     "id_empresa": "3216716",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "urgente_nov",
     "estado_visita_label": "Vence Nov/26: 30/11/2026",
     "kpi_tags": [
@@ -28697,7 +28697,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "911",
     "id_empresa": "3216717",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 29/10/2026",
     "kpi_tags": [
@@ -28732,7 +28732,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "912",
     "id_empresa": "3216718",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 30/10/2026",
     "kpi_tags": [
@@ -28767,7 +28767,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "913",
     "id_empresa": "3216719",
-    "comentarios": "PEDIDO DE ALTA DE NQN POR SIMP",
+    "comentarios": "",
     "estado_visita": "efectuada",
     "estado_visita_label": "Efectuada: 29/10/2026",
     "kpi_tags": [
@@ -31456,7 +31456,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "992",
     "id_empresa": "3224697",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -31932,7 +31932,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "1006",
     "id_empresa": "3224711",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -32000,7 +32000,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "1008",
     "id_empresa": "3224713",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -32102,7 +32102,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "1011",
     "id_empresa": "3224716",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -32408,7 +32408,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "1020",
     "id_empresa": "3224725",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -32442,7 +32442,7 @@
     "ref_tel": "2996084255",
     "nro_srt": "1021",
     "id_empresa": "3224726",
-    "comentarios": "DEBEN PEDIR BAJA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -34210,7 +34210,7 @@
     "ref_tel": "2994382459",
     "nro_srt": "1073",
     "id_empresa": "3224841",
-    "comentarios": "ALTA SOLICITADA POR SIMP",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/12/2026",
     "kpi_tags": [
@@ -58284,40 +58284,6 @@
     "id": 1662,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
-    "organismo": "SECRETARIA DE PRODUCCION E INDUSTRIA",
-    "cuit_org": "30710405871",
-    "nombre": "Vivero Provincial San Martin de los Andes",
-    "estado": "Activo",
-    "cod_ant": "2142",
-    "domicilio": "Lote 69- Ruta Prov 19 0 SAN MARTIN DE LOS ANDES Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
-    "f_rgrl_lim": "",
-    "rgrl_vencido": false,
-    "rar": "NO",
-    "svcc": "NO",
-    "depto": "LACAR",
-    "zona_fria": false,
-    "f_vis_lim": "",
-    "f_vis": "",
-    "preventor": "",
-    "ref_nombre": "",
-    "ref_mail": "",
-    "ref_tel": "",
-    "nro_srt": "",
-    "id_empresa": "",
-    "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Programada (Sin fecha fijada)",
-    "kpi_tags": [
-      "futuras",
-      "sin_preventor"
-    ]
-  },
-  {
-    "id": 1663,
-    "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
-    "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
     "cuit_org": "30999278376",
     "nombre": "ANEXO VI AULA TALLER MOVIL INDUMEN",
@@ -58340,7 +58306,7 @@
     "ref_tel": "",
     "nro_srt": "",
     "id_empresa": "",
-    "comentarios": "NO DAR DE ALTA EN MUESTRA 6",
+    "comentarios": "",
     "estado_visita": "programada",
     "estado_visita_label": "Prog: 31/01/2027",
     "kpi_tags": [
@@ -58349,7 +58315,7 @@
     ]
   },
   {
-    "id": 1664,
+    "id": 1663,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
