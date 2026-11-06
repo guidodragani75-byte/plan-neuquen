@@ -6178,7 +6178,7 @@
     "id_empresa": "3190063",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (86d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -9707,7 +9707,7 @@
     "id_empresa": "3190169",
     "comentarios": "Fallida",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (86d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -10211,7 +10211,7 @@
     "id_empresa": "3190183",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (85d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (86d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -14138,7 +14138,7 @@
     "id_empresa": "3194715",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (69d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -14438,6 +14438,41 @@
     "id": 401,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
+    "organismo": "MINISTERIO DE SEGURIDAD",
+    "cuit_org": "30717437965",
+    "nombre": "POBLACION JUDICIALIZADA CHOS MALAL",
+    "estado": "Activo",
+    "cod_ant": "1734",
+    "domicilio": "LOS MAITENES 738 CHOS MALAL Neuquen",
+    "rgrl": "NO",
+    "f_rgrl_carga": "",
+    "f_rgrl_lim": "",
+    "rgrl_vencido": false,
+    "rar": "SI",
+    "svcc": "NO",
+    "depto": "CHOS MALAL",
+    "zona_fria": false,
+    "f_vis_lim": "29/08/2026",
+    "f_vis": "",
+    "preventor": "JAIRO GUAJARDO",
+    "ref_nombre": "Enrique Uribe\n  Pilquiñan Micaela\n  Dobrovolsky Natalia",
+    "ref_mail": "euribe@neuquen.gov.ar\n  mapilquinan@neuquen.gov.ar\n  ndobrovolsky@neuquen.gov.ar",
+    "ref_tel": "2994382459",
+    "nro_srt": "510",
+    "id_empresa": "3194724",
+    "comentarios": "",
+    "estado_visita": "vencida",
+    "estado_visita_label": "Vencida: 29/08/2026 (69d)",
+    "kpi_tags": [
+      "vencidas",
+      "rar_si",
+      "prev_asignados"
+    ]
+  },
+  {
+    "id": 402,
+    "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
+    "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
     "cuit_org": "30999278376",
     "nombre": "E.P.E.T. 4",
@@ -14471,7 +14506,7 @@
     ]
   },
   {
-    "id": 402,
+    "id": 403,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14508,7 +14543,7 @@
     ]
   },
   {
-    "id": 403,
+    "id": 404,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14544,7 +14579,7 @@
     ]
   },
   {
-    "id": 404,
+    "id": 405,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14580,7 +14615,7 @@
     ]
   },
   {
-    "id": 405,
+    "id": 406,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14617,7 +14652,7 @@
     ]
   },
   {
-    "id": 406,
+    "id": 407,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14654,7 +14689,7 @@
     ]
   },
   {
-    "id": 407,
+    "id": 408,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONTROL DE INGRESO PROVINCIAL DEPRODUCTOS ALIMENTICIOS (CIPPA)",
@@ -14690,7 +14725,7 @@
     ]
   },
   {
-    "id": 408,
+    "id": 409,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONTROL DE INGRESO PROVINCIAL DEPRODUCTOS ALIMENTICIOS (CIPPA)",
@@ -14726,7 +14761,7 @@
     ]
   },
   {
-    "id": 409,
+    "id": 410,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -14762,7 +14797,7 @@
     ]
   },
   {
-    "id": 410,
+    "id": 411,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "INSTITUTO PROVINCIAL DE VIVIENDA Y URBANISMO (IPVU)",
@@ -14798,7 +14833,7 @@
     ]
   },
   {
-    "id": 411,
+    "id": 412,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -14834,7 +14869,7 @@
     ]
   },
   {
-    "id": 412,
+    "id": 413,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -14870,7 +14905,7 @@
     ]
   },
   {
-    "id": 413,
+    "id": 414,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -14906,7 +14941,7 @@
     ]
   },
   {
-    "id": 414,
+    "id": 415,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -14942,7 +14977,7 @@
     ]
   },
   {
-    "id": 415,
+    "id": 416,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -14979,7 +15014,7 @@
     ]
   },
   {
-    "id": 416,
+    "id": 417,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15015,7 +15050,7 @@
     ]
   },
   {
-    "id": 417,
+    "id": 418,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15051,7 +15086,7 @@
     ]
   },
   {
-    "id": 418,
+    "id": 419,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15087,7 +15122,7 @@
     ]
   },
   {
-    "id": 419,
+    "id": 420,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15123,7 +15158,7 @@
     ]
   },
   {
-    "id": 420,
+    "id": 421,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15159,7 +15194,7 @@
     ]
   },
   {
-    "id": 421,
+    "id": 422,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -15196,7 +15231,7 @@
     ]
   },
   {
-    "id": 422,
+    "id": 423,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15233,7 +15268,7 @@
     ]
   },
   {
-    "id": 423,
+    "id": 424,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15269,7 +15304,7 @@
     ]
   },
   {
-    "id": 424,
+    "id": 425,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15305,7 +15340,7 @@
     ]
   },
   {
-    "id": 425,
+    "id": 426,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15341,7 +15376,7 @@
     ]
   },
   {
-    "id": 426,
+    "id": 427,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -15377,7 +15412,7 @@
     ]
   },
   {
-    "id": 427,
+    "id": 428,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15413,7 +15448,7 @@
     ]
   },
   {
-    "id": 428,
+    "id": 429,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15449,7 +15484,7 @@
     ]
   },
   {
-    "id": 429,
+    "id": 430,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15485,7 +15520,7 @@
     ]
   },
   {
-    "id": 430,
+    "id": 431,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15521,7 +15556,7 @@
     ]
   },
   {
-    "id": 431,
+    "id": 432,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15557,7 +15592,7 @@
     ]
   },
   {
-    "id": 432,
+    "id": 433,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -15593,7 +15628,7 @@
     ]
   },
   {
-    "id": 433,
+    "id": 434,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -15629,7 +15664,7 @@
     ]
   },
   {
-    "id": 434,
+    "id": 435,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -15665,7 +15700,7 @@
     ]
   },
   {
-    "id": 435,
+    "id": 436,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -15701,7 +15736,7 @@
     ]
   },
   {
-    "id": 436,
+    "id": 437,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15737,7 +15772,7 @@
     ]
   },
   {
-    "id": 437,
+    "id": 438,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15773,7 +15808,7 @@
     ]
   },
   {
-    "id": 438,
+    "id": 439,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15809,7 +15844,7 @@
     ]
   },
   {
-    "id": 439,
+    "id": 440,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -15845,7 +15880,7 @@
     ]
   },
   {
-    "id": 440,
+    "id": 441,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15881,7 +15916,7 @@
     ]
   },
   {
-    "id": 441,
+    "id": 442,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15917,7 +15952,7 @@
     ]
   },
   {
-    "id": 442,
+    "id": 443,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -15954,7 +15989,7 @@
     ]
   },
   {
-    "id": 443,
+    "id": 444,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -15990,7 +16025,7 @@
     ]
   },
   {
-    "id": 444,
+    "id": 445,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16026,7 +16061,7 @@
     ]
   },
   {
-    "id": 445,
+    "id": 446,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16062,7 +16097,7 @@
     ]
   },
   {
-    "id": 446,
+    "id": 447,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16098,7 +16133,7 @@
     ]
   },
   {
-    "id": 447,
+    "id": 448,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16134,7 +16169,7 @@
     ]
   },
   {
-    "id": 448,
+    "id": 449,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16170,7 +16205,7 @@
     ]
   },
   {
-    "id": 449,
+    "id": 450,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "INSTITUTO PROVINCIAL DE VIVIENDA Y URBANISMO (IPVU)",
@@ -16206,7 +16241,7 @@
     ]
   },
   {
-    "id": 450,
+    "id": 451,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16242,7 +16277,7 @@
     ]
   },
   {
-    "id": 451,
+    "id": 452,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16278,7 +16313,7 @@
     ]
   },
   {
-    "id": 452,
+    "id": 453,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE AERONÃUTICA",
@@ -16314,7 +16349,7 @@
     ]
   },
   {
-    "id": 453,
+    "id": 454,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -16341,7 +16376,7 @@
     "id_empresa": "3194777",
     "comentarios": "Fallida",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (69d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -16349,7 +16384,7 @@
     ]
   },
   {
-    "id": 454,
+    "id": 455,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16385,7 +16420,7 @@
     ]
   },
   {
-    "id": 455,
+    "id": 456,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16421,7 +16456,7 @@
     ]
   },
   {
-    "id": 456,
+    "id": 457,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16457,7 +16492,7 @@
     ]
   },
   {
-    "id": 457,
+    "id": 458,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -16493,7 +16528,7 @@
     ]
   },
   {
-    "id": 458,
+    "id": 459,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16529,7 +16564,7 @@
     ]
   },
   {
-    "id": 459,
+    "id": 460,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONTROL DE INGRESO PROVINCIAL DEPRODUCTOS ALIMENTICIOS (CIPPA)",
@@ -16565,7 +16600,7 @@
     ]
   },
   {
-    "id": 460,
+    "id": 461,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16601,7 +16636,7 @@
     ]
   },
   {
-    "id": 461,
+    "id": 462,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16637,7 +16672,7 @@
     ]
   },
   {
-    "id": 462,
+    "id": 463,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16673,7 +16708,7 @@
     ]
   },
   {
-    "id": 463,
+    "id": 464,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -16700,7 +16735,7 @@
     "id_empresa": "3194789",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (69d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -16709,7 +16744,7 @@
     ]
   },
   {
-    "id": 464,
+    "id": 465,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -16745,7 +16780,7 @@
     ]
   },
   {
-    "id": 465,
+    "id": 466,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -16781,7 +16816,7 @@
     ]
   },
   {
-    "id": 466,
+    "id": 467,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -16817,7 +16852,7 @@
     ]
   },
   {
-    "id": 467,
+    "id": 468,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
@@ -16853,7 +16888,7 @@
     ]
   },
   {
-    "id": 468,
+    "id": 469,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -16889,7 +16924,7 @@
     ]
   },
   {
-    "id": 469,
+    "id": 470,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -16925,7 +16960,7 @@
     ]
   },
   {
-    "id": 470,
+    "id": 471,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -16961,7 +16996,7 @@
     ]
   },
   {
-    "id": 471,
+    "id": 472,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -16997,7 +17032,7 @@
     ]
   },
   {
-    "id": 472,
+    "id": 473,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17033,7 +17068,7 @@
     ]
   },
   {
-    "id": 473,
+    "id": 474,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17069,7 +17104,7 @@
     ]
   },
   {
-    "id": 474,
+    "id": 475,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17105,7 +17140,7 @@
     ]
   },
   {
-    "id": 475,
+    "id": 476,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17141,7 +17176,7 @@
     ]
   },
   {
-    "id": 476,
+    "id": 477,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17177,7 +17212,7 @@
     ]
   },
   {
-    "id": 477,
+    "id": 478,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -17213,7 +17248,7 @@
     ]
   },
   {
-    "id": 478,
+    "id": 479,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -17240,7 +17275,7 @@
     "id_empresa": "3197180",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (68d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (69d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -17248,7 +17283,7 @@
     ]
   },
   {
-    "id": 479,
+    "id": 480,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "SUBSECRETARIA GENERAL",
@@ -17284,7 +17319,7 @@
     ]
   },
   {
-    "id": 480,
+    "id": 481,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17319,7 +17354,7 @@
     ]
   },
   {
-    "id": 481,
+    "id": 482,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17357,7 +17392,7 @@
     ]
   },
   {
-    "id": 482,
+    "id": 483,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17396,7 +17431,7 @@
     ]
   },
   {
-    "id": 483,
+    "id": 484,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17434,7 +17469,7 @@
     ]
   },
   {
-    "id": 484,
+    "id": 485,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17469,7 +17504,7 @@
     ]
   },
   {
-    "id": 485,
+    "id": 486,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17504,7 +17539,7 @@
     ]
   },
   {
-    "id": 486,
+    "id": 487,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17539,7 +17574,7 @@
     ]
   },
   {
-    "id": 487,
+    "id": 488,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17574,7 +17609,7 @@
     ]
   },
   {
-    "id": 488,
+    "id": 489,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17609,7 +17644,7 @@
     ]
   },
   {
-    "id": 489,
+    "id": 490,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17644,7 +17679,7 @@
     ]
   },
   {
-    "id": 490,
+    "id": 491,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17679,7 +17714,7 @@
     ]
   },
   {
-    "id": 491,
+    "id": 492,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17714,7 +17749,7 @@
     ]
   },
   {
-    "id": 492,
+    "id": 493,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17749,7 +17784,7 @@
     ]
   },
   {
-    "id": 493,
+    "id": 494,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17784,7 +17819,7 @@
     ]
   },
   {
-    "id": 494,
+    "id": 495,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17822,7 +17857,7 @@
     ]
   },
   {
-    "id": 495,
+    "id": 496,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17857,7 +17892,7 @@
     ]
   },
   {
-    "id": 496,
+    "id": 497,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17895,7 +17930,7 @@
     ]
   },
   {
-    "id": 497,
+    "id": 498,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17934,7 +17969,7 @@
     ]
   },
   {
-    "id": 498,
+    "id": 499,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -17972,7 +18007,7 @@
     ]
   },
   {
-    "id": 499,
+    "id": 500,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18010,7 +18045,7 @@
     ]
   },
   {
-    "id": 500,
+    "id": 501,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18048,7 +18083,7 @@
     ]
   },
   {
-    "id": 501,
+    "id": 502,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18086,7 +18121,7 @@
     ]
   },
   {
-    "id": 502,
+    "id": 503,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18124,7 +18159,7 @@
     ]
   },
   {
-    "id": 503,
+    "id": 504,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18162,7 +18197,7 @@
     ]
   },
   {
-    "id": 504,
+    "id": 505,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18200,7 +18235,7 @@
     ]
   },
   {
-    "id": 505,
+    "id": 506,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18227,7 +18262,7 @@
     "id_empresa": "3204994",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18235,7 +18270,7 @@
     ]
   },
   {
-    "id": 506,
+    "id": 507,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18262,7 +18297,7 @@
     "id_empresa": "3204995",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18270,7 +18305,7 @@
     ]
   },
   {
-    "id": 507,
+    "id": 508,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18305,7 +18340,7 @@
     ]
   },
   {
-    "id": 508,
+    "id": 509,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18332,7 +18367,7 @@
     "id_empresa": "3204997",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18340,7 +18375,7 @@
     ]
   },
   {
-    "id": 509,
+    "id": 510,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18375,7 +18410,7 @@
     ]
   },
   {
-    "id": 510,
+    "id": 511,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18410,7 +18445,7 @@
     ]
   },
   {
-    "id": 511,
+    "id": 512,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18445,7 +18480,7 @@
     ]
   },
   {
-    "id": 512,
+    "id": 513,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18480,7 +18515,7 @@
     ]
   },
   {
-    "id": 513,
+    "id": 514,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18518,7 +18553,7 @@
     ]
   },
   {
-    "id": 514,
+    "id": 515,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18556,7 +18591,7 @@
     ]
   },
   {
-    "id": 515,
+    "id": 516,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18591,7 +18626,7 @@
     ]
   },
   {
-    "id": 516,
+    "id": 517,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18626,7 +18661,7 @@
     ]
   },
   {
-    "id": 517,
+    "id": 518,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18661,7 +18696,7 @@
     ]
   },
   {
-    "id": 518,
+    "id": 519,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18696,7 +18731,7 @@
     ]
   },
   {
-    "id": 519,
+    "id": 520,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18734,7 +18769,7 @@
     ]
   },
   {
-    "id": 520,
+    "id": 521,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18761,7 +18796,7 @@
     "id_empresa": "3205009",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18769,7 +18804,7 @@
     ]
   },
   {
-    "id": 521,
+    "id": 522,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18808,7 +18843,7 @@
     ]
   },
   {
-    "id": 522,
+    "id": 523,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18846,7 +18881,7 @@
     ]
   },
   {
-    "id": 523,
+    "id": 524,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18885,7 +18920,7 @@
     ]
   },
   {
-    "id": 524,
+    "id": 525,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18923,7 +18958,7 @@
     ]
   },
   {
-    "id": 525,
+    "id": 526,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18961,7 +18996,7 @@
     ]
   },
   {
-    "id": 526,
+    "id": 527,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -18999,7 +19034,7 @@
     ]
   },
   {
-    "id": 527,
+    "id": 528,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19034,7 +19069,7 @@
     ]
   },
   {
-    "id": 528,
+    "id": 529,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19069,7 +19104,7 @@
     ]
   },
   {
-    "id": 529,
+    "id": 530,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19104,7 +19139,7 @@
     ]
   },
   {
-    "id": 530,
+    "id": 531,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19142,7 +19177,7 @@
     ]
   },
   {
-    "id": 531,
+    "id": 532,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19180,7 +19215,7 @@
     ]
   },
   {
-    "id": 532,
+    "id": 533,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19218,7 +19253,7 @@
     ]
   },
   {
-    "id": 533,
+    "id": 534,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19256,7 +19291,7 @@
     ]
   },
   {
-    "id": 534,
+    "id": 535,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -19291,7 +19326,7 @@
     ]
   },
   {
-    "id": 535,
+    "id": 536,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONTROL DE INGRESO PROVINCIAL DEPRODUCTOS ALIMENTICIOS (CIPPA)",
@@ -19329,7 +19364,7 @@
     ]
   },
   {
-    "id": 536,
+    "id": 537,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -19367,7 +19402,7 @@
     ]
   },
   {
-    "id": 537,
+    "id": 538,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -19405,7 +19440,7 @@
     ]
   },
   {
-    "id": 538,
+    "id": 539,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TURISMO,AMBIENTE Y RECURSOS NATURALES",
@@ -19432,7 +19467,7 @@
     "id_empresa": "3205027",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -19443,7 +19478,7 @@
     ]
   },
   {
-    "id": 539,
+    "id": 540,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -19481,7 +19516,7 @@
     ]
   },
   {
-    "id": 540,
+    "id": 541,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -19519,7 +19554,7 @@
     ]
   },
   {
-    "id": 541,
+    "id": 542,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -19557,7 +19592,7 @@
     ]
   },
   {
-    "id": 542,
+    "id": 543,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -19595,7 +19630,7 @@
     ]
   },
   {
-    "id": 543,
+    "id": 544,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SEGURIDAD",
@@ -19633,7 +19668,7 @@
     ]
   },
   {
-    "id": 544,
+    "id": 545,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
@@ -19660,7 +19695,7 @@
     "id_empresa": "3205033",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19670,7 +19705,7 @@
     ]
   },
   {
-    "id": 545,
+    "id": 546,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
@@ -19697,7 +19732,7 @@
     "id_empresa": "3205034",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19707,7 +19742,7 @@
     ]
   },
   {
-    "id": 546,
+    "id": 547,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
@@ -19745,7 +19780,7 @@
     ]
   },
   {
-    "id": 547,
+    "id": 548,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
@@ -19772,7 +19807,7 @@
     "id_empresa": "3205036",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19782,7 +19817,7 @@
     ]
   },
   {
-    "id": 548,
+    "id": 549,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -19820,7 +19855,7 @@
     ]
   },
   {
-    "id": 549,
+    "id": 550,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -19858,7 +19893,7 @@
     ]
   },
   {
-    "id": 550,
+    "id": 551,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -19896,7 +19931,7 @@
     ]
   },
   {
-    "id": 551,
+    "id": 552,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -19934,7 +19969,7 @@
     ]
   },
   {
-    "id": 552,
+    "id": 553,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -19972,7 +20007,7 @@
     ]
   },
   {
-    "id": 553,
+    "id": 554,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20010,7 +20045,7 @@
     ]
   },
   {
-    "id": 554,
+    "id": 555,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20048,7 +20083,7 @@
     ]
   },
   {
-    "id": 555,
+    "id": 556,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20086,7 +20121,7 @@
     ]
   },
   {
-    "id": 556,
+    "id": 557,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20124,7 +20159,7 @@
     ]
   },
   {
-    "id": 557,
+    "id": 558,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20162,7 +20197,7 @@
     ]
   },
   {
-    "id": 558,
+    "id": 559,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20200,7 +20235,7 @@
     ]
   },
   {
-    "id": 559,
+    "id": 560,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE GOBIERNO, MUJERES Y DERECHOS HUMANOS",
@@ -20238,7 +20273,7 @@
     ]
   },
   {
-    "id": 560,
+    "id": 561,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -20277,7 +20312,7 @@
     ]
   },
   {
-    "id": 561,
+    "id": 562,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -20316,7 +20351,7 @@
     ]
   },
   {
-    "id": 562,
+    "id": 563,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -20355,7 +20390,7 @@
     ]
   },
   {
-    "id": 563,
+    "id": 564,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20393,7 +20428,7 @@
     ]
   },
   {
-    "id": 564,
+    "id": 565,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20431,7 +20466,7 @@
     ]
   },
   {
-    "id": 565,
+    "id": 566,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20458,7 +20493,7 @@
     "id_empresa": "3205054",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20468,7 +20503,7 @@
     ]
   },
   {
-    "id": 566,
+    "id": 567,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20495,7 +20530,7 @@
     "id_empresa": "3205056",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20505,7 +20540,7 @@
     ]
   },
   {
-    "id": 567,
+    "id": 568,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20532,7 +20567,7 @@
     "id_empresa": "3205057",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20542,7 +20577,7 @@
     ]
   },
   {
-    "id": 568,
+    "id": 569,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA EPAS",
@@ -20569,7 +20604,7 @@
     "id_empresa": "3205058",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20579,7 +20614,7 @@
     ]
   },
   {
-    "id": 569,
+    "id": 570,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20606,7 +20641,7 @@
     "id_empresa": "3205059",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20616,7 +20651,7 @@
     ]
   },
   {
-    "id": 570,
+    "id": 571,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20643,7 +20678,7 @@
     "id_empresa": "3205060",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20653,7 +20688,7 @@
     ]
   },
   {
-    "id": 571,
+    "id": 572,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20680,7 +20715,7 @@
     "id_empresa": "3205061",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20690,7 +20725,7 @@
     ]
   },
   {
-    "id": 572,
+    "id": 573,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20717,7 +20752,7 @@
     "id_empresa": "3205062",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20727,7 +20762,7 @@
     ]
   },
   {
-    "id": 573,
+    "id": 574,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20754,7 +20789,7 @@
     "id_empresa": "3205063",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20764,7 +20799,7 @@
     ]
   },
   {
-    "id": 574,
+    "id": 575,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20791,7 +20826,7 @@
     "id_empresa": "3205064",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20801,7 +20836,7 @@
     ]
   },
   {
-    "id": 575,
+    "id": 576,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20828,7 +20863,7 @@
     "id_empresa": "3205065",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20838,7 +20873,7 @@
     ]
   },
   {
-    "id": 576,
+    "id": 577,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "PRESIDENCIA DEL ENTE PROVINCIAL DE TERMAS (EPROTEN)",
@@ -20865,7 +20900,7 @@
     "id_empresa": "3205067",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20875,7 +20910,7 @@
     ]
   },
   {
-    "id": 577,
+    "id": 578,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -20913,7 +20948,7 @@
     ]
   },
   {
-    "id": 578,
+    "id": 579,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -20951,7 +20986,7 @@
     ]
   },
   {
-    "id": 579,
+    "id": 580,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -20989,7 +21024,7 @@
     ]
   },
   {
-    "id": 580,
+    "id": 581,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -21027,7 +21062,7 @@
     ]
   },
   {
-    "id": 581,
+    "id": 582,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -21065,7 +21100,7 @@
     ]
   },
   {
-    "id": 582,
+    "id": 583,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -21103,7 +21138,7 @@
     ]
   },
   {
-    "id": 583,
+    "id": 584,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -21141,7 +21176,7 @@
     ]
   },
   {
-    "id": 584,
+    "id": 585,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -21179,7 +21214,7 @@
     ]
   },
   {
-    "id": 585,
+    "id": 586,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21214,7 +21249,7 @@
     ]
   },
   {
-    "id": 586,
+    "id": 587,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21249,7 +21284,7 @@
     ]
   },
   {
-    "id": 587,
+    "id": 588,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21284,7 +21319,7 @@
     ]
   },
   {
-    "id": 588,
+    "id": 589,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21319,7 +21354,7 @@
     ]
   },
   {
-    "id": 589,
+    "id": 590,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21354,7 +21389,7 @@
     ]
   },
   {
-    "id": 590,
+    "id": 591,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21389,7 +21424,7 @@
     ]
   },
   {
-    "id": 591,
+    "id": 592,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21424,7 +21459,7 @@
     ]
   },
   {
-    "id": 592,
+    "id": 593,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21459,7 +21494,7 @@
     ]
   },
   {
-    "id": 593,
+    "id": 594,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21494,7 +21529,7 @@
     ]
   },
   {
-    "id": 594,
+    "id": 595,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21529,7 +21564,7 @@
     ]
   },
   {
-    "id": 595,
+    "id": 596,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21564,7 +21599,7 @@
     ]
   },
   {
-    "id": 596,
+    "id": 597,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21599,7 +21634,7 @@
     ]
   },
   {
-    "id": 597,
+    "id": 598,
     "rs": "",
     "cuit": "",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21634,7 +21669,7 @@
     ]
   },
   {
-    "id": 598,
+    "id": 599,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21669,7 +21704,7 @@
     ]
   },
   {
-    "id": 599,
+    "id": 600,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21704,7 +21739,7 @@
     ]
   },
   {
-    "id": 600,
+    "id": 601,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21739,7 +21774,7 @@
     ]
   },
   {
-    "id": 601,
+    "id": 602,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21774,7 +21809,7 @@
     ]
   },
   {
-    "id": 602,
+    "id": 603,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21809,7 +21844,7 @@
     ]
   },
   {
-    "id": 603,
+    "id": 604,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21844,7 +21879,7 @@
     ]
   },
   {
-    "id": 604,
+    "id": 605,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21879,7 +21914,7 @@
     ]
   },
   {
-    "id": 605,
+    "id": 606,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21914,7 +21949,7 @@
     ]
   },
   {
-    "id": 606,
+    "id": 607,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21949,7 +21984,7 @@
     ]
   },
   {
-    "id": 607,
+    "id": 608,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -21984,7 +22019,7 @@
     ]
   },
   {
-    "id": 608,
+    "id": 609,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22019,7 +22054,7 @@
     ]
   },
   {
-    "id": 609,
+    "id": 610,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22054,7 +22089,7 @@
     ]
   },
   {
-    "id": 610,
+    "id": 611,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22089,7 +22124,7 @@
     ]
   },
   {
-    "id": 611,
+    "id": 612,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22124,7 +22159,7 @@
     ]
   },
   {
-    "id": 612,
+    "id": 613,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22159,7 +22194,7 @@
     ]
   },
   {
-    "id": 613,
+    "id": 614,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22194,7 +22229,7 @@
     ]
   },
   {
-    "id": 614,
+    "id": 615,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22229,7 +22264,7 @@
     ]
   },
   {
-    "id": 615,
+    "id": 616,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22264,7 +22299,7 @@
     ]
   },
   {
-    "id": 616,
+    "id": 617,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22299,7 +22334,7 @@
     ]
   },
   {
-    "id": 617,
+    "id": 618,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22334,7 +22369,7 @@
     ]
   },
   {
-    "id": 618,
+    "id": 619,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22361,14 +22396,14 @@
     "id_empresa": "3205109",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "sin_preventor"
     ]
   },
   {
-    "id": 619,
+    "id": 620,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22403,7 +22438,7 @@
     ]
   },
   {
-    "id": 620,
+    "id": 621,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22438,7 +22473,7 @@
     ]
   },
   {
-    "id": 621,
+    "id": 622,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22473,7 +22508,7 @@
     ]
   },
   {
-    "id": 622,
+    "id": 623,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22508,7 +22543,7 @@
     ]
   },
   {
-    "id": 623,
+    "id": 624,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22543,7 +22578,7 @@
     ]
   },
   {
-    "id": 624,
+    "id": 625,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22578,7 +22613,7 @@
     ]
   },
   {
-    "id": 625,
+    "id": 626,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22613,7 +22648,7 @@
     ]
   },
   {
-    "id": 626,
+    "id": 627,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22648,7 +22683,7 @@
     ]
   },
   {
-    "id": 627,
+    "id": 628,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22683,7 +22718,7 @@
     ]
   },
   {
-    "id": 628,
+    "id": 629,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22718,7 +22753,7 @@
     ]
   },
   {
-    "id": 629,
+    "id": 630,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22753,7 +22788,7 @@
     ]
   },
   {
-    "id": 630,
+    "id": 631,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22788,7 +22823,7 @@
     ]
   },
   {
-    "id": 631,
+    "id": 632,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22823,7 +22858,7 @@
     ]
   },
   {
-    "id": 632,
+    "id": 633,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22858,7 +22893,7 @@
     ]
   },
   {
-    "id": 633,
+    "id": 634,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -22893,7 +22928,7 @@
     ]
   },
   {
-    "id": 634,
+    "id": 635,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "SUBSECRETARIA GENERAL",
@@ -22920,7 +22955,7 @@
     "id_empresa": "3205125",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (39d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (40d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -22930,7 +22965,7 @@
     ]
   },
   {
-    "id": 635,
+    "id": 636,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "MINISTERIO DE SALUD",
@@ -22957,7 +22992,7 @@
     "id_empresa": "3206868",
     "comentarios": "",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 03/10/2026 (33d)",
+    "estado_visita_label": "Vencida: 03/10/2026 (34d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -22967,7 +23002,7 @@
     ]
   },
   {
-    "id": 636,
+    "id": 637,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23002,7 +23037,7 @@
     ]
   },
   {
-    "id": 637,
+    "id": 638,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23037,7 +23072,7 @@
     ]
   },
   {
-    "id": 638,
+    "id": 639,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23072,7 +23107,7 @@
     ]
   },
   {
-    "id": 639,
+    "id": 640,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23107,7 +23142,7 @@
     ]
   },
   {
-    "id": 640,
+    "id": 641,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23142,7 +23177,7 @@
     ]
   },
   {
-    "id": 641,
+    "id": 642,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23177,7 +23212,7 @@
     ]
   },
   {
-    "id": 642,
+    "id": 643,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23212,7 +23247,7 @@
     ]
   },
   {
-    "id": 643,
+    "id": 644,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23247,7 +23282,7 @@
     ]
   },
   {
-    "id": 644,
+    "id": 645,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23282,7 +23317,7 @@
     ]
   },
   {
-    "id": 645,
+    "id": 646,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23317,7 +23352,7 @@
     ]
   },
   {
-    "id": 646,
+    "id": 647,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23352,7 +23387,7 @@
     ]
   },
   {
-    "id": 647,
+    "id": 648,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23387,7 +23422,7 @@
     ]
   },
   {
-    "id": 648,
+    "id": 649,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23422,7 +23457,7 @@
     ]
   },
   {
-    "id": 649,
+    "id": 650,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23457,7 +23492,7 @@
     ]
   },
   {
-    "id": 650,
+    "id": 651,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23492,7 +23527,7 @@
     ]
   },
   {
-    "id": 651,
+    "id": 652,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23527,7 +23562,7 @@
     ]
   },
   {
-    "id": 652,
+    "id": 653,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23562,7 +23597,7 @@
     ]
   },
   {
-    "id": 653,
+    "id": 654,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23597,7 +23632,7 @@
     ]
   },
   {
-    "id": 654,
+    "id": 655,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23632,7 +23667,7 @@
     ]
   },
   {
-    "id": 655,
+    "id": 656,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23667,7 +23702,7 @@
     ]
   },
   {
-    "id": 656,
+    "id": 657,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23702,7 +23737,7 @@
     ]
   },
   {
-    "id": 657,
+    "id": 658,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23737,7 +23772,7 @@
     ]
   },
   {
-    "id": 658,
+    "id": 659,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23772,7 +23807,7 @@
     ]
   },
   {
-    "id": 659,
+    "id": 660,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23807,7 +23842,7 @@
     ]
   },
   {
-    "id": 660,
+    "id": 661,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23842,7 +23877,7 @@
     ]
   },
   {
-    "id": 661,
+    "id": 662,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23877,7 +23912,7 @@
     ]
   },
   {
-    "id": 662,
+    "id": 663,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23912,7 +23947,7 @@
     ]
   },
   {
-    "id": 663,
+    "id": 664,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23947,7 +23982,7 @@
     ]
   },
   {
-    "id": 664,
+    "id": 665,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -23982,7 +24017,7 @@
     ]
   },
   {
-    "id": 665,
+    "id": 666,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24017,7 +24052,7 @@
     ]
   },
   {
-    "id": 666,
+    "id": 667,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24052,7 +24087,7 @@
     ]
   },
   {
-    "id": 667,
+    "id": 668,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24087,7 +24122,7 @@
     ]
   },
   {
-    "id": 668,
+    "id": 669,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24122,7 +24157,7 @@
     ]
   },
   {
-    "id": 669,
+    "id": 670,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24157,7 +24192,7 @@
     ]
   },
   {
-    "id": 670,
+    "id": 671,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24192,7 +24227,7 @@
     ]
   },
   {
-    "id": 671,
+    "id": 672,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24227,7 +24262,7 @@
     ]
   },
   {
-    "id": 672,
+    "id": 673,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24262,7 +24297,7 @@
     ]
   },
   {
-    "id": 673,
+    "id": 674,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24297,7 +24332,7 @@
     ]
   },
   {
-    "id": 674,
+    "id": 675,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24332,7 +24367,7 @@
     ]
   },
   {
-    "id": 675,
+    "id": 676,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24367,7 +24402,7 @@
     ]
   },
   {
-    "id": 676,
+    "id": 677,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24402,7 +24437,7 @@
     ]
   },
   {
-    "id": 677,
+    "id": 678,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24437,7 +24472,7 @@
     ]
   },
   {
-    "id": 678,
+    "id": 679,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24472,7 +24507,7 @@
     ]
   },
   {
-    "id": 679,
+    "id": 680,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24507,7 +24542,7 @@
     ]
   },
   {
-    "id": 680,
+    "id": 681,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24542,7 +24577,7 @@
     ]
   },
   {
-    "id": 681,
+    "id": 682,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24577,7 +24612,7 @@
     ]
   },
   {
-    "id": 682,
+    "id": 683,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24612,7 +24647,7 @@
     ]
   },
   {
-    "id": 683,
+    "id": 684,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24647,7 +24682,7 @@
     ]
   },
   {
-    "id": 684,
+    "id": 685,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24682,7 +24717,7 @@
     ]
   },
   {
-    "id": 685,
+    "id": 686,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24717,7 +24752,7 @@
     ]
   },
   {
-    "id": 686,
+    "id": 687,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24752,7 +24787,7 @@
     ]
   },
   {
-    "id": 687,
+    "id": 688,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24787,7 +24822,7 @@
     ]
   },
   {
-    "id": 688,
+    "id": 689,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24822,7 +24857,7 @@
     ]
   },
   {
-    "id": 689,
+    "id": 690,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24857,7 +24892,7 @@
     ]
   },
   {
-    "id": 690,
+    "id": 691,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24892,7 +24927,7 @@
     ]
   },
   {
-    "id": 691,
+    "id": 692,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24927,7 +24962,7 @@
     ]
   },
   {
-    "id": 692,
+    "id": 693,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24962,7 +24997,7 @@
     ]
   },
   {
-    "id": 693,
+    "id": 694,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -24997,7 +25032,7 @@
     ]
   },
   {
-    "id": 694,
+    "id": 695,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25032,7 +25067,7 @@
     ]
   },
   {
-    "id": 695,
+    "id": 696,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25067,7 +25102,7 @@
     ]
   },
   {
-    "id": 696,
+    "id": 697,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25102,7 +25137,7 @@
     ]
   },
   {
-    "id": 697,
+    "id": 698,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25137,7 +25172,7 @@
     ]
   },
   {
-    "id": 698,
+    "id": 699,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25172,7 +25207,7 @@
     ]
   },
   {
-    "id": 699,
+    "id": 700,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25207,7 +25242,7 @@
     ]
   },
   {
-    "id": 700,
+    "id": 701,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25242,7 +25277,7 @@
     ]
   },
   {
-    "id": 701,
+    "id": 702,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25277,7 +25312,7 @@
     ]
   },
   {
-    "id": 702,
+    "id": 703,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25312,7 +25347,7 @@
     ]
   },
   {
-    "id": 703,
+    "id": 704,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25347,7 +25382,7 @@
     ]
   },
   {
-    "id": 704,
+    "id": 705,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25382,7 +25417,7 @@
     ]
   },
   {
-    "id": 705,
+    "id": 706,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25417,7 +25452,7 @@
     ]
   },
   {
-    "id": 706,
+    "id": 707,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25452,7 +25487,7 @@
     ]
   },
   {
-    "id": 707,
+    "id": 708,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25487,7 +25522,7 @@
     ]
   },
   {
-    "id": 708,
+    "id": 709,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25522,7 +25557,7 @@
     ]
   },
   {
-    "id": 709,
+    "id": 710,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25557,7 +25592,7 @@
     ]
   },
   {
-    "id": 710,
+    "id": 711,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25592,7 +25627,7 @@
     ]
   },
   {
-    "id": 711,
+    "id": 712,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25627,7 +25662,7 @@
     ]
   },
   {
-    "id": 712,
+    "id": 713,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25662,7 +25697,7 @@
     ]
   },
   {
-    "id": 713,
+    "id": 714,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25697,7 +25732,7 @@
     ]
   },
   {
-    "id": 714,
+    "id": 715,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25732,7 +25767,7 @@
     ]
   },
   {
-    "id": 715,
+    "id": 716,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25767,7 +25802,7 @@
     ]
   },
   {
-    "id": 716,
+    "id": 717,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25802,7 +25837,7 @@
     ]
   },
   {
-    "id": 717,
+    "id": 718,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25837,7 +25872,7 @@
     ]
   },
   {
-    "id": 718,
+    "id": 719,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25872,7 +25907,7 @@
     ]
   },
   {
-    "id": 719,
+    "id": 720,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25907,7 +25942,7 @@
     ]
   },
   {
-    "id": 720,
+    "id": 721,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25942,7 +25977,7 @@
     ]
   },
   {
-    "id": 721,
+    "id": 722,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -25977,7 +26012,7 @@
     ]
   },
   {
-    "id": 722,
+    "id": 723,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26012,7 +26047,7 @@
     ]
   },
   {
-    "id": 723,
+    "id": 724,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26047,7 +26082,7 @@
     ]
   },
   {
-    "id": 724,
+    "id": 725,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26082,7 +26117,7 @@
     ]
   },
   {
-    "id": 725,
+    "id": 726,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26117,7 +26152,7 @@
     ]
   },
   {
-    "id": 726,
+    "id": 727,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26152,7 +26187,7 @@
     ]
   },
   {
-    "id": 727,
+    "id": 728,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26187,7 +26222,7 @@
     ]
   },
   {
-    "id": 728,
+    "id": 729,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26222,7 +26257,7 @@
     ]
   },
   {
-    "id": 729,
+    "id": 730,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26257,7 +26292,7 @@
     ]
   },
   {
-    "id": 730,
+    "id": 731,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26292,7 +26327,7 @@
     ]
   },
   {
-    "id": 731,
+    "id": 732,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26327,7 +26362,7 @@
     ]
   },
   {
-    "id": 732,
+    "id": 733,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26362,7 +26397,7 @@
     ]
   },
   {
-    "id": 733,
+    "id": 734,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26397,7 +26432,7 @@
     ]
   },
   {
-    "id": 734,
+    "id": 735,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26432,7 +26467,7 @@
     ]
   },
   {
-    "id": 735,
+    "id": 736,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26467,7 +26502,7 @@
     ]
   },
   {
-    "id": 736,
+    "id": 737,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26502,7 +26537,7 @@
     ]
   },
   {
-    "id": 737,
+    "id": 738,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -26537,7 +26572,7 @@
     ]
   },
   {
-    "id": 738,
+    "id": 739,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26572,7 +26607,7 @@
     ]
   },
   {
-    "id": 739,
+    "id": 740,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26607,7 +26642,7 @@
     ]
   },
   {
-    "id": 740,
+    "id": 741,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26642,7 +26677,7 @@
     ]
   },
   {
-    "id": 741,
+    "id": 742,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26677,7 +26712,7 @@
     ]
   },
   {
-    "id": 742,
+    "id": 743,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26712,7 +26747,7 @@
     ]
   },
   {
-    "id": 743,
+    "id": 744,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26747,7 +26782,7 @@
     ]
   },
   {
-    "id": 744,
+    "id": 745,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26782,7 +26817,7 @@
     ]
   },
   {
-    "id": 745,
+    "id": 746,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26817,7 +26852,7 @@
     ]
   },
   {
-    "id": 746,
+    "id": 747,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26852,7 +26887,7 @@
     ]
   },
   {
-    "id": 747,
+    "id": 748,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26887,7 +26922,7 @@
     ]
   },
   {
-    "id": 748,
+    "id": 749,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26922,7 +26957,7 @@
     ]
   },
   {
-    "id": 749,
+    "id": 750,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26957,7 +26992,7 @@
     ]
   },
   {
-    "id": 750,
+    "id": 751,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -26992,7 +27027,7 @@
     ]
   },
   {
-    "id": 751,
+    "id": 752,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27027,7 +27062,7 @@
     ]
   },
   {
-    "id": 752,
+    "id": 753,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27062,7 +27097,7 @@
     ]
   },
   {
-    "id": 753,
+    "id": 754,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27097,7 +27132,7 @@
     ]
   },
   {
-    "id": 754,
+    "id": 755,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27132,7 +27167,7 @@
     ]
   },
   {
-    "id": 755,
+    "id": 756,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27167,7 +27202,7 @@
     ]
   },
   {
-    "id": 756,
+    "id": 757,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -27202,7 +27237,7 @@
     ]
   },
   {
-    "id": 757,
+    "id": 758,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27237,7 +27272,7 @@
     ]
   },
   {
-    "id": 758,
+    "id": 759,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27272,7 +27307,7 @@
     ]
   },
   {
-    "id": 759,
+    "id": 760,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27307,7 +27342,7 @@
     ]
   },
   {
-    "id": 760,
+    "id": 761,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27342,7 +27377,7 @@
     ]
   },
   {
-    "id": 761,
+    "id": 762,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27377,7 +27412,7 @@
     ]
   },
   {
-    "id": 762,
+    "id": 763,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27412,7 +27447,7 @@
     ]
   },
   {
-    "id": 763,
+    "id": 764,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27447,7 +27482,7 @@
     ]
   },
   {
-    "id": 764,
+    "id": 765,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27482,7 +27517,7 @@
     ]
   },
   {
-    "id": 765,
+    "id": 766,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27517,7 +27552,7 @@
     ]
   },
   {
-    "id": 766,
+    "id": 767,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27552,7 +27587,7 @@
     ]
   },
   {
-    "id": 767,
+    "id": 768,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27587,7 +27622,7 @@
     ]
   },
   {
-    "id": 768,
+    "id": 769,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27622,7 +27657,7 @@
     ]
   },
   {
-    "id": 769,
+    "id": 770,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27657,7 +27692,7 @@
     ]
   },
   {
-    "id": 770,
+    "id": 771,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27692,7 +27727,7 @@
     ]
   },
   {
-    "id": 771,
+    "id": 772,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27727,7 +27762,7 @@
     ]
   },
   {
-    "id": 772,
+    "id": 773,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27762,7 +27797,7 @@
     ]
   },
   {
-    "id": 773,
+    "id": 774,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27797,7 +27832,7 @@
     ]
   },
   {
-    "id": 774,
+    "id": 775,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27832,7 +27867,7 @@
     ]
   },
   {
-    "id": 775,
+    "id": 776,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27867,7 +27902,7 @@
     ]
   },
   {
-    "id": 776,
+    "id": 777,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27902,7 +27937,7 @@
     ]
   },
   {
-    "id": 777,
+    "id": 778,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27937,7 +27972,7 @@
     ]
   },
   {
-    "id": 778,
+    "id": 779,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -27972,7 +28007,7 @@
     ]
   },
   {
-    "id": 779,
+    "id": 780,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28007,7 +28042,7 @@
     ]
   },
   {
-    "id": 780,
+    "id": 781,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28042,7 +28077,7 @@
     ]
   },
   {
-    "id": 781,
+    "id": 782,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28077,7 +28112,7 @@
     ]
   },
   {
-    "id": 782,
+    "id": 783,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28112,7 +28147,7 @@
     ]
   },
   {
-    "id": 783,
+    "id": 784,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28147,7 +28182,7 @@
     ]
   },
   {
-    "id": 784,
+    "id": 785,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28182,7 +28217,7 @@
     ]
   },
   {
-    "id": 785,
+    "id": 786,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28217,7 +28252,7 @@
     ]
   },
   {
-    "id": 786,
+    "id": 787,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28252,7 +28287,7 @@
     ]
   },
   {
-    "id": 787,
+    "id": 788,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28287,7 +28322,7 @@
     ]
   },
   {
-    "id": 788,
+    "id": 789,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28322,7 +28357,7 @@
     ]
   },
   {
-    "id": 789,
+    "id": 790,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28357,7 +28392,7 @@
     ]
   },
   {
-    "id": 790,
+    "id": 791,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -28392,7 +28427,7 @@
     ]
   },
   {
-    "id": 791,
+    "id": 792,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -28427,7 +28462,7 @@
     ]
   },
   {
-    "id": 792,
+    "id": 793,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28462,7 +28497,7 @@
     ]
   },
   {
-    "id": 793,
+    "id": 794,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28497,7 +28532,7 @@
     ]
   },
   {
-    "id": 794,
+    "id": 795,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "POLICIA DE LA PROVINCIA",
@@ -28532,7 +28567,7 @@
     ]
   },
   {
-    "id": 795,
+    "id": 796,
     "rs": "PROVINCIA DEL NEUQUEN ADMINISTRACION CENTRAL",
     "cuit": "30999068940",
     "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
@@ -28564,41 +28599,6 @@
       "visitados",
       "rgrl_si",
       "prev_asignados"
-    ]
-  },
-  {
-    "id": 796,
-    "rs": "",
-    "cuit": "",
-    "organismo": "MINISTERIO DE SEGURIDAD",
-    "cuit_org": "30717437965",
-    "nombre": "DELEGACION FAUNA CAVIAHUE",
-    "estado": "Activo",
-    "cod_ant": "",
-    "domicilio": "EL AGRIO 0.00 CAVIAHUE  Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
-    "f_rgrl_lim": "31/10/2026",
-    "rgrl_vencido": true,
-    "rar": "NO",
-    "svcc": "NO",
-    "depto": "CONFLUENCIA",
-    "zona_fria": false,
-    "f_vis_lim": "30/11/2026",
-    "f_vis": "",
-    "preventor": "",
-    "ref_nombre": "enrique Uribe",
-    "ref_mail": "euribe@neuquen.gov.ar",
-    "ref_tel": "2994382459",
-    "nro_srt": "908",
-    "id_empresa": "3216714",
-    "comentarios": "",
-    "estado_visita": "urgente_nov",
-    "estado_visita_label": "Vence Nov/26: 30/11/2026",
-    "kpi_tags": [
-      "urgentes_nov",
-      "rgrl_vencidos",
-      "sin_preventor"
     ]
   },
   {
@@ -29058,8 +29058,8 @@
     "estado": "Activo",
     "cod_ant": "53",
     "domicilio": "RAMOS DE ESPEJO 1 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -29067,19 +29067,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "922",
     "id_empresa": "3224627",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -29297,8 +29298,8 @@
     "estado": "Activo",
     "cod_ant": "62",
     "domicilio": "DAVID ABRAHAM 0 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -29306,19 +29307,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "929",
     "id_empresa": "3224634",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -29876,8 +29878,8 @@
     "estado": "Activo",
     "cod_ant": "181",
     "domicilio": "BLANCO GALARZA 2851 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -29885,19 +29887,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "946",
     "id_empresa": "3224651",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30080,8 +30083,8 @@
     "estado": "Activo",
     "cod_ant": "223",
     "domicilio": "GDOR BARTOLOME PERI 401 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30089,19 +30092,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "952",
     "id_empresa": "3224657",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30250,8 +30254,8 @@
     "estado": "Activo",
     "cod_ant": "234",
     "domicilio": "VARVARCO 850 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30259,19 +30263,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "957",
     "id_empresa": "3224662",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30284,8 +30289,8 @@
     "estado": "Activo",
     "cod_ant": "237",
     "domicilio": "RAMON ACOSTA 2290 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30293,19 +30298,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "958",
     "id_empresa": "3224663",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30828,8 +30834,8 @@
     "estado": "Activo",
     "cod_ant": "338",
     "domicilio": "AV HUILEN 0 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30837,19 +30843,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "974",
     "id_empresa": "3224679",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30862,8 +30869,8 @@
     "estado": "Activo",
     "cod_ant": "346",
     "domicilio": "CALLE 5 0 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30871,19 +30878,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "975",
     "id_empresa": "3224680",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {
@@ -30896,8 +30904,8 @@
     "estado": "Activo",
     "cod_ant": "350",
     "domicilio": "AV LAS FLORES 0 NEUQUEN Neuquen",
-    "rgrl": "NO",
-    "f_rgrl_carga": "",
+    "rgrl": "SI",
+    "f_rgrl_carga": "05/11/2026",
     "f_rgrl_lim": "30/11/2026",
     "rgrl_vencido": false,
     "rar": "NO",
@@ -30905,19 +30913,20 @@
     "depto": "CONFLUENCIA",
     "zona_fria": false,
     "f_vis_lim": "31/12/2026",
-    "f_vis": "",
-    "preventor": "",
+    "f_vis": "05/11/2026",
+    "preventor": "EMANUEL VALDERRAMA",
     "ref_nombre": "Pacheco Lorena\n Valeria Montenegro",
     "ref_mail": "lapacheco@neuquen.gov.ar\n vmontenegro@neuquen.gov.ar",
     "ref_tel": "2996084255",
     "nro_srt": "976",
     "id_empresa": "3224681",
     "comentarios": "",
-    "estado_visita": "programada",
-    "estado_visita_label": "Prog: 31/12/2026",
+    "estado_visita": "efectuada",
+    "estado_visita_label": "Efectuada: 05/11/2026",
     "kpi_tags": [
-      "futuras",
-      "sin_preventor"
+      "visitados",
+      "rgrl_si",
+      "prev_asignados"
     ]
   },
   {

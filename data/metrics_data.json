@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-11-05 13:58:23",
+  "timestamp": "2026-11-06 13:43:20",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 747,
-  "pendientes": 916,
-  "pct_avance": 44.9,
-  "vencidas_criticas": 30,
-  "urgentes_nov26": 26,
-  "futuras_programadas": 860,
-  "rgrl_si": 749,
-  "rgrl_pct": 45.0,
-  "rgrl_vencidos_pend": 34,
-  "rar_si": 556,
-  "rar_pct": 33.4,
+  "visitados": 756,
+  "pendientes": 907,
+  "pct_avance": 45.5,
+  "vencidas_criticas": 31,
+  "urgentes_nov26": 25,
+  "futuras_programadas": 851,
+  "rgrl_si": 758,
+  "rgrl_pct": 45.6,
+  "rgrl_vencidos_pend": 33,
+  "rar_si": 557,
+  "rar_pct": 33.5,
   "total_expuestos": 15472,
   "svcc_si": 50,
   "svcc_pct": 3.0,
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 918,
-  "prev_asignados": 745,
+  "sin_preventor": 908,
+  "prev_asignados": 755,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -37,7 +37,7 @@
     230,
     263,
     171,
-    2
+    11
   ],
   "crono_labels": [
     "2026-12",
@@ -48,7 +48,7 @@
     "2027-05"
   ],
   "crono_values": [
-    158,
+    149,
     164,
     157,
     153,
@@ -59,12 +59,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 178,
-      "pendientes": 512,
-      "pct_avance": 25.8,
+      "visitados": 187,
+      "pendientes": 503,
+      "pct_avance": 27.1,
       "vencidas": 0,
       "urgentes_nov": 20,
-      "rgrl_pct": 25.7,
+      "rgrl_pct": 27.0,
       "rar_pct": 11.7
     },
     {
@@ -128,10 +128,10 @@
       "visitados": 19,
       "pendientes": 31,
       "pct_avance": 38.0,
-      "vencidas": 2,
-      "urgentes_nov": 1,
+      "vencidas": 3,
+      "urgentes_nov": 0,
       "rgrl_pct": 38.0,
-      "rar_pct": 42.0
+      "rar_pct": 44.0
     },
     {
       "organismo": "DIRECCION PROVINCIAL DE VIALIDAD",
@@ -346,8 +346,8 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 171,
-      "visitados": 170,
+      "asignados": 180,
+      "visitados": 179,
       "pendientes": 1,
       "pct_completado": 99.4
     },
@@ -374,10 +374,10 @@
     },
     {
       "preventor": "JAIRO GUAJARDO",
-      "asignados": 71,
+      "asignados": 72,
       "visitados": 68,
-      "pendientes": 3,
-      "pct_completado": 95.8
+      "pendientes": 4,
+      "pct_completado": 94.4
     },
     {
       "preventor": "ALEJANDRO RODRIGUEZ",
@@ -432,10 +432,10 @@
   "departamentos": [
     {
       "departamento": "CONFLUENCIA",
-      "total": 844,
-      "visitados": 488,
-      "pendientes": 356,
-      "pct_avance": 57.8
+      "total": 843,
+      "visitados": 497,
+      "pendientes": 346,
+      "pct_avance": 59.0
     },
     {
       "departamento": "ZAPALA",
@@ -453,10 +453,10 @@
     },
     {
       "departamento": "CHOS MALAL",
-      "total": 82,
+      "total": 83,
       "visitados": 24,
-      "pendientes": 58,
-      "pct_avance": 29.3
+      "pendientes": 59,
+      "pct_avance": 28.9
     },
     {
       "departamento": "PEHUENCHES",
