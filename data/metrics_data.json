@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-10 14:18:51",
+  "timestamp": "2026-11-11 13:32:12",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 756,
-  "pendientes": 907,
-  "pct_avance": 45.5,
+  "visitados": 763,
+  "pendientes": 900,
+  "pct_avance": 45.9,
   "vencidas_criticas": 31,
   "urgentes_nov26": 25,
-  "futuras_programadas": 851,
-  "rgrl_si": 758,
-  "rgrl_pct": 45.6,
-  "rgrl_vencidos_pend": 33,
+  "futuras_programadas": 844,
+  "rgrl_si": 766,
+  "rgrl_pct": 46.1,
+  "rgrl_vencidos_pend": 32,
   "rar_si": 557,
   "rar_pct": 33.5,
   "total_expuestos": 15472,
@@ -20,8 +20,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 908,
-  "prev_asignados": 755,
+  "sin_preventor": 901,
+  "prev_asignados": 762,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -37,7 +37,7 @@
     230,
     263,
     171,
-    11
+    18
   ],
   "crono_labels": [
     "2026-12",
@@ -47,7 +47,7 @@
     "2027-04"
   ],
   "crono_values": [
-    149,
+    142,
     164,
     157,
     153,
@@ -57,12 +57,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 187,
-      "pendientes": 503,
-      "pct_avance": 27.1,
+      "visitados": 194,
+      "pendientes": 496,
+      "pct_avance": 28.1,
       "vencidas": 0,
       "urgentes_nov": 20,
-      "rgrl_pct": 27.0,
+      "rgrl_pct": 28.1,
       "rar_pct": 11.7
     },
     {
@@ -344,15 +344,15 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 180,
-      "visitados": 179,
+      "asignados": 182,
+      "visitados": 181,
       "pendientes": 1,
-      "pct_completado": 99.4
+      "pct_completado": 99.5
     },
     {
       "preventor": "LUCRECIA CONTRERAS",
-      "asignados": 134,
-      "visitados": 133,
+      "asignados": 139,
+      "visitados": 138,
       "pendientes": 1,
       "pct_completado": 99.3
     },
@@ -431,9 +431,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 497,
-      "pendientes": 346,
-      "pct_avance": 59.0
+      "visitados": 504,
+      "pendientes": 339,
+      "pct_avance": 59.8
     },
     {
       "departamento": "ZAPALA",
