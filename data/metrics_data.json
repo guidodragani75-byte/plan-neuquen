@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-11 13:32:12",
+  "timestamp": "2026-11-12 14:36:02",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 763,
-  "pendientes": 900,
-  "pct_avance": 45.9,
+  "visitados": 781,
+  "pendientes": 882,
+  "pct_avance": 47.0,
   "vencidas_criticas": 31,
-  "urgentes_nov26": 25,
-  "futuras_programadas": 844,
-  "rgrl_si": 766,
-  "rgrl_pct": 46.1,
-  "rgrl_vencidos_pend": 32,
+  "urgentes_nov26": 21,
+  "futuras_programadas": 830,
+  "rgrl_si": 782,
+  "rgrl_pct": 47.0,
+  "rgrl_vencidos_pend": 29,
   "rar_si": 557,
   "rar_pct": 33.5,
   "total_expuestos": 15472,
@@ -20,8 +20,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 901,
-  "prev_asignados": 762,
+  "sin_preventor": 883,
+  "prev_asignados": 780,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -37,7 +37,7 @@
     230,
     263,
     171,
-    18
+    36
   ],
   "crono_labels": [
     "2026-12",
@@ -47,7 +47,7 @@
     "2027-04"
   ],
   "crono_values": [
-    142,
+    128,
     164,
     157,
     153,
@@ -57,12 +57,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 194,
-      "pendientes": 496,
-      "pct_avance": 28.1,
+      "visitados": 212,
+      "pendientes": 478,
+      "pct_avance": 30.7,
       "vencidas": 0,
-      "urgentes_nov": 20,
-      "rgrl_pct": 28.1,
+      "urgentes_nov": 16,
+      "rgrl_pct": 30.4,
       "rar_pct": 11.7
     },
     {
@@ -344,15 +344,15 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 182,
-      "visitados": 181,
+      "asignados": 192,
+      "visitados": 191,
       "pendientes": 1,
       "pct_completado": 99.5
     },
     {
       "preventor": "LUCRECIA CONTRERAS",
-      "asignados": 139,
-      "visitados": 138,
+      "asignados": 143,
+      "visitados": 142,
       "pendientes": 1,
       "pct_completado": 99.3
     },
@@ -365,8 +365,8 @@
     },
     {
       "preventor": "DIEGO CANALES",
-      "asignados": 73,
-      "visitados": 73,
+      "asignados": 77,
+      "visitados": 77,
       "pendientes": 0,
       "pct_completado": 100.0
     },
@@ -431,9 +431,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 504,
-      "pendientes": 339,
-      "pct_avance": 59.8
+      "visitados": 522,
+      "pendientes": 321,
+      "pct_avance": 61.9
     },
     {
       "departamento": "ZAPALA",
