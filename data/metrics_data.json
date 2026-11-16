@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-15 13:25:49",
+  "timestamp": "2026-11-16 14:45:47",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 781,
-  "pendientes": 882,
-  "pct_avance": 47.0,
+  "visitados": 787,
+  "pendientes": 876,
+  "pct_avance": 47.3,
   "vencidas_criticas": 31,
-  "urgentes_nov26": 21,
-  "futuras_programadas": 830,
-  "rgrl_si": 782,
-  "rgrl_pct": 47.0,
-  "rgrl_vencidos_pend": 29,
+  "urgentes_nov26": 20,
+  "futuras_programadas": 825,
+  "rgrl_si": 794,
+  "rgrl_pct": 47.7,
+  "rgrl_vencidos_pend": 28,
   "rar_si": 557,
   "rar_pct": 33.5,
   "total_expuestos": 15472,
@@ -20,8 +20,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 883,
-  "prev_asignados": 780,
+  "sin_preventor": 877,
+  "prev_asignados": 786,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -37,7 +37,7 @@
     230,
     263,
     171,
-    36
+    42
   ],
   "crono_labels": [
     "2026-12",
@@ -47,7 +47,7 @@
     "2027-04"
   ],
   "crono_values": [
-    128,
+    123,
     164,
     157,
     153,
@@ -57,12 +57,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 212,
-      "pendientes": 478,
-      "pct_avance": 30.7,
+      "visitados": 218,
+      "pendientes": 472,
+      "pct_avance": 31.6,
       "vencidas": 0,
-      "urgentes_nov": 16,
-      "rgrl_pct": 30.4,
+      "urgentes_nov": 15,
+      "rgrl_pct": 32.2,
       "rar_pct": 11.7
     },
     {
@@ -344,8 +344,8 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 192,
-      "visitados": 191,
+      "asignados": 198,
+      "visitados": 197,
       "pendientes": 1,
       "pct_completado": 99.5
     },
@@ -431,9 +431,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 522,
-      "pendientes": 321,
-      "pct_avance": 61.9
+      "visitados": 528,
+      "pendientes": 315,
+      "pct_avance": 62.6
     },
     {
       "departamento": "ZAPALA",
