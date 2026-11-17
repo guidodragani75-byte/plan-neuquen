@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-11-16 14:45:47",
+  "timestamp": "2026-11-17 15:28:53",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 787,
-  "pendientes": 876,
-  "pct_avance": 47.3,
+  "visitados": 797,
+  "pendientes": 866,
+  "pct_avance": 47.9,
   "vencidas_criticas": 31,
   "urgentes_nov26": 20,
-  "futuras_programadas": 825,
-  "rgrl_si": 794,
-  "rgrl_pct": 47.7,
+  "futuras_programadas": 815,
+  "rgrl_si": 804,
+  "rgrl_pct": 48.3,
   "rgrl_vencidos_pend": 28,
   "rar_si": 557,
   "rar_pct": 33.5,
@@ -20,8 +20,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 60,
   "zona_fria_pct": 28.7,
-  "sin_preventor": 877,
-  "prev_asignados": 786,
+  "sin_preventor": 867,
+  "prev_asignados": 796,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -37,7 +37,7 @@
     230,
     263,
     171,
-    42
+    52
   ],
   "crono_labels": [
     "2026-12",
@@ -47,7 +47,7 @@
     "2027-04"
   ],
   "crono_values": [
-    123,
+    113,
     164,
     157,
     153,
@@ -57,12 +57,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 218,
-      "pendientes": 472,
-      "pct_avance": 31.6,
+      "visitados": 228,
+      "pendientes": 462,
+      "pct_avance": 33.0,
       "vencidas": 0,
       "urgentes_nov": 15,
-      "rgrl_pct": 32.2,
+      "rgrl_pct": 33.6,
       "rar_pct": 11.7
     },
     {
@@ -344,15 +344,15 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 198,
-      "visitados": 197,
+      "asignados": 206,
+      "visitados": 205,
       "pendientes": 1,
       "pct_completado": 99.5
     },
     {
       "preventor": "LUCRECIA CONTRERAS",
-      "asignados": 143,
-      "visitados": 142,
+      "asignados": 144,
+      "visitados": 143,
       "pendientes": 1,
       "pct_completado": 99.3
     },
@@ -365,8 +365,8 @@
     },
     {
       "preventor": "DIEGO CANALES",
-      "asignados": 77,
-      "visitados": 77,
+      "asignados": 78,
+      "visitados": 78,
       "pendientes": 0,
       "pct_completado": 100.0
     },
@@ -431,9 +431,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 528,
-      "pendientes": 315,
-      "pct_avance": 62.6
+      "visitados": 538,
+      "pendientes": 305,
+      "pct_avance": 63.8
     },
     {
       "departamento": "ZAPALA",
