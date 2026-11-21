@@ -6178,7 +6178,7 @@
     "id_empresa": "273",
     "comentarios": "13/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (100d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (101d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -9707,7 +9707,7 @@
     "id_empresa": "373",
     "comentarios": "13/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (100d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (101d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -10211,7 +10211,7 @@
     "id_empresa": "387",
     "comentarios": "13/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 12/08/2026 (100d)",
+    "estado_visita_label": "Vencida: 12/08/2026 (101d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_si",
@@ -14138,7 +14138,7 @@
     "id_empresa": "501",
     "comentarios": "30/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (83d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (84d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -14462,7 +14462,7 @@
     "id_empresa": "510",
     "comentarios": "30/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (83d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (84d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -16376,7 +16376,7 @@
     "id_empresa": "563",
     "comentarios": "30/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (83d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (84d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -16735,7 +16735,7 @@
     "id_empresa": "574",
     "comentarios": "30/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (83d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (84d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -17275,7 +17275,7 @@
     "id_empresa": "589",
     "comentarios": "30/07/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 29/08/2026 (83d)",
+    "estado_visita_label": "Vencida: 29/08/2026 (84d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -18262,7 +18262,7 @@
     "id_empresa": "617",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18297,7 +18297,7 @@
     "id_empresa": "618",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18367,7 +18367,7 @@
     "id_empresa": "620",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -18796,7 +18796,7 @@
     "id_empresa": "632",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -19467,7 +19467,7 @@
     "id_empresa": "650",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rgrl_vencidos",
@@ -19695,7 +19695,7 @@
     "id_empresa": "656",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19732,7 +19732,7 @@
     "id_empresa": "657",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -19807,7 +19807,7 @@
     "id_empresa": "659",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20493,7 +20493,7 @@
     "id_empresa": "677",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20530,7 +20530,7 @@
     "id_empresa": "678",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20567,7 +20567,7 @@
     "id_empresa": "679",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20604,7 +20604,7 @@
     "id_empresa": "680",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20641,7 +20641,7 @@
     "id_empresa": "681",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20678,7 +20678,7 @@
     "id_empresa": "682",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20715,7 +20715,7 @@
     "id_empresa": "683",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20752,7 +20752,7 @@
     "id_empresa": "684",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20789,7 +20789,7 @@
     "id_empresa": "685",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20826,7 +20826,7 @@
     "id_empresa": "686",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20863,7 +20863,7 @@
     "id_empresa": "687",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -20900,7 +20900,7 @@
     "id_empresa": "688",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -22396,7 +22396,7 @@
     "id_empresa": "730",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "sin_preventor"
@@ -22955,7 +22955,7 @@
     "id_empresa": "746",
     "comentarios": "28/08/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 27/09/2026 (54d)",
+    "estado_visita_label": "Vencida: 27/09/2026 (55d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
@@ -22992,7 +22992,7 @@
     "id_empresa": "747",
     "comentarios": "03/09/2026",
     "estado_visita": "vencida",
-    "estado_visita_label": "Vencida: 03/10/2026 (48d)",
+    "estado_visita_label": "Vencida: 03/10/2026 (49d)",
     "kpi_tags": [
       "vencidas",
       "rar_si",
