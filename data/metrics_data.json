@@ -1,9 +1,10 @@
 {
-  "timestamp": "2026-11-21 14:11:42",
+  "timestamp": "2026-11-21 13:58:58",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
   "visitados": 831,
+  "visitas_fallidas": 0,
   "pendientes": 832,
   "pct_avance": 50.0,
   "vencidas_criticas": 31,
@@ -357,7 +358,7 @@
       "pct_completado": 99.3
     },
     {
-      "preventor": "SAMUEL ISSAC",
+      "preventor": "SAMUEL ISAAC",
       "asignados": 80,
       "visitados": 80,
       "pendientes": 0,
@@ -393,8 +394,8 @@
     },
     {
       "preventor": "NESTOR SCATENA",
-      "asignados": 38,
-      "visitados": 37,
+      "asignados": 39,
+      "visitados": 38,
       "pendientes": 1,
       "pct_completado": 97.4
     },
@@ -416,13 +417,6 @@
       "preventor": "LAUTARO FUENTEALBA",
       "asignados": 11,
       "visitados": 11,
-      "pendientes": 0,
-      "pct_completado": 100.0
-    },
-    {
-      "preventor": "MATIAS NESTOR SCATENA",
-      "asignados": 1,
-      "visitados": 1,
       "pendientes": 0,
       "pct_completado": 100.0
     }
@@ -554,5 +548,138 @@
       "pendientes": 0,
       "pct_avance": 100.0
     }
-  ]
+  ],
+  "alertas_saneamiento": {
+    "fallidas": [],
+    "sin_prev_vis": [
+      {
+        "id": 460,
+        "nombre": "CIPPA PUESTO RDLS",
+        "fecha_visita": "23/09/2026"
+      },
+      {
+        "id": 514,
+        "nombre": "HOSPITAL VILLA PEHUENIA",
+        "fecha_visita": "23/09/2026"
+      },
+      {
+        "id": 538,
+        "nombre": "ANP CHAÑY",
+        "fecha_visita": "02/10/2026"
+      },
+      {
+        "id": 554,
+        "nombre": "REGISTRO CIVIL CAVIAHUE SECCIONAL 2702",
+        "fecha_visita": "02/10/2026"
+      },
+      {
+        "id": 583,
+        "nombre": "ESCUELA PRIMARIA Nº 47- EP",
+        "fecha_visita": "02/10/2026"
+      },
+      {
+        "id": 600,
+        "nombre": "COMISARIA 44°",
+        "fecha_visita": "30/09/2026"
+      },
+      {
+        "id": 612,
+        "nombre": "DIRECCION UNIDADES DE DETENCION",
+        "fecha_visita": "21/09/2026"
+      },
+      {
+        "id": 745,
+        "nombre": "JARDIN DE INFANTES N 068",
+        "fecha_visita": "09/10/2026"
+      }
+    ],
+    "depto_na": [
+      {
+        "id": 367,
+        "nombre": "MINIST.ENERGIA Y R.N (S.E.H.MUSEO ZAP)",
+        "depto": "#N/A"
+      },
+      {
+        "id": 479,
+        "nombre": "EX EMBOTELLADORA",
+        "depto": "#N/A"
+      },
+      {
+        "id": 1563,
+        "nombre": "CENTRO DE SALUD ENF M ROCA",
+        "depto": "#N/A"
+      },
+      {
+        "id": 1605,
+        "nombre": "CPC - SAN LORENZO SUR",
+        "depto": "#N/A"
+      },
+      {
+        "id": 1623,
+        "nombre": "SECRETARÃA DE DESARROLLO COMUNITARIO DE AREAS RURALES E INCLUCIÃ“N",
+        "depto": "#N/A"
+      },
+      {
+        "id": 1630,
+        "nombre": "ESCUELA PRIMARIA NRO 164- EI EP EE",
+        "depto": "#N/A"
+      }
+    ],
+    "cuit_vacio": [
+      {
+        "id": 598,
+        "nombre": "COMISARIA 3°"
+      },
+      {
+        "id": 797,
+        "nombre": "DIRECCIÓN DE PERSONAS MAYORES"
+      },
+      {
+        "id": 798,
+        "nombre": "INSPECTORIA VILLA LA ANGOSTURA"
+      },
+      {
+        "id": 799,
+        "nombre": "COMEDOR COOP RIO GRANDE"
+      },
+      {
+        "id": 800,
+        "nombre": "COMEDOR HIPODROMO III EDAD"
+      },
+      {
+        "id": 801,
+        "nombre": "Subsecretaria de Derechos Humano"
+      },
+      {
+        "id": 961,
+        "nombre": "Registro Civil 7ma sección oficina 2964"
+      }
+    ],
+    "sin_fecha_cronograma": [
+      {
+        "id": 1662,
+        "nombre": "Vivero Provincial San Martin de los Andes"
+      }
+    ],
+    "preventores_normalizados": [
+      {
+        "original": "MATIAS NESTOR SCATENA",
+        "normalizado": "NESTOR SCATENA"
+      },
+      {
+        "original": "SAMUEL ISSAC",
+        "normalizado": "SAMUEL ISAAC"
+      }
+    ],
+    "duplicado_probable": [
+      {
+        "nombre": "Toma Lago EB1 Cutral Có",
+        "ids": [
+          206,
+          477
+        ]
+      }
+    ],
+    "total_alertas": 22
+  }
 }

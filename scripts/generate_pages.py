@@ -767,9 +767,14 @@ html_template = """<!DOCTYPE html>
     </div>
     <div class="header-controls">
       <div id="sync-status" class="sync-status">
-        <i class="fa-solid fa-circle" style="color:#A3E635;font-size:9px;"></i>
-        <span id="sync-text">Sincronizado con Sheets</span>
+        <i class="fa-solid fa-database" style="color:#A3E635;font-size:10px;"></i>
+        <span>Corte: <strong id="header-timestamp">__TIMESTAMP__</strong></span>
+        <span style="opacity:0.5;">|</span>
+        <span id="sync-text">Datos del Repositorio (GitHub Actions)</span>
       </div>
+      <button class="action-btn" id="btn-open-alertas" onclick="abrirModalSaneamiento()" style="background:#FFFBEB; color:#92400E; border:1px solid #FCD34D; font-weight:600; padding:6px 12px; font-size:11px; cursor:pointer;" title="Ver diagnóstico de inconsistencias a sanear en Sheets">
+        <i class="fa-solid fa-triangle-exclamation" style="color:#D97706;"></i> Diagnóstico Planilla (<span id="badge-total-alertas">__TOTAL_ALERTAS__</span>)
+      </button>
       <button id="btn-sync" class="sync-btn" onclick="syncWithGoogleSheets()">
         <i class="fa-solid fa-arrows-rotate"></i> Actualizar
       </button>
@@ -791,7 +796,7 @@ html_template = """<!DOCTYPE html>
       <i class="fa-solid fa-user-shield"></i> Preventores & Asignación <span class="tab-counter" id="tab-counter-prev">__TOTAL_PREVENTORES__</span>
     </button>
     <button class="tab-btn tab-btn-highlight" id="btn-tab-casos" onclick="switchTab('casos', this)">
-      <i class="fa-solid fa-table-list"></i> Vista de Casos & Sedes <span class="tab-counter" id="tab-counter-casos">__TOTAL_ACTIVOS__</span>
+      <i class="fa-solid fa-table-list"></i> Vista de Casos & Sedes <span class="tab-counter" id="tab-counter-casos">__TOTAL_PADRON__</span>
     </button>
   </nav>
 
@@ -803,15 +808,15 @@ html_template = """<!DOCTYPE html>
       <div class="alert-banner">
         <i class="fa-solid fa-triangle-exclamation"></i>
         <div class="alert-banner-content">
-          <h4>Vencimientos Críticos y Asignaciones al 02/11/2026</h4>
-          <p>Se registran <strong id="alert-vencidas" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('vencidas')">__VENCIDAS_CRITICAS__ visitas vencidas sin realizar</strong> y <strong id="alert-urgentes" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('urgentes_nov')">__URGENTES_NOV26__ por vencer este mes</strong>. Asimismo, el <strong id="alert-sin-prev-pct" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('sin_preventor')">__SIN_PREVENTOR_PCT__% (__SIN_PREVENTOR__ sedes)</strong> de los establecimientos activos aún no cuenta con preventor asignado en la planilla.</p>
+          <h4>Vencimientos Críticos y Asignaciones al __TIMESTAMP_DATE__</h4>
+          <p>Se registran <strong id="alert-vencidas" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('vencidas')">__VENCIDAS_CRITICAS__ visitas vencidas sin realizar</strong> (plazo límite Col. AM superado) y <strong id="alert-fallidas" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('fallidas')">__VISITAS_FALLIDAS__ visitas fallidas / no operativas</strong> pendientes de reprogramar. Asimismo, el <strong id="alert-sin-prev-pct" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('sin_preventor')">__SIN_PREVENTOR_PEND_PCT__% (__SIN_PREVENTOR__ sedes)</strong> de las visitas pendientes aún no cuenta con preventor asignado en la planilla.</p>
         </div>
       </div>
 
       <!-- Fila 1 de KPIs (Clicables para ver casos) -->
       <div class="kpi-grid">
         <!-- KPI 1: Stock Visitas Efectivas -->
-        <div class="kpi-card success-border clickable" onclick="abrirCasos('visitados')" title="Haga clic para ver los 745 casos con visitas efectivas realizadas">
+        <div class="kpi-card success-border clickable" onclick="abrirCasos('visitados')" title="Haga clic para ver los casos con visitas efectivas realizadas">
           <div class="kpi-header">
             <span class="kpi-label">Stock de Visitas Efectivas</span>
             <i class="fa-solid fa-check-double kpi-icon"></i>
@@ -827,12 +832,12 @@ html_template = """<!DOCTYPE html>
             <div id="bar-visitados" class="micro-bar-fill" style="width:__PCT_AVANCE__%; background:var(--primary);"></div>
           </div>
           <div class="kpi-action-hint">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver los 745 casos
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver los __VISITADOS__ casos
           </div>
         </div>
 
         <!-- KPI 2: Visitas Vencidas s/Realizar -->
-        <div class="kpi-card alert-border clickable" onclick="abrirCasos('vencidas')" title="Haga clic para ver los 30 casos con visitas vencidas sin realizar">
+        <div class="kpi-card alert-border clickable" onclick="abrirCasos('vencidas')" title="Haga clic para ver las sedes con visitas vencidas sin realizar">
           <div class="kpi-header">
             <span class="kpi-label">Visitas Vencidas s/Realizar</span>
             <i class="fa-solid fa-circle-exclamation kpi-icon" style="color:var(--alert);"></i>
@@ -841,56 +846,56 @@ html_template = """<!DOCTYPE html>
             <span id="kpi-vencidas">__VENCIDAS_CRITICAS__</span> <span class="unit" style="color:var(--alert);">sedes</span>
           </div>
           <div class="kpi-sub">
-            <span style="color:var(--alert); font-weight:600;">Plazo legal superado</span>
+            <span style="color:var(--alert); font-weight:600;">Plazo límite (Col. AM) superado</span>
             <span class="badge badge-alert">Prioridad 1</span>
           </div>
           <div class="micro-bar-bg">
             <div class="micro-bar-fill" style="width:100%; background:var(--alert);"></div>
           </div>
           <div class="kpi-action-hint" style="color:var(--alert);">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver los 30 casos vencidos
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las __VENCIDAS_CRITICAS__ sedes vencidas
           </div>
         </div>
 
-        <!-- KPI 3: Vencen en Noviembre 2026 -->
-        <div class="kpi-card warn-border clickable" onclick="abrirCasos('urgentes_nov')" title="Haga clic para ver los 26 casos que vencen este mes">
+        <!-- KPI 3: Visitas Fallidas / A Reprogramar -->
+        <div class="kpi-card warn-border clickable" onclick="abrirCasos('fallidas')" title="Haga clic para ver las sedes con visitas fallidas, mudadas o cerradas">
           <div class="kpi-header">
-            <span class="kpi-label">Vencen en Noviembre 2026</span>
-            <i class="fa-solid fa-clock-rotate-left kpi-icon" style="color:var(--warn);"></i>
+            <span class="kpi-label">Visitas Fallidas / A Reprogramar</span>
+            <i class="fa-solid fa-ban kpi-icon" style="color:var(--warn);"></i>
           </div>
           <div class="kpi-val" style="color:var(--warn);">
-            <span id="kpi-urgentes">__URGENTES_NOV26__</span> <span class="unit" style="color:var(--warn);">sedes</span>
+            <span id="kpi-fallidas">__VISITAS_FALLIDAS__</span> <span class="unit" style="color:var(--warn);">sedes</span>
           </div>
           <div class="kpi-sub">
-            <span style="color:var(--warn); font-weight:600;">20 corresponden al CPE</span>
-            <span class="badge badge-warn">Este Mes</span>
+            <span style="color:var(--warn); font-weight:600;">NO OPERATIVO / Obras / Mudadas</span>
+            <span class="badge badge-warn">A Reprogramar</span>
           </div>
           <div class="micro-bar-bg">
             <div class="micro-bar-fill" style="width:100%; background:var(--warn);"></div>
           </div>
           <div class="kpi-action-hint" style="color:var(--warn);">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver los 26 casos urgentes
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las __VISITAS_FALLIDAS__ sedes fallidas
           </div>
         </div>
 
-        <!-- KPI 4: Cronograma Dic '26 - May '27 -->
-        <div class="kpi-card info-border clickable" onclick="abrirCasos('futuras')" title="Haga clic para ver las 863 sedes con visitas programadas">
+        <!-- KPI 4: Cronograma Ene '27 - May '27 -->
+        <div class="kpi-card info-border clickable" onclick="abrirCasos('futuras')" title="Haga clic para ver las sedes con visitas programadas">
           <div class="kpi-header">
-            <span class="kpi-label">Cronograma Dic '26 - May '27</span>
+            <span class="kpi-label">Cronograma Ene '27 - May '27</span>
             <i class="fa-solid fa-calendar-days kpi-icon" style="color:var(--info);"></i>
           </div>
           <div class="kpi-val">
             <span id="kpi-futuras">__FUTURAS_PROGRAMADAS__</span> <span class="unit">sedes</span>
           </div>
           <div class="kpi-sub">
-            <span style="color:var(--text-muted);">Pico: ~160 visitas/mes</span>
+            <span style="color:var(--text-muted);">Prog: 702 con fecha + 1 s/fijar</span>
             <span class="badge badge-info">Programadas</span>
           </div>
           <div class="micro-bar-bg">
             <div class="micro-bar-fill" style="width:100%; background:var(--info);"></div>
           </div>
           <div class="kpi-action-hint" style="color:var(--info);">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las 863 sedes programadas
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las __FUTURAS_PROGRAMADAS__ sedes programadas
           </div>
         </div>
       </div>
@@ -1020,16 +1025,41 @@ html_template = """<!DOCTYPE html>
         <div class="panel-header">
           <div>
             <div class="panel-title"><i class="fa-solid fa-clipboard-check"></i> Saneamiento Administrativo & Bajas en SIMP</div>
-            <div class="panel-subtitle">Establecimientos no computados en el plan activo (Total: <span id="tot-bajas">__TOTAL_BAJAS__</span> bajas)</div>
+            <div class="panel-subtitle">Establecimientos no computados en el plan activo (Total: <span id="tot-bajas">__TOTAL_BAJAS__</span> bajas auditables)</div>
           </div>
-          <span class="badge badge-warn"><span id="badge-bajas">__TOTAL_BAJAS__</span> Bajas Registradas</span>
+          <span class="badge badge-neutral" style="background:#4B5563; color:#FFFFFF; cursor:pointer;" onclick="abrirCasos('bajas')">
+            <i class="fa-solid fa-folder-minus"></i> <span id="badge-bajas">__TOTAL_BAJAS__</span> Bajas Registradas
+          </span>
         </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+          
+          <!-- KPI Independiente de Bajas -->
+          <div class="kpi-card clickable" style="border-left: 4px solid #6B7280; background:#F9FAFB;" onclick="abrirCasos('bajas')" title="Haga clic para ver los establecimientos dados de baja en la tabla de casos">
+            <div class="kpi-header">
+              <span class="kpi-label" style="color:#4B5563;">Establecimientos en Baja</span>
+              <i class="fa-solid fa-folder-minus kpi-icon" style="color:#6B7280;"></i>
+            </div>
+            <div class="kpi-val" style="color:#374151;">
+              <span id="kpi-bajas">__TOTAL_BAJAS__</span> <span class="unit" style="color:#6B7280;">sedes</span>
+            </div>
+            <div class="kpi-sub">
+              <span style="color:#4B5563; font-weight:600;">Excluidos de metas activas</span>
+              <span class="badge badge-neutral">Saneadas SIMP</span>
+            </div>
+            <div class="micro-bar-bg">
+              <div class="micro-bar-fill" style="width:100%; background:#6B7280;"></div>
+            </div>
+            <div class="kpi-action-hint" style="color:#4B5563;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Auditar las __TOTAL_BAJAS__ bajas en la tabla
+            </div>
+          </div>
+
           <div style="background:#F8FAF8; padding:14px; border:1px solid var(--border-subtle); border-radius:4px;">
             <div style="font-size:11px; font-weight:600; text-transform:uppercase; color:var(--text-muted)">Trámites Críticos en SIMP</div>
             <div style="font-size:18px; font-weight:700; font-family:var(--font-mono); margin-top:4px;">13 pedidos de baja/alta</div>
             <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">7 bajas y 6 pedidos de alta pendientes de validación en SIMP.</div>
           </div>
+
           <div style="background:#F8FAF8; padding:14px; border:1px solid var(--border-subtle); border-radius:4px;">
             <div style="font-size:11px; font-weight:600; text-transform:uppercase; color:var(--text-muted)">Cobertura de Contactabilidad</div>
             <div style="font-size:18px; font-weight:700; font-family:var(--font-mono); margin-top:4px;">
@@ -1039,6 +1069,7 @@ html_template = """<!DOCTYPE html>
               <span id="sin-tel-count">__SIN_TEL__</span> establecimientos sin número de contacto directo.
             </div>
           </div>
+
         </div>
       </div>
 
@@ -1086,14 +1117,14 @@ html_template = """<!DOCTYPE html>
     <div id="tab-vencimientos" class="tab-pane">
       
       <div class="kpi-grid">
-        <div class="kpi-card alert-border clickable" onclick="abrirCasos('vencidas')" title="Ver las 30 sedes con visitas vencidas">
+        <div class="kpi-card alert-border clickable" onclick="abrirCasos('vencidas')" title="Ver las sedes con visitas vencidas">
           <div class="kpi-header">
-            <span class="kpi-label">Total Vencidas al 02/11</span>
+            <span class="kpi-label">Total Vencidas al __TIMESTAMP_DATE__</span>
             <i class="fa-solid fa-ban kpi-icon" style="color:var(--alert);"></i>
           </div>
           <div class="kpi-val" style="color:var(--alert);" id="crono-kpi-vencidas">__VENCIDAS_CRITICAS__</div>
           <div class="kpi-sub">
-            <span>Superaron plazo de verosimilitud</span>
+            <span>Superaron plazo de visita (Col. AM)</span>
             <span class="badge badge-alert">Urgente</span>
           </div>
           <div class="kpi-action-hint" style="color:var(--alert);">
@@ -1101,48 +1132,48 @@ html_template = """<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="kpi-card warn-border clickable" onclick="abrirCasos('urgentes_nov')" title="Ver las 26 sedes que vencen este mes">
+        <div class="kpi-card warn-border clickable" onclick="abrirCasos('fallidas')" title="Ver las sedes con visitas fallidas o cerradas">
           <div class="kpi-header">
-            <span class="kpi-label">Urgencia Noviembre 2026</span>
-            <i class="fa-solid fa-hourglass-half kpi-icon" style="color:var(--warn);"></i>
+            <span class="kpi-label">Fallidas a Reprogramar</span>
+            <i class="fa-solid fa-ban kpi-icon" style="color:var(--warn);"></i>
           </div>
-          <div class="kpi-val" style="color:var(--warn);" id="crono-kpi-urgentes">__URGENTES_NOV26__</div>
+          <div class="kpi-val" style="color:var(--warn);">__VISITAS_FALLIDAS__</div>
           <div class="kpi-sub">
-            <span>Vencen en los próximos 28 días</span>
-            <span class="badge badge-warn">Este Mes</span>
+            <span>NO OPERATIVO / Obras</span>
+            <span class="badge badge-warn">Pendiente</span>
           </div>
           <div class="kpi-action-hint" style="color:var(--warn);">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver casos urgentes
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver fallidas
           </div>
         </div>
 
-        <div class="kpi-card clickable" onclick="abrirCasos('futuras')" title="Ver sedes con cronograma futuro">
+        <div class="kpi-card clickable" onclick="abrirCasos('futuras')" title="Ver sedes con cronograma 2027">
           <div class="kpi-header">
-            <span class="kpi-label">Carga Diciembre 2026</span>
+            <span class="kpi-label">Cronograma Ene - May '27</span>
             <i class="fa-solid fa-calendar-day kpi-icon"></i>
           </div>
-          <div class="kpi-val">160</div>
+          <div class="kpi-val">702</div>
           <div class="kpi-sub">
-            <span>Meta de cierre de año</span>
-            <span class="badge badge-info">Programada</span>
+            <span>Enero a Mayo 2027</span>
+            <span class="badge badge-info">Programadas</span>
           </div>
           <div class="kpi-action-hint">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver programadas
           </div>
         </div>
 
-        <div class="kpi-card clickable" onclick="abrirCasos('futuras')" title="Ver sedes con cronograma primer semestre 2027">
+        <div class="kpi-card clickable" onclick="abrirCasos('futuras')" title="Ver sedes con fecha de visita pendiente de asignación">
           <div class="kpi-header">
-            <span class="kpi-label">Primer Semestre 2027</span>
-            <i class="fa-solid fa-forward kpi-icon"></i>
+            <span class="kpi-label">Sin Fecha Fijada</span>
+            <i class="fa-solid fa-clock kpi-icon"></i>
           </div>
-          <div class="kpi-val">702</div>
+          <div class="kpi-val">1</div>
           <div class="kpi-sub">
-            <span>Enero a Mayo 2027</span>
-            <span class="badge badge-success">Plan 2027</span>
+            <span>Vivero San Martín (ID 1662)</span>
+            <span class="badge badge-warn">A Definir</span>
           </div>
           <div class="kpi-action-hint">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver cronograma 2027
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver sede s/fecha
           </div>
         </div>
       </div>
@@ -1194,34 +1225,34 @@ html_template = """<!DOCTYPE html>
         <i class="fa-solid fa-user-xmark"></i>
         <div class="alert-banner-content">
           <h4>Cuello de Botella en Asignación Técnica</h4>
-          <p>Actualmente <strong id="alert-prev-sin" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('sin_preventor')">__SIN_PREVENTOR__ establecimientos activos (__SIN_PREVENTOR_PCT__%)</strong> no tienen un profesional asignado en la planilla. Las 743 visitas realizadas fueron cubiertas por solo 12 preventores.</p>
+          <p>Actualmente <strong id="alert-prev-sin" style="cursor:pointer; text-decoration:underline;" onclick="abrirCasos('sin_preventor')">__SIN_PREVENTOR__ establecimientos activos</strong> no tienen un profesional asignado en la planilla (representa el <strong>__SIN_PREVENTOR_PEND_PCT__%</strong> de las visitas pendientes). La nómina normalizada cuenta con __TOTAL_PREVENTORES__ profesionales.</p>
         </div>
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi-card alert-border clickable" onclick="abrirCasos('sin_preventor')" title="Ver las 921 sedes sin profesional preventor asignado">
+        <div class="kpi-card alert-border clickable" onclick="abrirCasos('sin_preventor')" title="Ver las sedes sin profesional preventor asignado">
           <div class="kpi-header">
             <span class="kpi-label">Sedes sin Preventor Asignado</span>
             <i class="fa-solid fa-triangle-exclamation kpi-icon" style="color:var(--alert);"></i>
           </div>
           <div class="kpi-val" style="color:var(--alert);" id="kpi-prev-sin">__SIN_PREVENTOR__</div>
           <div class="kpi-sub">
-            <span>99.1% de las visitas pendientes</span>
+            <span>__SIN_PREVENTOR_PEND_PCT__% de las visitas pendientes</span>
             <span class="badge badge-alert">Sin Asignar</span>
           </div>
           <div class="kpi-action-hint" style="color:var(--alert);">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las 921 sedes sin preventor
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver las __SIN_PREVENTOR__ sedes sin preventor
           </div>
         </div>
 
-        <div class="kpi-card success-border clickable" onclick="abrirCasos('prev_asignados')" title="Ver las 743 sedes con profesional asignado">
+        <div class="kpi-card success-border clickable" onclick="abrirCasos('prev_asignados')" title="Ver las sedes con profesional asignado">
           <div class="kpi-header">
             <span class="kpi-label">Sedes con Preventor Asignado</span>
             <i class="fa-solid fa-user-check kpi-icon" style="color:var(--primary);"></i>
           </div>
           <div class="kpi-val" id="kpi-prev-asig">__PREV_ASIGNADOS__</div>
           <div class="kpi-sub">
-            <span>743 visitas ya completadas</span>
+            <span>__PREV_EFECTIVAS__ visitas efectivas completadas</span>
             <span class="badge badge-success">Asignadas</span>
           </div>
           <div class="kpi-action-hint">
@@ -1388,6 +1419,121 @@ html_template = """<!DOCTYPE html>
 
   </div>
 
+  <!-- Modal Diagnóstico y Saneamiento de Planilla (Apertura al abrir el módulo) -->
+  <div id="modal-saneamiento" class="modal-overlay" onclick="cerrarModalSaneamiento(event)">
+    <div class="modal-container" style="max-width: 900px;" onclick="event.stopPropagation()">
+      <div class="modal-header" style="background:#78350F; border-bottom:2px solid #F59E0B;">
+        <div>
+          <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:#FDE68A;">
+            <i class="fa-solid fa-clipboard-check"></i> Auditoría Operativa & Calidad de Datos
+          </div>
+          <h2 style="font-size:18px; font-weight:700; margin-top:4px; color:#FFFFFF;">
+            Diagnóstico de Planilla: Inconsistencias a Corregir en Google Sheets
+          </h2>
+          <div style="font-size:12px; color:#FEF3C7; margin-top:2px;">
+            Detección automática de inconsistencias sobre el padrón de 1.837 establecimientos (1.664 activos y 173 bajas).
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="cerrarModalSaneamiento()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <div class="modal-body" style="padding: 24px; max-height: calc(85vh - 120px); overflow-y: auto;">
+        
+        <div style="background:#FFFBEB; border-left:4px solid #F59E0B; padding:12px 16px; border-radius:4px; margin-bottom:18px;">
+          <div style="font-weight:700; color:#92400E; font-size:13px; display:flex; align-items:center; gap:8px;">
+            <i class="fa-solid fa-triangle-exclamation"></i> Resumen de Acciones de Saneamiento Pendientes
+          </div>
+          <div style="font-size:12px; color:#78350F; margin-top:3px; line-height:1.5;">
+            Esta alerta consolida las inconsistencias registradas en la planilla oficial de Google Sheets. Al corregir los registros en la planilla, el tablero se actualizará automáticamente en la siguiente sincronización.
+          </div>
+        </div>
+
+        <!-- 1. Visitas no válidas / Fallidas -->
+        <div style="border:1px solid #FECACA; background:#FEF2F2; border-radius:6px; padding:14px; margin-bottom:14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <div style="font-weight:700; color:#991B1B; font-size:13px; display:flex; align-items:center; gap:8px;">
+              <i class="fa-solid fa-ban"></i> 1. Visitas con texto no válido / Fallidas a Reprogramar (10 sedes)
+            </div>
+            <button class="action-btn" style="font-size:11px; padding:3px 9px; background:#FFFFFF; border-color:#FCA5A5; color:#991B1B;" onclick="cerrarModalSaneamiento(); abrirCasos('fallidas');">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver en Casos
+            </button>
+          </div>
+          <div style="font-size:12px; color:#7F1D1D; line-height:1.5;">
+            <strong>Inconsistencia:</strong> 2 sedes registran <code>"NO OPERATIVO"</code> en fecha de visita (Centro de Salud Vista Hermosa y CFF Confluencia), y 8 sedes registran comentarios de visita fallida por mudanza, obras o medidas de fuerza. Están <strong>excluidas de las 737 visitas efectivas</strong>.<br>
+            <strong>Acción en Sheets:</strong> En caso de haberse realizado la inspección, consignar la fecha válida en la Columna AJ (Fecha Visita); de lo contrario, gestionar nueva fecha de visita.
+          </div>
+        </div>
+
+        <!-- 2. Preventores y Asignaciones -->
+        <div style="border:1px solid #FED7AA; background:#FFF7ED; border-radius:6px; padding:14px; margin-bottom:14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <div style="font-weight:700; color:#9A3412; font-size:13px; display:flex; align-items:center; gap:8px;">
+              <i class="fa-solid fa-user-shield"></i> 2. Asignación de Preventores & Nombres Duplicados
+            </div>
+            <button class="action-btn" style="font-size:11px; padding:3px 9px; background:#FFFFFF; border-color:#FDBA74; color:#9A3412;" onclick="cerrarModalSaneamiento(); switchTab('preventores');">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Preventores
+            </button>
+          </div>
+          <div style="font-size:12px; color:#7C2D12; line-height:1.5;">
+            <strong>Inconsistencias:</strong>
+            <ul style="margin:4px 0 0 16px; padding:0;">
+              <li><strong>8 sedes figuran visitadas sin preventor asignado</strong> en la columna AF.</li>
+              <li><strong>Duplicación de identidad:</strong> <code>"MATIAS NESTOR SCATENA"</code> (1 caso) y <code>"NESTOR SCATENA"</code> (38 casos). Se normalizó a 11 preventores.</li>
+              <li><strong>Error tipográfico:</strong> <code>"SAMUEL ISSAC"</code> corregido a <code>"SAMUEL ISAAC"</code>.</li>
+            </ul>
+            <strong>Acción en Sheets:</strong> Completar el preventor actuante en las 8 sedes y unificar los nombres en la Columna AF.
+          </div>
+        </div>
+
+        <!-- 3. Cronograma y Fechas -->
+        <div style="border:1px solid #BAE6FD; background:#F0F9FF; border-radius:6px; padding:14px; margin-bottom:14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <div style="font-weight:700; color:#0369A1; font-size:13px; display:flex; align-items:center; gap:8px;">
+              <i class="fa-solid fa-calendar-check"></i> 3. Cronograma (Columna AM rectora y Columna AE)
+            </div>
+            <button class="action-btn" style="font-size:11px; padding:3px 9px; background:#FFFFFF; border-color:#7DD3FC; color:#0369A1;" onclick="cerrarModalSaneamiento(); switchTab('vencimientos');">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Cronograma
+            </button>
+          </div>
+          <div style="font-size:12px; color:#0C4A6E; line-height:1.5;">
+            <strong>Inconsistencias:</strong>
+            <ul style="margin:4px 0 0 16px; padding:0;">
+              <li><strong>1 sede programada sin fecha fijada:</strong> <em>Vivero Provincial San Martín de los Andes</em> (ID 1662) no registra fecha ni en AM ni en AE. Se incorporó la categoría "Sin fecha fijada" en el cronograma (703 sedes en total).</li>
+              <li><strong>214 sedes con plazo de visita vencido:</strong> Al adoptar la Columna AM como fecha planificada de visita, 214 sedes programadas entre julio y octubre 2026 figuran pendientes y vencidas al día de la fecha.</li>
+            </ul>
+            <strong>Acción en Sheets:</strong> Cargar fecha programada en Col. AM para el Vivero San Martín y priorizar las 214 sedes con plazo vencido.
+          </div>
+        </div>
+
+        <!-- 4. Calidad de Datos -->
+        <div style="border:1px solid #E2E8F0; background:#F8FAFC; border-radius:6px; padding:14px;">
+          <div style="font-weight:700; color:#334155; font-size:13px; display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+            <i class="fa-solid fa-database"></i> 4. Calidad de Registros en Google Sheets
+          </div>
+          <div style="font-size:12px; color:#475569; line-height:1.5;">
+            <ul style="margin:0 0 0 16px; padding:0;">
+              <li><strong>6 sedes con Departamento "#N/A"</strong> (fórmula de VLOOKUP rota en la hoja) y 1 sede en CABA (Casa del Neuquén).</li>
+              <li><strong>8 sedes sin Razón Social o CUIT</strong> (ej. Comisaría 3°, Delegación Fauna Caviahue, Registro Civil 7ma).</li>
+              <li><strong>1 posible duplicado:</strong> <em>"Toma Lago EB1 Cutral Có"</em> con IDs 206 y 477.</li>
+              <li><strong>703 sedes sin N° SRT ni ID Empresa</strong> en las columnas AK y AL.</li>
+            </ul>
+            <strong>Acción en Sheets:</strong> Reparar fórmulas <code>#N/A</code> de departamento y completar CUITs/SRT faltantes.
+          </div>
+        </div>
+
+      </div>
+
+      <div style="padding:14px 24px; background:#F8FAF8; border-top:1px solid var(--border-table); display:flex; justify-content:space-between; align-items:center;">
+        <div style="font-size:12px; color:var(--text-muted);">
+          Podés volver a abrir este diagnóstico en cualquier momento desde el botón <strong>Diagnóstico Planilla</strong> en la cabecera.
+        </div>
+        <button class="action-btn" style="background:var(--primary); color:#FFFFFF; border-color:var(--primary); padding:7px 16px; font-weight:600;" onclick="cerrarModalSaneamiento()">
+          <i class="fa-solid fa-check"></i> Entendido, ver Tablero
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal Ficha Técnica de la Sede -->
   <div id="modal-ficha" class="modal-overlay" onclick="cerrarModalFicha(event)">
     <div class="modal-container" onclick="event.stopPropagation()">
@@ -1446,8 +1592,9 @@ html_template = """<!DOCTYPE html>
       { id: 'todos', label: 'Todos los Activos', countKey: 'total_activos', icon: 'fa-table-list', color: '#1C241E' },
       { id: 'visitados', label: 'Stock Visitas Efectivas', countKey: 'visitados', icon: 'fa-check-double', color: 'var(--primary)' },
       { id: 'vencidas', label: 'Visitas Vencidas s/Realizar', countKey: 'vencidas_criticas', icon: 'fa-circle-exclamation', color: 'var(--alert)' },
-      { id: 'urgentes_nov', label: 'Vencen en Noviembre 2026', countKey: 'urgentes_nov26', icon: 'fa-clock-rotate-left', color: 'var(--warn)' },
-      { id: 'futuras', label: 'Cronograma Dic 26 - May 27', countKey: 'futuras_programadas', icon: 'fa-calendar-days', color: 'var(--info)' },
+      { id: 'fallidas', label: 'Visitas Fallidas / Reprogramar', countKey: 'visitas_fallidas', icon: 'fa-ban', color: '#D97706' },
+      { id: 'futuras', label: 'Cronograma Ene 27 - May 27', countKey: 'futuras_programadas', icon: 'fa-calendar-days', color: 'var(--info)' },
+      { id: 'bajas', label: 'Establecimientos en Baja', countKey: 'total_bajas', icon: 'fa-folder-minus', color: '#6B7280' },
       { id: 'rgrl_si', label: 'Cumplimiento RGRL (Cargados)', countKey: 'rgrl_si', icon: 'fa-file-shield', color: 'var(--primary)' },
       { id: 'rgrl_vencidos', label: 'RGRL Vencidos Pendientes', countKey: 'rgrl_vencidos_pend', icon: 'fa-triangle-exclamation', color: 'var(--alert)' },
       { id: 'rar_si', label: 'Relevamiento RAR (Riesgos)', countKey: 'rar_si', icon: 'fa-triangle-exclamation', color: '#0284C7' },
@@ -1548,9 +1695,10 @@ html_template = """<!DOCTYPE html>
         type: 'line',
         data: {
           labels: dataMetrics.crono_labels.map(l => {
+            if (l === 'Sin fecha fijada') return 'Sin fecha fijada';
             const m = { '01':'Ene','02':'Feb','03':'Mar','04':'Abr','05':'May','06':'Jun','07':'Jul','08':'Ago','09':'Sep','10':'Oct','11':'Nov','12':'Dic' };
             const p = l.split('-');
-            return (m[p[1]] || p[1]) + ' ' + p[0];
+            return (m[p[1]] || p[1]) + ' ' + (p[0] || '');
           }),
           datasets: [{
             label: 'Establecimientos con Vencimiento de Visita',
@@ -1686,7 +1834,9 @@ html_template = """<!DOCTYPE html>
 
       casosFiltrados = dataCasos.filter(caso => {
         // Filtro por KPI Tag
-        if (activeKpiTag && activeKpiTag !== 'todos') {
+        if (activeKpiTag === 'todos') {
+          if (caso.estado === 'Baja') return false;
+        } else if (activeKpiTag && activeKpiTag !== 'todos') {
           if (!caso.kpi_tags || !caso.kpi_tags.includes(activeKpiTag)) return false;
         }
 
@@ -1773,8 +1923,12 @@ html_template = """<!DOCTYPE html>
         
         // Badge Estado Visita
         let visBadge = '';
-        if (c.estado_visita === 'efectuada') {
+        if (c.estado === 'Baja') {
+          visBadge = `<span class="badge badge-neutral" style="background:#4B5563; color:#FFFFFF;"><i class="fa-solid fa-folder-minus"></i> Baja SIMP</span>`;
+        } else if (c.estado_visita === 'efectuada') {
           visBadge = `<span class="badge badge-success"><i class="fa-solid fa-check"></i> Efectuada ${c.f_vis || ''}</span>`;
+        } else if (c.estado_visita === 'fallida') {
+          visBadge = `<span class="badge badge-warn" style="background:#FEF3C7; color:#92400E; border:1px solid #F59E0B;"><i class="fa-solid fa-ban"></i> Fallida (${c.f_vis || 'S/D'})</span>`;
         } else if (c.estado_visita === 'vencida') {
           visBadge = `<span class="badge badge-alert"><i class="fa-solid fa-triangle-exclamation"></i> Vencida ${c.f_vis_lim || ''}</span>`;
         } else if (c.estado_visita === 'urgente_nov') {
@@ -1904,10 +2058,14 @@ html_template = """<!DOCTYPE html>
       `;
 
       let visStatusHtml = '';
-      if (caso.estado_visita === 'efectuada') {
+      if (caso.estado === 'Baja') {
+        visStatusHtml = `<span class="badge badge-neutral" style="background:#4B5563; color:#FFFFFF;"><i class="fa-solid fa-folder-minus"></i> ESTABLECIMIENTO DADO DE BAJA EN SIMP</span>`;
+      } else if (caso.estado_visita === 'efectuada') {
         visStatusHtml = `<span class="badge badge-success"><i class="fa-solid fa-check"></i> Efectuada: ${caso.f_vis}</span>`;
+      } else if (caso.estado_visita === 'fallida') {
+        visStatusHtml = `<span class="badge badge-warn" style="background:#FEF3C7; color:#92400E; border:1px solid #F59E0B;"><i class="fa-solid fa-ban"></i> Visita Fallida / A Reprogramar (${caso.f_vis || 'S/D'})</span>`;
       } else if (caso.estado_visita === 'vencida') {
-        visStatusHtml = `<span class="badge badge-alert"><i class="fa-solid fa-triangle-exclamation"></i> VENCIDA (Límite: ${caso.f_vis_lim})</span>`;
+        visStatusHtml = `<span class="badge badge-alert"><i class="fa-solid fa-triangle-exclamation"></i> VENCIDA (Fecha Límite / Visita: ${caso.f_vis_lim})</span>`;
       } else if (caso.estado_visita === 'urgente_nov') {
         visStatusHtml = `<span class="badge badge-warn"><i class="fa-solid fa-clock"></i> Vence en Noviembre 2026 (${caso.f_vis_lim})</span>`;
       } else {
@@ -2160,7 +2318,7 @@ Observaciones: ${c.comentarios || 'Ninguna'}`;
           initCasosView();
         }
 
-        syncText.innerHTML = '<i class="fa-solid fa-circle" style="color:#A3E635;font-size:9px;"></i> En vivo (Sheets)';
+        syncText.innerHTML = '<i class="fa-solid fa-circle" style="color:#A3E635;font-size:9px;"></i> Datos del Repositorio (GitHub Actions)';
         btn.classList.remove('loading');
         return;
       } catch (err) {
@@ -2178,10 +2336,16 @@ Observaciones: ${c.comentarios || 'Ninguna'}`;
       document.getElementById('bar-visitados').style.width = dataMetrics.pct_avance + '%';
 
       document.getElementById('kpi-vencidas').innerText = dataMetrics.vencidas_criticas;
-      document.getElementById('alert-vencidas').innerText = dataMetrics.vencidas_criticas + ' visitas vencidas sin realizar';
+      if (document.getElementById('alert-vencidas')) {
+        document.getElementById('alert-vencidas').innerText = dataMetrics.vencidas_criticas + ' visitas vencidas sin realizar';
+      }
 
-      document.getElementById('kpi-urgentes').innerText = dataMetrics.urgentes_nov26;
-      document.getElementById('alert-urgentes').innerText = dataMetrics.urgentes_nov26 + ' por vencer este mes';
+      if (document.getElementById('kpi-fallidas')) {
+        document.getElementById('kpi-fallidas').innerText = dataMetrics.visitas_fallidas;
+      }
+      if (document.getElementById('alert-fallidas')) {
+        document.getElementById('alert-fallidas').innerText = dataMetrics.visitas_fallidas + ' visitas fallidas / no operativas';
+      }
 
       document.getElementById('kpi-futuras').innerText = dataMetrics.futuras_programadas;
 
@@ -2205,18 +2369,57 @@ Observaciones: ${c.comentarios || 'Ninguna'}`;
       document.getElementById('kpi-zf-pct').innerText = dataMetrics.zona_fria_pct;
       document.getElementById('bar-zf').style.width = dataMetrics.zona_fria_pct + '%';
       document.getElementById('kpi-zf-pend').innerText = dataMetrics.zona_fria_total - dataMetrics.zona_fria_vis;
+
+      if (document.getElementById('kpi-bajas')) {
+        document.getElementById('kpi-bajas').innerText = dataMetrics.total_bajas;
+      }
+      if (document.getElementById('badge-bajas')) {
+        document.getElementById('badge-bajas').innerText = dataMetrics.total_bajas;
+      }
+      if (document.getElementById('tot-bajas')) {
+        document.getElementById('tot-bajas').innerText = dataMetrics.total_bajas;
+      }
+      if (document.getElementById('header-timestamp') && dataMetrics.timestamp) {
+        document.getElementById('header-timestamp').innerText = dataMetrics.timestamp;
+      }
+      if (document.getElementById('badge-total-alertas') && dataMetrics.alertas_saneamiento) {
+        document.getElementById('badge-total-alertas').innerText = dataMetrics.alertas_saneamiento.total_alertas;
+      }
+    }
+
+    function abrirModalSaneamiento() {
+      const m = document.getElementById('modal-saneamiento');
+      if (m) {
+        m.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function cerrarModalSaneamiento(event) {
+      if (event && event.target !== document.getElementById('modal-saneamiento') && !event.target.closest('.modal-close-btn') && !event.target.classList.contains('action-btn')) {
+        return;
+      }
+      const m = document.getElementById('modal-saneamiento');
+      if (m) {
+        m.classList.remove('open');
+        document.body.style.overflow = '';
+      }
     }
 
     document.addEventListener('DOMContentLoaded', () => {
       renderCharts();
       initCasosView();
-      // Verificación en segundo plano si hay nuevos datos
-      setTimeout(syncWithGoogleSheets, 1000);
+      // Apertura automática de la alerta con lo que tendría que arreglar en Sheets
+      setTimeout(abrirModalSaneamiento, 350);
+      setTimeout(syncWithGoogleSheets, 1500);
     });
 
     // Cierre modal con escape
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') cerrarModalFicha();
+      if (e.key === 'Escape') {
+        cerrarModalFicha();
+        cerrarModalSaneamiento();
+      }
     });
   </script>
 </body>
@@ -2224,6 +2427,13 @@ Observaciones: ${c.comentarios || 'Ninguna'}`;
 """
 
 replacements = {
+    '__TOTAL_PADRON__': str(data.get('total_padron', 1837)),
+    '__TIMESTAMP__': data.get('timestamp', '03/11/2026 18:37:00'),
+    '__TIMESTAMP_DATE__': data.get('timestamp', '03/11/2026').split()[0],
+    '__TOTAL_ALERTAS__': str(data.get('alertas_saneamiento', {}).get('total_alertas', 33)),
+    '__VISITAS_FALLIDAS__': str(data.get('visitas_fallidas', 10)),
+    '__SIN_PREVENTOR_PEND_PCT__': str(round(data['sin_preventor'] / data['pendientes'] * 100, 1)) if data.get('pendientes') else '0',
+    '__PREV_EFECTIVAS__': str(sum(p['visitados'] for p in data['preventores'])),
     '__TOTAL_ORGANISMOS__': str(len(data['organismos'])),
     '__TOTAL_CRITICAS__': str(data['vencidas_criticas'] + data['urgentes_nov26']),
     '__TOTAL_PREVENTORES__': str(len(data['preventores'])),

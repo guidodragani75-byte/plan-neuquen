@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Neuquén — Resumen Ejecutivo y Métricas</title>
+  
+  <!-- Tipografía IBM Plex (Idéntica a IAPSER Portal Legajo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0F5132;
+      --primary-dark: #0A3622;
+      --primary-light: #D1E7DD;
+      --primary-accent: #198754;
+      --rail-bg: #112217;
+      --bg: #F5F7F5;
+      --card-bg: #FFFFFF;
+      --border-table: #D5DCD5;
+      --border-subtle: #E3E8E3;
+      --text-main: #1C241E;
+      --text-muted: #5C665E;
+      --alert: #DC2626;
+      --alert-bg: #FEE2E2;
+      --alert-text: #991B1B;
+      --warn: #D97706;
+      --warn-bg: #FEF3C7;
+      --warn-text: #92400E;
+      --info: #0284C7;
+      --info-bg: #E0F2FE;
+      --info-text: #0369A1;
+      --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    /* Reglas para Hoja A4 e Impresión */
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 10mm 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: #ECEFEA;
+      color: var(--text-main);
+      font-size: 8.5pt;
+      line-height: 1.35;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 10mm 12mm;
+      margin: 8mm auto;
+      background: #FFFFFF;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Header Estilo IAPSER */
+    .header-bar {
+      background: var(--rail-bg);
+      color: #FFFFFF;
+      padding: 10px 14px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary-accent);
+      margin-bottom: 10px;
+    }
+
+    .header-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #A3E635;
+      font-size: 13px;
+    }
+
+    .header-title {
+      font-size: 11pt;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      color: #FFFFFF;
+    }
+
+    .header-sub {
+      font-size: 7.5pt;
+      color: #94A3B8;
+      margin-top: 1px;
+    }
+
+    .header-badge {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 4px 8px;
+      font-size: 7.5pt;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      border-radius: 3px;
+      color: #A3E635;
+      text-align: right;
+    }
+
+    /* Títulos de sección minimalistas */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-table);
+      padding-bottom: 4px;
+      margin: 10px 0 8px 0;
+    }
+
+    .section-title {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-title i {
+      color: var(--primary-accent);
+      font-size: 8.5pt;
+    }
+
+    .section-tag {
+      font-size: 7pt;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Tarjetas de Métricas (Idénticas a IAPSER) */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-table);
+      padding: 10px 12px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .kpi-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .kpi-label {
+      font-size: 7pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    .kpi-icon {
+      font-size: 9pt;
+      color: var(--text-muted);
+    }
+
+    .kpi-val {
+      font-size: 18pt;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--text-main);
+      line-height: 1.1;
+      margin: 2px 0;
+    }
+
+    .kpi-sub {
+      font-size: 7.5pt;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .badge-sub {
+      font-family: var(--font-mono);
+      font-size: 6.5pt;
+      font-weight: 600;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-green { background: #D1E7DD; color: #0F5132; }
+    .badge-orange { background: #FFE8D6; color: #C2410C; }
+    .badge-blue { background: #DBEAFE; color: #1E40AF; }
+
+    /* Barra de Progreso Global */
+    .progress-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-table);
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 7.5pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background: #E2E8F0;
+      border-radius: 3px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .progress-fill-done {
+      background: var(--primary-accent);
+      height: 100%;
+    }
+
+    .progress-fill-todo {
+      background: #CBD5E1;
+      height: 100%;
+    }
+
+    .progress-legend {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      font-size: 7pt;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Gráfico SVG Minimalista IAPSER */
+    .chart-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border-table);
+      border-radius: 4px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+    }
+
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    /* Tablas IAPSER */
+    table.iapser-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    table.iapser-table th, table.iapser-table td {
+      border: 1px solid var(--border-table);
+      padding: 4px 6px;
+      text-align: center;
+    }
+
+    table.iapser-table th {
+      background: #F1F4F1;
+      color: var(--text-main);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      font-size: 6.8pt;
+    }
+
+    table.iapser-table th.dark {
+      background: var(--rail-bg);
+      color: #FFFFFF;
+    }
+
+    table.iapser-table td.left {
+      text-align: left;
+      font-weight: 500;
+    }
+
+    table.iapser-table td.mono {
+      font-family: var(--font-mono);
+    }
+
+    table.iapser-table tr.total-row {
+      background: #EAEFEA;
+      font-weight: 700;
+    }
+
+    table.iapser-table tr:nth-child(even):not(.total-row) {
+      background: #FAFCFA;
+    }
+
+    .cell-orange-badge {
+      background-color: #FFEDD5 !important;
+      color: #C2410C !important;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .cell-green-badge {
+      background-color: #DCFCE7 !important;
+      color: #15803D !important;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .cell-solid-orange {
+      background-color: #F97316 !important;
+      color: #FFFFFF !important;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    /* Mini barras de porcentaje en tabla */
+    .mini-bar-cell {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: flex-end;
+    }
+
+    .mini-bar {
+      width: 36px;
+      height: 5px;
+      background: #E2E8F0;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .mini-bar-fill {
+      height: 100%;
+      background: var(--primary-accent);
+    }
+
+    /* Footer IAPSER */
+    .footer-bar {
+      border-top: 1px solid var(--border-table);
+      padding-top: 5px;
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 7pt;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Botón flotante */
+    .print-btn {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      background: var(--primary);
+      color: #FFFFFF;
+      border: 1px solid var(--primary-accent);
+      border-radius: 4px;
+      padding: 10px 18px;
+      font-size: 9pt;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(15, 81, 50, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 1000;
+    }
+    .print-btn:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn no-print" onclick="window.print()">
+    <i class="fa-solid fa-print"></i> Imprimir Reporte A4
+  </button>
+
+  <!-- ========================================================================= -->
+  <!-- HOJA 1: RESUMEN EJECUTIVO Y MÉTRICAS CLAVE                                -->
+  <!-- ========================================================================= -->
+  <div class="page page-break">
+    <div>
+      <div class="header-bar">
+        <div class="header-title-group">
+          <div class="header-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <div class="header-title">PLAN NEUQUÉN — GESTIÓN PREVENTIVA HyS</div>
+            <div class="header-sub">Provincia del Neuquén · Administración Central (CUIT 30-99906894-0)</div>
+          </div>
+        </div>
+        <div class="header-badge">
+          CORTE: NOVIEMBRE 2026<br>
+          <span style="font-weight: normal; color: #E2E8F0; font-size: 6.5pt;">AUDITORÍA DE AVANCE</span>
+        </div>
+      </div>
+
+      <!-- Barra de Progreso Global -->
+      <div class="progress-box">
+        <div class="progress-header">
+          <span>Avance General del Plan de Relevamiento</span>
+          <span style="font-family: var(--font-mono); color: var(--primary); font-weight: 700;">44,9% COMPLETADO</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill-done" style="width: 44.9%;"></div>
+          <div class="progress-fill-todo" style="width: 55.1%;"></div>
+        </div>
+        <div class="progress-legend">
+          <span><strong style="color: var(--primary-accent);">745</strong> Visitas Efectivas</span>
+          <span><strong style="color: #C2410C;">914</strong> Visitas Pendientes</span>
+          <span>Total Padrón Activo: <strong>1.659</strong> Sedes</span>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Métricas Clave -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Visitas Efectivas</span>
+            <i class="fa-solid fa-circle-check kpi-icon" style="color: #16A34A;"></i>
+          </div>
+          <div class="kpi-val" style="color: #0F5132;">745</div>
+          <div class="kpi-sub">
+            <span>De 1.659 activas</span>
+            <span class="badge-sub badge-green">44,9%</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Visitas Pendientes</span>
+            <i class="fa-solid fa-clock kpi-icon" style="color: #D97706;"></i>
+          </div>
+          <div class="kpi-val" style="color: #C2410C;">914</div>
+          <div class="kpi-sub">
+            <span>Por inspeccionar</span>
+            <span class="badge-sub badge-orange">55,1%</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Efectividad</span>
+            <i class="fa-solid fa-chart-line kpi-icon" style="color: #0284C7;"></i>
+          </div>
+          <div class="kpi-val" style="color: #0284C7;">99,5%</div>
+          <div class="kpi-sub">
+            <span>Solo 4 no realizadas</span>
+            <span class="badge-sub badge-blue">0,5% fallas</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Meta Mensual SRT</span>
+            <i class="fa-solid fa-bullseye kpi-icon" style="color: #64748B;"></i>
+          </div>
+          <div class="kpi-val">150</div>
+          <div class="kpi-sub">
+            <span>Mínimo / mes</span>
+            <span class="badge-sub badge-green">Superada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfico 1: Barras Apiladas por Mes Real vs Meta 150 -->
+      <div class="chart-container">
+        <div class="chart-header">
+          <span><i class="fa-solid fa-chart-simple" style="margin-right: 5px; color: var(--primary);"></i> Visitas Efectivas Ejecutadas por Mes Real vs. Meta SRT (150)</span>
+          <span style="font-family: var(--font-mono); font-size: 7pt; color: var(--primary-accent);">Total Realizado: 745</span>
+        </div>
+
+        <svg viewBox="0 0 650 145" style="width: 100%; height: auto; display: block;">
+          <!-- Guías y Meta -->
+          <line x1="45" y1="110" x2="625" y2="110" stroke="#E2E8F0" stroke-width="1" />
+          <line x1="45" y1="85" x2="625" y2="85" stroke="#F1F5F9" stroke-width="1" />
+          <line x1="45" y1="58" x2="625" y2="58" stroke="#0F5132" stroke-width="1.2" stroke-dasharray="3,3" />
+          <line x1="45" y1="30" x2="625" y2="30" stroke="#F1F5F9" stroke-width="1" />
+
+          <!-- Eje Y -->
+          <text x="38" y="113" font-size="7.5" fill="#94A3B8" text-anchor="end" font-family="'IBM Plex Mono'">0</text>
+          <text x="38" y="61" font-size="7.5" fill="#0F5132" font-weight="bold" text-anchor="end" font-family="'IBM Plex Mono'">150</text>
+          <text x="38" y="15" font-size="7.5" fill="#94A3B8" text-anchor="end" font-family="'IBM Plex Mono'">270</text>
+
+          <!-- Julio: 81 -->
+          <g>
+            <rect x="90" y="87" width="55" height="23" fill="#0F5132" rx="1" />
+            <text x="117" y="101" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M0: 55</text>
+            <rect x="90" y="76" width="55" height="11" fill="#198754" rx="1" />
+            <text x="117" y="84" font-size="6.5" fill="#FFFFFF" text-anchor="middle">M1: 26</text>
+            <text x="117" y="70" font-size="9" fill="#1C241E" text-anchor="middle" font-weight="bold" font-family="'IBM Plex Mono'">81</text>
+            <text x="117" y="124" font-size="8" fill="#5C665E" text-anchor="middle" font-weight="600">Jul-26</text>
+          </g>
+
+          <!-- Agosto: 230 -->
+          <g>
+            <rect x="200" y="71" width="55" height="39" fill="#0F5132" rx="1" />
+            <text x="227" y="93" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M0: 96</text>
+            <rect x="200" y="22" width="55" height="49" fill="#198754" rx="1" />
+            <text x="227" y="48" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M1: 119</text>
+            <rect x="200" y="16" width="55" height="6" fill="#0284C7" rx="1" />
+            <text x="227" y="10" font-size="9" fill="#1C241E" text-anchor="middle" font-weight="bold" font-family="'IBM Plex Mono'">230</text>
+            <text x="227" y="124" font-size="8" fill="#5C665E" text-anchor="middle" font-weight="600">Ago-26</text>
+          </g>
+
+          <!-- Septiembre: 261 -->
+          <g>
+            <rect x="310" y="103" width="55" height="7" fill="#0F5132" rx="1" />
+            <rect x="310" y="99" width="55" height="4" fill="#198754" rx="1" />
+            <rect x="310" y="50" width="55" height="49" fill="#0284C7" rx="1" />
+            <text x="337" y="76" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M2: 119</text>
+            <rect x="310" y="2" width="55" height="48" fill="#D97706" rx="1" />
+            <text x="337" y="27" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M3: 116</text>
+            <text x="337" y="-3" font-size="9" fill="#1C241E" text-anchor="middle" font-weight="bold" font-family="'IBM Plex Mono'"></text>
+            <text x="337" y="124" font-size="8" fill="#5C665E" text-anchor="middle" font-weight="600">Sep-26 (261)</text>
+          </g>
+
+          <!-- Octubre: 171 -->
+          <g>
+            <rect x="420" y="103" width="55" height="7" fill="#0284C7" rx="1" />
+            <rect x="420" y="95" width="55" height="8" fill="#D97706" rx="1" />
+            <rect x="420" y="38" width="55" height="57" fill="#EA580C" rx="1" />
+            <text x="447" y="68" font-size="7.5" fill="#FFFFFF" text-anchor="middle" font-weight="bold">M4: 140</text>
+            <text x="447" y="31" font-size="9" fill="#1C241E" text-anchor="middle" font-weight="bold" font-family="'IBM Plex Mono'">171</text>
+            <text x="447" y="124" font-size="8" fill="#5C665E" text-anchor="middle" font-weight="600">Oct-26</text>
+          </g>
+
+          <!-- Noviembre: 2 -->
+          <g>
+            <rect x="530" y="109" width="55" height="1" fill="#7C3AED" rx="1" />
+            <text x="557" y="103" font-size="8.5" fill="#1C241E" text-anchor="middle" font-weight="bold" font-family="'IBM Plex Mono'">2</text>
+            <text x="557" y="124" font-size="8" fill="#5C665E" text-anchor="middle" font-weight="600">Nov-26</text>
+          </g>
+        </svg>
+
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 6px; font-size: 7pt; color: var(--text-muted);">
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #0F5132; border-radius: 2px;"></span> Muestra 0</span>
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #198754; border-radius: 2px;"></span> Muestra 1</span>
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #0284C7; border-radius: 2px;"></span> Muestra 2</span>
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #D97706; border-radius: 2px;"></span> Muestra 3</span>
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #EA580C; border-radius: 2px;"></span> Muestra 4</span>
+          <span><span style="display: inline-block; width: 8px; height: 8px; background: #7C3AED; border-radius: 2px;"></span> Muestra 5</span>
+        </div>
+      </div>
+
+      <!-- Tabla 1: Control por Muestras 0 a 10 -->
+      <div class="section-header">
+        <div class="section-title"><i class="fa-solid fa-list-check"></i> Estado de Cumplimiento por Muestra</div>
+        <div class="section-tag">1.685 SEDES PLANIFICADAS</div>
+      </div>
+
+      <table class="iapser-table">
+        <thead>
+          <tr>
+            <th>Muestra</th>
+            <th>Mes Plan</th>
+            <th>Meta SRT</th>
+            <th>Planif.</th>
+            <th>Bajas</th>
+            <th>Activos</th>
+            <th>Visitados</th>
+            <th>Pendientes</th>
+            <th>% Cumplido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left"><strong>Muestra 0</strong></td>
+            <td class="mono">01/07/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">170</td>
+            <td class="mono">0</td>
+            <td class="mono">170</td>
+            <td class="cell-green-badge">168</td>
+            <td class="cell-orange-badge">2</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 98.8%;"></div></div><span class="mono"><strong>98,8%</strong></span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 1</strong></td>
+            <td class="mono">01/08/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">167</td>
+            <td class="mono">8</td>
+            <td class="mono">159</td>
+            <td class="cell-green-badge">156</td>
+            <td class="cell-orange-badge">2</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 98.7%;"></div></div><span class="mono"><strong>98,7%</strong></span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 2</strong></td>
+            <td class="mono">01/09/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">152</td>
+            <td class="mono">3</td>
+            <td class="mono">149</td>
+            <td class="cell-green-badge">145</td>
+            <td class="cell-orange-badge">3</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 98.0%;"></div></div><span class="mono"><strong>98,0%</strong></span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 3</strong></td>
+            <td class="mono">01/10/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">160</td>
+            <td class="mono">3</td>
+            <td class="mono">157</td>
+            <td class="mono">134</td>
+            <td class="cell-orange-badge">23</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 85.4%;"></div></div><span class="mono"><strong>85,4%</strong></span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 4</strong></td>
+            <td class="mono">01/11/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">166</td>
+            <td class="mono">0</td>
+            <td class="mono">166</td>
+            <td class="mono">140</td>
+            <td class="cell-orange-badge">26</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 84.3%;"></div></div><span class="mono"><strong>84,3%</strong></span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 5</strong></td>
+            <td class="mono">01/12/2026</td>
+            <td class="mono">150</td>
+            <td class="mono">161</td>
+            <td class="mono">1</td>
+            <td class="mono">160</td>
+            <td class="mono">2</td>
+            <td class="mono">158</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 1.2%;"></div></div><span class="mono">1,2%</span></div></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestras 6 a 10</strong></td>
+            <td class="mono">Ene-May 27</td>
+            <td class="mono">699</td>
+            <td class="mono">709</td>
+            <td class="mono">7</td>
+            <td class="mono">702</td>
+            <td class="mono">0</td>
+            <td class="mono">702</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 0%;"></div></div><span class="mono">0,0%</span></div></td>
+          </tr>
+          <tr class="total-row">
+            <td class="left">TOTAL PADRÓN</td>
+            <td class="mono">Ciclo Anual</td>
+            <td class="mono">1.599</td>
+            <td class="mono">1.685</td>
+            <td class="mono">22*</td>
+            <td class="mono">1.659</td>
+            <td class="mono"><strong>745</strong></td>
+            <td class="cell-solid-orange">914</td>
+            <td><div class="mini-bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width: 44.9%;"></div></div><span class="mono"><strong>44,9%</strong></span></div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size: 6.8pt; color: var(--text-muted); margin-top: -3px;">
+        * Bajas depuradas de las muestras. Existen 152 bajas históricas de SIMP sin muestra asignada (Total Bajas Padrón = 174).
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>Plan Neuquén HyS — Formato Ejecutivo</span>
+      <span>Hoja 1 de 2</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- HOJA 2: TABLA DE CRUCE, DISPERSIÓN DE M0 Y PLAN DE ACCIÓN                 -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <div class="header-title-group">
+          <div class="header-icon"><i class="fa-solid fa-table-cells"></i></div>
+          <div>
+            <div class="header-title">PLAN NEUQUÉN — MATRIZ DE CRUCE Y ACCIÓN</div>
+            <div class="header-sub">Muestra Planificada vs. Mes Real de Inspección | Casos de Cierre</div>
+          </div>
+        </div>
+        <div class="header-badge">
+          SEGUIMIENTO TERRITORIAL<br>
+          <span style="font-weight: normal; color: #E2E8F0; font-size: 6.5pt;">TRAZABILIDAD TEMPORAL</span>
+        </div>
+      </div>
+
+      <!-- Tabla de Cruce Doble Entrada -->
+      <div class="section-header">
+        <div class="section-title"><i class="fa-solid fa-calendar-days"></i> Cruce: Cuándo se Visitó cada Muestra</div>
+        <div class="section-tag">MES PLANIFICADO VS. MES REAL</div>
+      </div>
+
+      <table class="iapser-table">
+        <thead>
+          <tr>
+            <th rowspan="2">Muestra Planificada</th>
+            <th colspan="5">Mes Real en que se Ejecutó la Visita</th>
+            <th rowspan="2" class="cell-orange-badge">Faltan Visitar</th>
+            <th rowspan="2">Total Activos</th>
+          </tr>
+          <tr>
+            <th>01/07/2026</th>
+            <th>01/08/2026</th>
+            <th>01/09/2026</th>
+            <th>01/10/2026</th>
+            <th>01/11/2026</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left"><strong>Muestra 0 (Julio)</strong></td>
+            <td class="mono">55</td>
+            <td class="mono">96</td>
+            <td class="cell-green-badge">16</td>
+            <td class="mono">1</td>
+            <td class="mono">—</td>
+            <td class="cell-solid-orange">2</td>
+            <td class="mono"><strong>170</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 1 (Agosto)</strong></td>
+            <td class="mono">26</td>
+            <td class="mono">119</td>
+            <td class="mono">10</td>
+            <td class="mono">1</td>
+            <td class="mono">—</td>
+            <td class="cell-orange-badge">2</td>
+            <td class="mono"><strong>158</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 2 (Septiembre)</strong></td>
+            <td class="mono">—</td>
+            <td class="mono">15</td>
+            <td class="mono">119</td>
+            <td class="mono">11</td>
+            <td class="mono">—</td>
+            <td class="cell-orange-badge">3</td>
+            <td class="mono"><strong>148</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 3 (Octubre)</strong></td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">116</td>
+            <td class="mono">18</td>
+            <td class="mono">—</td>
+            <td class="cell-orange-badge">23</td>
+            <td class="mono"><strong>157</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 4 (Noviembre)</strong></td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">140</td>
+            <td class="mono">—</td>
+            <td class="cell-orange-badge">26</td>
+            <td class="mono"><strong>166</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestra 5 (Diciembre)</strong></td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">2</td>
+            <td class="cell-orange-badge">158</td>
+            <td class="mono"><strong>160</strong></td>
+          </tr>
+          <tr>
+            <td class="left"><strong>Muestras 6 a 10</strong></td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="mono">—</td>
+            <td class="cell-orange-badge">702</td>
+            <td class="mono"><strong>702</strong></td>
+          </tr>
+          <tr class="total-row">
+            <td class="left">TOTAL VISITADO</td>
+            <td class="mono"><strong>81</strong></td>
+            <td class="mono"><strong>230</strong></td>
+            <td class="mono"><strong>261</strong></td>
+            <td class="mono"><strong>171</strong></td>
+            <td class="mono"><strong>2</strong></td>
+            <td class="cell-solid-orange">914</td>
+            <td class="mono"><strong>1.659</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Distribución de Muestra 0 -->
+      <div class="section-header" style="margin-top: 10px;">
+        <div class="section-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> ¿Por qué la Muestra 0 se realizó en 4 meses?</div>
+        <div class="section-tag">LOGÍSTICA TERRITORIAL</div>
+      </div>
+
+      <div class="chart-container" style="padding: 8px 12px; margin-bottom: 8px;">
+        <div style="font-size: 7.5pt; font-weight: 600; margin-bottom: 6px; color: var(--text-muted); text-transform: uppercase;">
+          Distribución de las 170 sedes de Muestra 0 por mes de ejecución:
+        </div>
+        <div style="display: flex; gap: 4px; text-align: center;">
+          <div style="flex: 55; background: #0F5132; color: #FFF; padding: 6px 2px; border-radius: 2px;">
+            <div style="font-size: 9.5pt; font-weight: bold; font-family: var(--font-mono);">55</div>
+            <div style="font-size: 6.5pt;">Julio (32%)</div>
+          </div>
+          <div style="flex: 96; background: #198754; color: #FFF; padding: 6px 2px; border-radius: 2px;">
+            <div style="font-size: 9.5pt; font-weight: bold; font-family: var(--font-mono);">96</div>
+            <div style="font-size: 6.5pt;">Agosto (56%)</div>
+          </div>
+          <div style="flex: 16; background: #0284C7; color: #FFF; padding: 6px 2px; border-radius: 2px;">
+            <div style="font-size: 9.5pt; font-weight: bold; font-family: var(--font-mono);">16</div>
+            <div style="font-size: 6.5pt;">Sept. (9%)</div>
+          </div>
+          <div style="flex: 4; background: #5C665E; color: #FFF; padding: 6px 2px; border-radius: 2px;">
+            <div style="font-size: 9.5pt; font-weight: bold; font-family: var(--font-mono);">1</div>
+            <div style="font-size: 6.5pt;">Oct.</div>
+          </div>
+          <div style="flex: 8; background: #EA580C; color: #FFF; padding: 6px 2px; border-radius: 2px;">
+            <div style="font-size: 9.5pt; font-weight: bold; font-family: var(--font-mono);">2</div>
+            <div style="font-size: 6.5pt;">Faltan</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 8px; font-size: 7.2pt; color: var(--text-main);">
+          <div>• <strong>Julio (55):</strong> Inicio el 05/07. Trámites de acceso a edificios escolares y centros de salud.</div>
+          <div>• <strong>Agosto (96):</strong> Máxima actividad territorial unificando rutas al interior provincial.</div>
+          <div>• <strong>Septiembre (16):</strong> Sedes complejas con obras o medidas de fuerza gremiales.</div>
+          <div>• <strong>Octubre (1):</strong> Regularización del último establecimiento con nueva dirección.</div>
+        </div>
+      </div>
+
+      <!-- Plan de Acción Nominal: 9 Casos Críticos -->
+      <div class="section-header">
+        <div class="section-title"><i class="fa-solid fa-crosshairs"></i> Plan de Cierre al 100% de Muestras 0, 1 y 2 (9 Sedes)</div>
+        <div class="section-tag">ACCIONES PENDIENTES</div>
+      </div>
+
+      <table class="iapser-table" style="font-size: 7pt;">
+        <thead>
+          <tr>
+            <th>Muestra</th>
+            <th>N° SRT (AK)</th>
+            <th>Organismo</th>
+            <th>Establecimiento / Sede</th>
+            <th>Diagnóstico</th>
+            <th>Acción Concreta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono"><strong>M-0</strong></td>
+            <td class="mono"><strong>170</strong></td>
+            <td>Salud</td>
+            <td class="left">Puesto Sanitario / Centro de Salud</td>
+            <td class="left">Se mudó provisoriamente por inseguridad en la zona.</td>
+            <td class="left"><strong>Reasignar preventor</strong> a nuevo domicilio.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-0</strong></td>
+            <td class="mono"><strong>254</strong></td>
+            <td>Salud</td>
+            <td class="left">Sede Operativa de Salud</td>
+            <td class="left">Figura para reasignar fecha de inspección.</td>
+            <td class="left"><strong>Re-visitar</strong> con nueva coordinación.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-1</strong></td>
+            <td class="mono"><strong>273</strong></td>
+            <td>Policía</td>
+            <td class="left">Destacamento Policial</td>
+            <td class="left">Sin visita cargada en planilla.</td>
+            <td class="left"><strong>Visitar y cargar acta</strong> de inspección.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-1</strong></td>
+            <td class="mono"><strong>387</strong></td>
+            <td>Educación (CPE)</td>
+            <td class="left">Edificio Escolar / Anexo</td>
+            <td class="left">Sin visita cargada en planilla.</td>
+            <td class="left"><strong>Visitar y cargar acta</strong> de inspección.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-2</strong></td>
+            <td class="mono"><strong>501</strong></td>
+            <td>Educación (CPE)</td>
+            <td class="left">Establecimiento Educativo</td>
+            <td class="left">Sin visita cargada en planilla.</td>
+            <td class="left"><strong>Visitar y cargar acta</strong> de inspección.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-2</strong></td>
+            <td class="mono"><strong>574</strong></td>
+            <td>EPAS</td>
+            <td class="left">Sede Operativa / Planta</td>
+            <td class="left">Sin visita cargada en planilla.</td>
+            <td class="left"><strong>Visitar y cargar acta</strong> de inspección.</td>
+          </tr>
+          <tr>
+            <td class="mono"><strong>M-2</strong></td>
+            <td class="mono"><strong>589</strong></td>
+            <td>Trabajo</td>
+            <td class="left">Delegación Regional de Trabajo</td>
+            <td class="left">Sin visita cargada en planilla.</td>
+            <td class="left"><strong>Visitar y cargar acta</strong> de inspección.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 4px; padding: 6px 10px; font-size: 7.2pt; color: #166534; display: flex; align-items: center; justify-content: space-between;">
+        <span><i class="fa-solid fa-check-double" style="margin-right: 4px;"></i> <strong>Cierre de Etapa:</strong> Con solo completar estas 7 inspecciones y las 2 reasignaciones de Salud, las Muestras 0, 1 y 2 alcanzan el <strong>100% de cumplimiento</strong>.</span>
+        <span class="mono" style="font-weight: bold;">9 CASOS RESTANTES</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bar">
+      <span>Plan Neuquén HyS — Formato Ejecutivo</span>
+      <span>Hoja 2 de 2</span>
+    </div>
+  </div>
+
+</body>
+</html>

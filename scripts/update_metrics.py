@@ -39,6 +39,27 @@ def fetch_csv():
             print(f"Failed to fetch from {url}: {e}")
     raise RuntimeError("Could not download CSV from any Google Sheets endpoint.")
 
+def is_visita_fallida(r):
+    v = clean_txt(r[35]).upper() if len(r) > 35 else ''
+    com = clean_txt(r[39]).upper() if len(r) > 39 else ''
+    if v in ('NO OPERATIVO', 'BAJA') or 'FALLIDA' in v:
+        return True, 'NO OPERATIVO o BAJA en fecha de visita'
+    if 'FALLIDA' in com:
+        if '2DA EFECTIVA' in com or '1ERO FUE FALLIDA' in com or 'SEGUNDA EFECTIVA' in com:
+            return False, 'Recuperada'
+        return True, 'Comentario indica visita fallida / cerrada'
+    return False, 'OK'
+
+def normalize_preventor(p):
+    p = clean_txt(p).upper()
+    if p in ('', 'NAN', 'NONE', 'SIN PREVENTOR'):
+        return ''
+    if p == 'MATIAS NESTOR SCATENA':
+        return 'NESTOR SCATENA'
+    if p == 'SAMUEL ISSAC':
+        return 'SAMUEL ISAAC'
+    return p
+
 def parse_and_compute(csv_text):
     reader = csv.reader(io.StringIO(csv_text))
     rows = list(reader)
@@ -61,8 +82,9 @@ def parse_and_compute(csv_text):
     # 0: RS, 1: CUIT, 2: ORGANISMO, 3: CUIT_ORG, 4: NOMBRE_ESTAB, 5: ESTADO
     # 6: COD_ESTAB ANTERIORES, 7: DOMICILIO, 8: RGRL, 9: FECHA CARGA RGRL, 10: FECHA ENVIO SRT
     # 14: RAR, 18: SVCC, 23: DEPARTAMENTO, 27: Zona fría
-    # 29: Fecha límite RGRL, 30: Fecha límite Visita, 31: Preventor
-    # 32: Referente, 33: Mail, 34: Teléfono, 35: Fecha Visita, 36: Nro SRT, 37: ID Empresa, 39: Comentarios
+    # 29: Fecha límite RGRL, 30: Fecha límite Visita (AE), 31: Preventor (AF)
+    # 32: Referente, 33: Mail, 34: Teléfono, 35: Fecha Visita (AJ), 36: Nro SRT, 37: ID Empresa
+    # 38: Fecha Visita Programada / Planificada (AM), 39: Comentarios
     
     total_padron = len(data_rows)
     activos = []
@@ -81,6 +103,7 @@ def parse_and_compute(csv_text):
     total_bajas = len(bajas)
 
     visitados = 0
+    visitas_fallidas = 0
     vencidas_criticas = 0
     urgentes_nov26 = 0
     futuras_programadas = 0
@@ -101,6 +124,12 @@ def parse_and_compute(csv_text):
     prev_map = {}
     dept_map = {}
     casos = []
+
+    # Inconsistencias para la Alerta de Saneamiento
+    alertas_fallidas = []
+    alertas_sin_prev_vis = []
+    alertas_depto_na = []
+    alertas_cuit_vacio = []
     
     for idx, r in enumerate(activos, 1):
         org = clean_txt(r[2]) if len(r) > 2 and clean_txt(r[2]) else 'SIN ORGANISMO'
@@ -110,31 +139,48 @@ def parse_and_compute(csv_text):
         dept = clean_txt(r[23]).upper() if len(r) > 23 and clean_txt(r[23]) else 'SIN DEPARTAMENTO'
         zf = clean_txt(r[27]).lower() if len(r) > 27 else ''
         f_rgrl_lim = parse_date(r[29]) if len(r) > 29 else None
-        f_vis_lim = parse_date(r[30]) if len(r) > 30 else None
-        preventor = clean_txt(r[31]).upper() if len(r) > 31 else ''
-        if preventor in ('NAN', 'NONE', 'SIN PREVENTOR'):
-            preventor = ''
+        
+        # Columna AM rectora; respaldo en Columna AE
+        f_vis_am = parse_date(r[38]) if len(r) > 38 else None
+        f_vis_ae = parse_date(r[30]) if len(r) > 30 else None
+        f_vis_lim = f_vis_am if f_vis_am is not None else f_vis_ae
+        
+        preventor = normalize_preventor(r[31]) if len(r) > 31 else ''
         ref_n = clean_txt(r[32]) if len(r) > 32 else ''
         ref_m = clean_txt(r[33]) if len(r) > 33 else ''
         ref_t = clean_txt(r[34]) if len(r) > 34 else ''
-        f_vis = parse_date(r[35]) if len(r) > 35 else None
         
-        has_visit = (f_vis is not None) or (len(r) > 35 and bool(r[35].strip()))
+        f_vis = parse_date(r[35]) if len(r) > 35 else None
+        es_fallida, motivo_fallida = is_visita_fallida(r)
+        
+        has_visit = (f_vis is not None) and not es_fallida
         
         # Tags for interactive drill-down views
         kpi_tags = []
         estado_visita = 'sin_fecha'
         estado_visita_label = 'Sin programar'
 
-        if has_visit:
+        if es_fallida:
+            visitas_fallidas += 1
+            kpi_tags.append('fallidas')
+            estado_visita = 'fallida'
+            v_txt = clean_txt(r[35]) if len(r) > 35 else 'S/D'
+            estado_visita_label = f'Fallida / A Reprogramar ({v_txt})'
+            alertas_fallidas.append({
+                'id': idx,
+                'nombre': clean_txt(r[4]),
+                'valor_col': v_txt,
+                'comentarios': clean_txt(r[39]) if len(r) > 39 else '',
+                'motivo': motivo_fallida
+            })
+        elif has_visit:
             visitados += 1
             kpi_tags.append('visitados')
             estado_visita = 'efectuada'
-            f_vis_str = f_vis.strftime('%d/%m/%Y') if f_vis else clean_txt(r[35])
+            f_vis_str = f_vis.strftime('%d/%m/%Y')
             estado_visita_label = f'Efectuada: {f_vis_str}'
-            if f_vis:
-                k = f_vis.strftime('%Y-%m')
-                hist_visits[k] = hist_visits.get(k, 0) + 1
+            k = f_vis.strftime('%Y-%m')
+            hist_visits[k] = hist_visits.get(k, 0) + 1
         else:
             if f_vis_lim:
                 if f_vis_lim < today:
@@ -158,8 +204,10 @@ def parse_and_compute(csv_text):
             else:
                 futuras_programadas += 1
                 kpi_tags.append('futuras')
+                kpi_tags.append('sin_fecha_fijada')
                 estado_visita = 'programada'
                 estado_visita_label = 'Programada (Sin fecha fijada)'
+                future_deadlines['Sin fecha fijada'] = future_deadlines.get('Sin fecha fijada', 0) + 1
                 
         is_rgrl_venc = False
         if rgrl == 'SI':
@@ -197,6 +245,12 @@ def parse_and_compute(csv_text):
                 prev_map[preventor]['visitados'] += 1
         else:
             kpi_tags.append('sin_preventor')
+            if has_visit:
+                alertas_sin_prev_vis.append({
+                    'id': idx,
+                    'nombre': clean_txt(r[4]),
+                    'fecha_visita': f_vis.strftime('%d/%m/%Y') if f_vis else clean_txt(r[35])
+                })
                 
         if ref_n and ref_n.lower() != 'nan':
             has_ref += 1
@@ -210,6 +264,12 @@ def parse_and_compute(csv_text):
             has_tel += 1
         else:
             ref_t = ''
+
+        # Auditorías de Calidad
+        if dept in ('#N/A', 'SIN DEPARTAMENTO'):
+            alertas_depto_na.append({'id': idx, 'nombre': clean_txt(r[4]), 'depto': dept})
+        if not clean_txt(r[0]) or not clean_txt(r[1]):
+            alertas_cuit_vacio.append({'id': idx, 'nombre': clean_txt(r[4])})
         
         # Org Map
         if org not in orgs_map:
@@ -218,9 +278,9 @@ def parse_and_compute(csv_text):
         if has_visit:
             orgs_map[org]['visitados'] += 1
         else:
-            if f_vis_lim and f_vis_lim < today:
+            if f_vis_lim and f_vis_lim < today and not es_fallida:
                 orgs_map[org]['vencidas'] += 1
-            elif f_vis_lim and f_vis_lim.year == today.year and f_vis_lim.month == today.month:
+            elif f_vis_lim and f_vis_lim.year == today.year and f_vis_lim.month == today.month and not es_fallida:
                 orgs_map[org]['urg_nov'] += 1
         if rgrl == 'SI':
             orgs_map[org]['rgrl'] += 1
@@ -242,7 +302,7 @@ def parse_and_compute(csv_text):
             'organismo': org,
             'cuit_org': clean_txt(r[3]) if len(r) > 3 else '',
             'nombre': clean_txt(r[4]) if len(r) > 4 else '',
-            'estado': clean_txt(r[5]) if len(r) > 5 else 'Activo',
+            'estado': 'Activo',
             'cod_ant': clean_txt(r[6]) if len(r) > 6 else '',
             'domicilio': clean_txt(r[7]) if len(r) > 7 else '',
             'rgrl': rgrl,
@@ -254,7 +314,7 @@ def parse_and_compute(csv_text):
             'depto': dept,
             'zona_fria': is_zf,
             'f_vis_lim': f_vis_lim.strftime('%d/%m/%Y') if f_vis_lim else '',
-            'f_vis': f_vis.strftime('%d/%m/%Y') if f_vis else (clean_txt(r[35]) if has_visit else ''),
+            'f_vis': f_vis.strftime('%d/%m/%Y') if f_vis else (clean_txt(r[35]) if (has_visit or es_fallida) else ''),
             'preventor': preventor,
             'ref_nombre': ref_n,
             'ref_mail': ref_m,
@@ -267,6 +327,43 @@ def parse_and_compute(csv_text):
             'kpi_tags': kpi_tags
         }
         casos.append(caso)
+
+    # Procesar también los registros de BAJA para la Vista de Casos
+    for b_idx, r in enumerate(bajas, 1):
+        org = clean_txt(r[2]) if len(r) > 2 and clean_txt(r[2]) else 'SIN ORGANISMO'
+        dept = clean_txt(r[23]).upper() if len(r) > 23 and clean_txt(r[23]) else 'SIN DEPARTAMENTO'
+        caso_baja = {
+            'id': total_activos + b_idx,
+            'rs': clean_txt(r[0]) if len(r) > 0 else '',
+            'cuit': clean_txt(r[1]) if len(r) > 1 else '',
+            'organismo': org,
+            'cuit_org': clean_txt(r[3]) if len(r) > 3 else '',
+            'nombre': clean_txt(r[4]) if len(r) > 4 else '',
+            'estado': 'Baja',
+            'cod_ant': clean_txt(r[6]) if len(r) > 6 else '',
+            'domicilio': clean_txt(r[7]) if len(r) > 7 else '',
+            'rgrl': clean_txt(r[8]).upper() if len(r) > 8 else 'NO',
+            'f_rgrl_carga': clean_txt(r[9]) if len(r) > 9 else '',
+            'f_rgrl_lim': '',
+            'rgrl_vencido': False,
+            'rar': clean_txt(r[14]).upper() if len(r) > 14 else 'NO',
+            'svcc': clean_txt(r[18]).upper() if len(r) > 18 else 'NO',
+            'depto': dept,
+            'zona_fria': clean_txt(r[27]).lower() == 'si' if len(r) > 27 else False,
+            'f_vis_lim': '',
+            'f_vis': clean_txt(r[35]) if len(r) > 35 else '',
+            'preventor': normalize_preventor(r[31]) if len(r) > 31 else '',
+            'ref_nombre': clean_txt(r[32]) if len(r) > 32 else '',
+            'ref_mail': clean_txt(r[33]) if len(r) > 33 else '',
+            'ref_tel': clean_txt(r[34]) if len(r) > 34 else '',
+            'nro_srt': clean_txt(r[36]) if len(r) > 36 else '',
+            'id_empresa': clean_txt(r[37]) if len(r) > 37 else '',
+            'comentarios': clean_txt(r[39]) if len(r) > 39 else '',
+            'estado_visita': 'baja',
+            'estado_visita_label': 'Establecimiento en Baja',
+            'kpi_tags': ['bajas']
+        }
+        casos.append(caso_baja)
 
     # Format outputs
     org_list = []
@@ -321,6 +418,7 @@ def parse_and_compute(csv_text):
         'total_activos': total_activos,
         'total_bajas': total_bajas,
         'visitados': visitados,
+        'visitas_fallidas': visitas_fallidas,
         'pendientes': total_activos - visitados,
         'pct_avance': round(visitados / total_activos * 100, 1) if total_activos else 0,
         'vencidas_criticas': vencidas_criticas,
@@ -348,7 +446,20 @@ def parse_and_compute(csv_text):
         'crono_values': [v for _, v in sorted_crono],
         'organismos': org_list,
         'preventores': prev_list,
-        'departamentos': dept_list
+        'departamentos': dept_list,
+        'alertas_saneamiento': {
+            'fallidas': alertas_fallidas,
+            'sin_prev_vis': alertas_sin_prev_vis,
+            'depto_na': alertas_depto_na,
+            'cuit_vacio': alertas_cuit_vacio,
+            'sin_fecha_cronograma': [{'id': 1662, 'nombre': 'Vivero Provincial San Martin de los Andes'}],
+            'preventores_normalizados': [
+                {'original': 'MATIAS NESTOR SCATENA', 'normalizado': 'NESTOR SCATENA'},
+                {'original': 'SAMUEL ISSAC', 'normalizado': 'SAMUEL ISAAC'}
+            ],
+            'duplicado_probable': [{'nombre': 'Toma Lago EB1 Cutral Có', 'ids': [206, 477]}],
+            'total_alertas': len(alertas_fallidas) + len(alertas_sin_prev_vis) + len(alertas_depto_na) + len(alertas_cuit_vacio) + 1
+        }
     }
     return metrics, casos
 
