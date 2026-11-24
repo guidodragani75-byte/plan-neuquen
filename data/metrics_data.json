@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-23 17:21:36",
+  "timestamp": "2026-11-24 16:56:34",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 831,
+  "visitados": 843,
   "visitas_fallidas": 0,
-  "pendientes": 832,
-  "pct_avance": 50.0,
-  "vencidas_criticas": 31,
+  "pendientes": 820,
+  "pct_avance": 50.7,
+  "vencidas_criticas": 28,
   "urgentes_nov26": 19,
-  "futuras_programadas": 782,
-  "rgrl_si": 832,
-  "rgrl_pct": 50.0,
+  "futuras_programadas": 773,
+  "rgrl_si": 844,
+  "rgrl_pct": 50.8,
   "rgrl_vencidos_pend": 27,
   "rar_si": 557,
   "rar_pct": 33.5,
@@ -19,10 +19,10 @@
   "svcc_si": 50,
   "svcc_pct": 3.0,
   "zona_fria_total": 209,
-  "zona_fria_vis": 60,
-  "zona_fria_pct": 28.7,
-  "sin_preventor": 833,
-  "prev_asignados": 830,
+  "zona_fria_vis": 63,
+  "zona_fria_pct": 30.1,
+  "sin_preventor": 821,
+  "prev_asignados": 842,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -38,7 +38,7 @@
     230,
     263,
     171,
-    86
+    98
   ],
   "crono_labels": [
     "2026-12",
@@ -48,7 +48,7 @@
     "2027-04"
   ],
   "crono_values": [
-    80,
+    71,
     164,
     157,
     153,
@@ -58,12 +58,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 262,
-      "pendientes": 428,
-      "pct_avance": 38.0,
+      "visitados": 271,
+      "pendientes": 419,
+      "pct_avance": 39.3,
       "vencidas": 0,
       "urgentes_nov": 14,
-      "rgrl_pct": 37.7,
+      "rgrl_pct": 39.0,
       "rar_pct": 11.7
     },
     {
@@ -91,12 +91,12 @@
     {
       "organismo": "MINISTERIO DE TRABAJO Y DESARROLLO HUMANO",
       "total": 121,
-      "visitados": 53,
-      "pendientes": 68,
-      "pct_avance": 43.8,
-      "vencidas": 5,
+      "visitados": 55,
+      "pendientes": 66,
+      "pct_avance": 45.5,
+      "vencidas": 3,
       "urgentes_nov": 1,
-      "rgrl_pct": 45.5,
+      "rgrl_pct": 47.1,
       "rar_pct": 45.5
     },
     {
@@ -234,12 +234,12 @@
     {
       "organismo": "SUBSECRETARIA GENERAL",
       "total": 8,
-      "visitados": 7,
-      "pendientes": 1,
-      "pct_avance": 87.5,
-      "vencidas": 1,
+      "visitados": 8,
+      "pendientes": 0,
+      "pct_avance": 100.0,
+      "vencidas": 0,
       "urgentes_nov": 0,
-      "rgrl_pct": 87.5,
+      "rgrl_pct": 100.0,
       "rar_pct": 100.0
     },
     {
@@ -345,8 +345,8 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 237,
-      "visitados": 236,
+      "asignados": 246,
+      "visitados": 245,
       "pendientes": 1,
       "pct_completado": 99.6
     },
@@ -372,18 +372,18 @@
       "pct_completado": 100.0
     },
     {
+      "preventor": "ALEJANDRO RODRIGUEZ",
+      "asignados": 73,
+      "visitados": 73,
+      "pendientes": 0,
+      "pct_completado": 100.0
+    },
+    {
       "preventor": "JAIRO GUAJARDO",
       "asignados": 72,
       "visitados": 68,
       "pendientes": 4,
       "pct_completado": 94.4
-    },
-    {
-      "preventor": "ALEJANDRO RODRIGUEZ",
-      "asignados": 70,
-      "visitados": 70,
-      "pendientes": 0,
-      "pct_completado": 100.0
     },
     {
       "preventor": "ARACELI FERNANDEZ",
@@ -425,9 +425,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 572,
-      "pendientes": 271,
-      "pct_avance": 67.9
+      "visitados": 581,
+      "pendientes": 262,
+      "pct_avance": 68.9
     },
     {
       "departamento": "ZAPALA",
@@ -488,9 +488,9 @@
     {
       "departamento": "LOS LAGOS",
       "total": 45,
-      "visitados": 14,
-      "pendientes": 31,
-      "pct_avance": 31.1
+      "visitados": 17,
+      "pendientes": 28,
+      "pct_avance": 37.8
     },
     {
       "departamento": "LONCOPUE",
