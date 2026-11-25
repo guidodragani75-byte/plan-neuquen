@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-11-24 16:56:34",
+  "timestamp": "2026-11-25 16:46:00",
   "total_padron": 1837,
   "total_activos": 1663,
   "total_bajas": 174,
-  "visitados": 843,
+  "visitados": 860,
   "visitas_fallidas": 0,
-  "pendientes": 820,
-  "pct_avance": 50.7,
+  "pendientes": 803,
+  "pct_avance": 51.7,
   "vencidas_criticas": 28,
-  "urgentes_nov26": 19,
-  "futuras_programadas": 773,
-  "rgrl_si": 844,
-  "rgrl_pct": 50.8,
-  "rgrl_vencidos_pend": 27,
+  "urgentes_nov26": 18,
+  "futuras_programadas": 757,
+  "rgrl_si": 863,
+  "rgrl_pct": 51.9,
+  "rgrl_vencidos_pend": 26,
   "rar_si": 557,
   "rar_pct": 33.5,
   "total_expuestos": 15472,
@@ -21,8 +21,8 @@
   "zona_fria_total": 209,
   "zona_fria_vis": 63,
   "zona_fria_pct": 30.1,
-  "sin_preventor": 821,
-  "prev_asignados": 842,
+  "sin_preventor": 804,
+  "prev_asignados": 859,
   "has_ref": 961,
   "has_mail": 961,
   "has_tel": 632,
@@ -38,7 +38,7 @@
     230,
     263,
     171,
-    98
+    115
   ],
   "crono_labels": [
     "2026-12",
@@ -48,7 +48,7 @@
     "2027-04"
   ],
   "crono_values": [
-    71,
+    55,
     164,
     157,
     153,
@@ -58,12 +58,12 @@
     {
       "organismo": "CONSEJO PROVINCIAL DE EDUCACION (CPE)",
       "total": 690,
-      "visitados": 271,
-      "pendientes": 419,
-      "pct_avance": 39.3,
+      "visitados": 287,
+      "pendientes": 403,
+      "pct_avance": 41.6,
       "vencidas": 0,
       "urgentes_nov": 14,
-      "rgrl_pct": 39.0,
+      "rgrl_pct": 41.6,
       "rar_pct": 11.7
     },
     {
@@ -80,12 +80,12 @@
     {
       "organismo": "POLICIA DE LA PROVINCIA",
       "total": 170,
-      "visitados": 95,
-      "pendientes": 75,
-      "pct_avance": 55.9,
+      "visitados": 96,
+      "pendientes": 74,
+      "pct_avance": 56.5,
       "vencidas": 1,
-      "urgentes_nov": 4,
-      "rgrl_pct": 55.9,
+      "urgentes_nov": 3,
+      "rgrl_pct": 56.5,
       "rar_pct": 3.5
     },
     {
@@ -345,15 +345,15 @@
   "preventores": [
     {
       "preventor": "EMANUEL VALDERRAMA",
-      "asignados": 246,
-      "visitados": 245,
+      "asignados": 260,
+      "visitados": 259,
       "pendientes": 1,
       "pct_completado": 99.6
     },
     {
       "preventor": "LUCRECIA CONTRERAS",
-      "asignados": 147,
-      "visitados": 146,
+      "asignados": 149,
+      "visitados": 148,
       "pendientes": 1,
       "pct_completado": 99.3
     },
@@ -373,8 +373,8 @@
     },
     {
       "preventor": "ALEJANDRO RODRIGUEZ",
-      "asignados": 73,
-      "visitados": 73,
+      "asignados": 74,
+      "visitados": 74,
       "pendientes": 0,
       "pct_completado": 100.0
     },
@@ -425,9 +425,9 @@
     {
       "departamento": "CONFLUENCIA",
       "total": 843,
-      "visitados": 581,
-      "pendientes": 262,
-      "pct_avance": 68.9
+      "visitados": 598,
+      "pendientes": 245,
+      "pct_avance": 70.9
     },
     {
       "departamento": "ZAPALA",
